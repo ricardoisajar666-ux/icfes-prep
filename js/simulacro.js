@@ -145,6 +145,7 @@ function renderSimulacroPlaying() {
 
       <div class="question-card">
         <div class="question-area-tag ${areaInfo ? areaInfo.tag : 'tag-lectura'}">${q.areaName}</div>
+        ${q.image ? `<div class="question-image"><img src="${q.image}" alt="Gráfico o imagen de la pregunta" loading="lazy"></div>` : ''}
         ${q.context ? `<div class="question-context">${q.context}</div>` : ''}
         <div class="question-text">${q.question}</div>
 
@@ -451,6 +452,7 @@ function reviewSimulacroAnswers(simIndex) {
             ${isCorrect ? '✅ Correcta' : '❌ Incorrecta'}
           </span>
         </div>
+        ${q.image ? `<div style="margin-bottom:8px"><img src="${q.image}" alt="Imagen" style="max-width:120px;max-height:80px;border-radius:6px;object-fit:cover" loading="lazy"></div>` : ''}
         <div style="font-size:14px;font-weight:500;margin-bottom:8px">${idx + 1}. ${q.question.length > 100 ? q.question.substring(0, 100) + '...' : q.question}</div>
         <div style="font-size:13px;color:var(--text-light)">
           Tu respuesta: <strong>${userAns !== undefined ? 'ABCD'[userAns] : 'No respondiste'}</strong> ·

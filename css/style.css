@@ -393,6 +393,22 @@ nav {
   white-space: pre-wrap;
 }
 
+.question-image {
+  margin-bottom: 16px;
+  text-align: center;
+}
+.question-image img {
+  max-width: 100%;
+  max-height: 400px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  object-fit: contain;
+  background: #fff;
+}
+[data-theme="dark"] .question-image img {
+  background: #1a1a2e;
+}
+
 .question-context {
   background: #f8f9fa;
   border-left: 3px solid var(--primary-light);

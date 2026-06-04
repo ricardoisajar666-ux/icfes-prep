@@ -116,6 +116,8 @@ function normalizeQuestion(q) {
     q.correct = 0;
   }
 
+  if (q.imagen && !q.image) q.image = q.imagen;
+
   if (!q.explanation) {
     q.explanation = {
       correct: 'La respuesta correcta es la opción ' + 'ABCD'[q.correct] + '.',
@@ -179,6 +181,7 @@ function downloadTemplate() {
       area: 'lectura',
       areaName: 'Lectura Crítica',
       difficulty: 'media',
+      image: 'images/ejemplo.png',
       context: 'Texto opcional de contexto aquí...',
       question: '¿Cuál es el propósito del autor?',
       options: ['Opción A', 'Opción B', 'Opción C', 'Opción D'],

@@ -81,6 +81,7 @@ function renderStudy() {
           <div class="question-area-tag ${areaInfo ? areaInfo.tag : 'tag-lectura'}">${q.areaName}</div>
           ${q.difficulty === 'dificil' ? '<span style="font-size:12px;color:var(--error);margin-left:8px">🔴 Difícil</span>' : q.difficulty === 'media' ? '<span style="font-size:12px;color:#ff9800;margin-left:8px">🟡 Media</span>' : '<span style="font-size:12px;color:var(--success);margin-left:8px">🟢 Fácil</span>'}
           <div class="question-number">Pregunta #${q.id}</div>
+          ${q.image ? `<div class="question-image"><img src="${q.image}" alt="Gráfico o imagen de la pregunta" loading="lazy"></div>` : ''}
           ${q.context ? `<div class="question-context">${q.context}</div>` : ''}
           <div class="question-text">${q.question}</div>
 
