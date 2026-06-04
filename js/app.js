@@ -226,8 +226,36 @@ function navigate(view, data) {
   window.scrollTo(0, 0);
 }
 
+// Theme management
+function initTheme() {
+  const saved = localStorage.getItem('icfesTheme');
+  if (saved === 'dark' || (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    document.documentElement.setAttribute('data-theme', 'dark');
+  }
+  updateThemeIcon();
+}
+function toggleTheme() {
+  const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+  if (isDark) {
+    document.documentElement.removeAttribute('data-theme');
+    localStorage.setItem('icfesTheme', 'light');
+  } else {
+    document.documentElement.setAttribute('data-theme', 'dark');
+    localStorage.setItem('icfesTheme', 'dark');
+  }
+  updateThemeIcon();
+}
+function updateThemeIcon() {
+  const btn = document.getElementById('theme-toggle');
+  if (btn) {
+    btn.textContent = document.documentElement.getAttribute('data-theme') === 'dark' ? '☀️' : '🌙';
+  }
+}
+window.toggleTheme = toggleTheme;
+
 // Initialize
 document.addEventListener('DOMContentLoaded', () => {
+  initTheme();
   loadState();
   navigate(AUTH.isLoggedIn() ? 'home' : 'login');
 });

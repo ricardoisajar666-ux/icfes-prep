@@ -417,6 +417,7 @@ function renderSimulacroResults(results) {
           <button class="btn btn-primary btn-lg" onclick="navigate('simulacro')">🔄 Nuevo simulacro</button>
           <button class="btn btn-outline btn-lg" onclick="reviewSimulacroAnswers(${window.simulacros.length - 1})">📝 Revisar respuestas</button>
           <button class="btn btn-secondary btn-lg" onclick="navigate('stats')">📈 Ver estadísticas</button>
+          <button class="btn btn-sm btn-outline" onclick="shareResults(window.simulacros[${window.simulacros.length - 1}])" style="border-color:#25D366;color:#25D366">📤 Compartir</button>
         </div>
       </div>
     </div>
@@ -462,6 +463,35 @@ function reviewSimulacroAnswers(simIndex) {
   html += '</div>';
   main.innerHTML = html;
 }
+
+function shareResults(results) {
+  if (!results) return;
+  const timeM = Math.floor(results.timeSpent / 60);
+  const timeS = results.timeSpent % 60;
+  const text = `📚 PrepICFES - Resultado Simulacro\n` +
+    `Puntaje: ${results.puntaje}/500\n` +
+    `✅ Correctas: ${results.correctas}\n` +
+    `❌ Incorrectas: ${results.incorrectas}\n` +
+    `⏱️ Tiempo: ${timeM}m ${String(timeS).padStart(2,'0')}s\n\n` +
+    `🧠 Sigue practicando en icfes-prep.netlify.app`;
+
+  if (navigator.share) {
+    navigator.share({ title: 'PrepICFES - Resultado', text }).catch(() => {});
+  } else if (navigator.clipboard) {
+    navigator.clipboard.writeText(text).then(() => {
+      alert('📋 Resultado copiado al portapapeles');
+    }).catch(() => {});
+  } else {
+    const ta = document.createElement('textarea');
+    ta.value = text;
+    document.body.appendChild(ta);
+    ta.select();
+    document.execCommand('copy');
+    document.body.removeChild(ta);
+    alert('📋 Resultado copiado al portapapeles');
+  }
+}
+window.shareResults = shareResults;
 
 // Export globals
 window.renderSimulacroSelect = renderSimulacroSelect;

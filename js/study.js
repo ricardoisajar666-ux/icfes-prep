@@ -3,6 +3,7 @@ function renderStudy() {
   APP.filteredQuestions = [...QUESTIONS];
   APP.currentQuestionIndex = 0;
   let activeArea = 'todas';
+  let showErrorsOnly = false;
   let shuffledPool = [];
 
   function shuffle(arr) {
@@ -15,7 +16,8 @@ function renderStudy() {
   }
 
   function getFiltered() {
-    const base = activeArea === 'todas' ? QUESTIONS : QUESTIONS.filter(q => q.area === activeArea);
+    let base = activeArea === 'todas' ? QUESTIONS : QUESTIONS.filter(q => q.area === activeArea);
+    if (showErrorsOnly) base = base.filter(q => APP.studyAnswers[q.id] === false);
     const baseIds = new Set(base.map(q => q.id));
     const poolIds = new Set(shuffledPool.map(q => q.id));
     const sameSet = baseIds.size === poolIds.size && [...baseIds].every(id => poolIds.has(id));
@@ -64,6 +66,7 @@ function renderStudy() {
           ${EXAM_CONFIG.areas.map(a => `
             <button class="area-btn ${activeArea === a.id ? 'active' : ''}" onclick="filterStudy('${a.id}')">${a.name}</button>
           `).join('')}
+          <button class="area-btn ${showErrorsOnly ? 'active' : ''}" onclick="toggleErrorsOnly()" style="${showErrorsOnly ? 'background:var(--error);border-color:var(--error);color:#fff' : ''}">❌ Solo errores</button>
         </div>
 
         <div class="question-progress">
@@ -131,6 +134,13 @@ function renderStudy() {
 
   window.filterStudy = (area) => {
     activeArea = area;
+    APP.currentQuestionIndex = 0;
+    shuffledPool = [];
+    renderQuestionView();
+  };
+
+  window.toggleErrorsOnly = () => {
+    showErrorsOnly = !showErrorsOnly;
     APP.currentQuestionIndex = 0;
     shuffledPool = [];
     renderQuestionView();
