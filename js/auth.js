@@ -32,7 +32,7 @@ const AUTH = {
   register(email, password) {
     if (this.getUsers().find(u => u.email === email)) return { ok: false, error: 'Este correo ya está registrado' };
     const d = this._getData();
-    d.users.push({ email, password, approved: false, isAdmin: false, blocked: false, streak: 0, lastLoginDate: '', registeredDate: new Date().toISOString().split('T')[0] });
+    d.users.push({ email, password, approved: true, isAdmin: false, blocked: false, streak: 0, lastLoginDate: '', registeredDate: new Date().toISOString().split('T')[0] });
     this._saveData(d);
     return { ok: true };
   },
@@ -41,7 +41,6 @@ const AUTH = {
     const u = d.users.find(u => u.email === email);
     if (!u) return { ok: false, error: 'Correo no registrado' };
     if (u.blocked) return { ok: false, error: 'Tu cuenta ha sido bloqueada por el administrador.' };
-    if (!u.approved && !u.isAdmin) return { ok: false, error: 'Registro pendiente de aprobación. Espera a que el administrador lo confirme.' };
     if (u.password !== password) return { ok: false, error: 'Contraseña incorrecta' };
     d.currentUser = email; this._saveData(d); this._updateStreak(email);
     return { ok: true, isAdmin: !!u.isAdmin };
@@ -166,7 +165,7 @@ function handleRegister(e) {
   const sd = document.getElementById('register-status');
   if (password !== confirm) { sd.innerHTML = `<div style="padding:12px;background:#ffebee;border-radius:8px;color:var(--error);font-weight:500">Las contraseñas no coinciden</div>`; return; }
   const r = AUTH.register(email, password);
-  if (r.ok) { sd.innerHTML = `<div style="padding:12px;background:#e8f5e9;border-radius:8px;color:var(--success);font-weight:500">✅ Registro exitoso. Ahora espera a que el administrador apruebe tu cuenta.</div>`; document.getElementById('register-form').reset(); }
+  if (r.ok) { sd.innerHTML = `<div style="padding:12px;background:#e8f5e9;border-radius:8px;color:var(--success);font-weight:500">✅ Registro exitoso. Ya puedes iniciar sesión.</div>`; document.getElementById('register-form').reset(); }
   else { sd.innerHTML = `<div style="padding:12px;background:#ffebee;border-radius:8px;color:var(--error);font-weight:500">${r.error}</div>`; }
 }
 window.handleRegister = handleRegister;

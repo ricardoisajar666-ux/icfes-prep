@@ -16,7 +16,10 @@ function renderStudy() {
 
   function getFiltered() {
     const base = activeArea === 'todas' ? QUESTIONS : QUESTIONS.filter(q => q.area === activeArea);
-    if (shuffledPool.length !== base.length || !shuffledPool.every((q, i) => q.id === base[i]?.id)) {
+    const baseIds = new Set(base.map(q => q.id));
+    const poolIds = new Set(shuffledPool.map(q => q.id));
+    const sameSet = baseIds.size === poolIds.size && [...baseIds].every(id => poolIds.has(id));
+    if (!sameSet) {
       shuffledPool = shuffle(base);
     }
     return shuffledPool;
