@@ -2222,7 +2222,7 @@ Where would you most likely see this notice?`,
     question: `Choose the correct verb form:`,
     options: ['go', 'goes', 'went', 'gone'],
     correct: 2,
-    explanation: { correct: '"Yesterday" indicates past time. The past simple of "go" is "went". "She went to the store yesterday."', wrongs: ['"Go" is present', '"Goes" is present third person', 'Opción correcta', '"Gone" needs a helper verb (has gone)'] }
+    explanation: { correct: '"Yesterday" = ayer. Indica tiempo pasado. Pasado simple de "go" (ir) es "went" (fue). "She went to the store yesterday" = Ella fue a la tienda ayer.', wrongs: ['"Go" es presente', '"Goes" es presente tercera persona', 'Opción correcta', '"Gone" necesita un verbo auxiliar (has gone)'] }
   },
   {
     id: 'EN20', area: 'ingles', areaName: 'Inglés', difficulty: 'dificil',
@@ -2230,7 +2230,7 @@ Where would you most likely see this notice?`,
     question: `Choose the correct option:`,
     options: ['will have', 'would have', 'have', 'had'],
     correct: 1,
-    explanation: { correct: 'Third conditional (past unreal): If + had + past participle, would have + past participle. "If I had known, I would have gone."', wrongs: ['Third conditional needs "would have"', 'Opción correcta', '"Have gone" is present perfect, not conditional', '"Had gone" is past perfect'] }
+    explanation: { correct: 'Tercer condicional (pasado irreal): If + had + participio, would have + participio. "If I had known, I would have gone" = Si hubiera sabido, habría ido.', wrongs: ['Tercer condicional necesita "would have"', 'Opción correcta', '"Have gone" es presente perfecto, no condicional', '"Had gone" es pasado perfecto'] }
   },
   {
     id: 'EN21', area: 'ingles', areaName: 'Inglés', difficulty: 'facil',
@@ -2238,7 +2238,7 @@ Where would you most likely see this notice?`,
     question: `Choose the correct article:`,
     options: ['a', 'an', 'the', 'no article'],
     correct: 1,
-    explanation: { correct: '"Interesting" starts with a vowel sound, so we use "an". "This is an interesting movie."', wrongs: ['"A" is used before consonant sounds', 'Opción correcta', '"The" would specify a particular movie', 'An article is needed before "interesting movie"'] }
+    explanation: { correct: '"Interesting" = interesante. Empieza con sonido vocálico, por eso usamos "an". "This is an interesting movie" = Esta es una película interesante.', wrongs: ['"A" se usa antes de sonidos consonánticos', 'Opción correcta', '"The" especificaría una película en particular', 'Se necesita un artículo antes de "interesting movie"'] }
   },
   {
     id: 'EN22', area: 'ingles', areaName: 'Inglés', difficulty: 'media',
@@ -2246,7 +2246,7 @@ Where would you most likely see this notice?`,
     question: `Choose the correct conjunction:`,
     options: ['so', 'because', 'when', 'until'],
     correct: 2,
-    explanation: { correct: '"When" connects two events happening around the same time. "The children were playing in the park when it started to rain" (one event interrupted another).', wrongs: ['"So" indicates result, not simultaneity', '"Because" indicates cause', 'Opción correcta', '"Until" indicates up to a point in time'] }
+    explanation: { correct: '"When" = cuando. Conecta dos eventos que ocurren al mismo tiempo. "The children were playing when it started to rain" = Los niños jugaban cuando empezó a llover.', wrongs: ['"So" = así que, indica resultado', '"Because" = porque, indica causa', 'Opción correcta', '"Until" = hasta, indica hasta un punto en el tiempo'] }
   },
   {
     id: 'EN23', area: 'ingles', areaName: 'Inglés', difficulty: 'dificil',
@@ -2254,7 +2254,7 @@ Where would you most likely see this notice?`,
     question: `Choose the correct option:`,
     options: ['does', 'do', 'did', 'can'],
     correct: 0,
-    explanation: { correct: 'With "Not only" at the beginning of a clause, we use inversion: auxiliary verb + subject. "Not only DOES she speak French..." Present simple needs "does".', wrongs: ['Opción correcta', '"Do" is for plural subjects', '"Did" is past tense, but the second part is present', '"Can" would work but the sentence structure needs "does" for inversion'] }
+    explanation: { correct: 'Con "Not only" (no solo) al inicio, usamos inversión: auxiliar + sujeto. Present simple necesita "does". "Not only DOES she speak French" = No solo habla francés.', wrongs: ['Opción correcta', '"Do" es para sujetos plurales', '"Did" es pasado, pero la segunda parte es presente', '"Can" podría funcionar pero "does" es correcto para inversión'] }
   },
   {
     id: 'EN24', area: 'ingles', areaName: 'Inglés', difficulty: 'facil',
@@ -2270,7 +2270,7 @@ Where would you most likely see this notice?`,
     question: `Choose the correct relative pronoun:`,
     options: ['who', 'which', 'where', 'whom'],
     correct: 1,
-    explanation: { correct: '"Which" is used for things and objects. "The book WHICH is on the table is mine." (Also "that" would work.)', wrongs: ['"Who" is for people', 'Opción correcta', '"Where" is for places', '"Whom" is object pronoun for people'] }
+    explanation: { correct: '"Which" = el/la cual. Se usa para cosas y objetos. "The book which is on the table is mine" = El libro que está en la mesa es mío.', wrongs: ['"Who" es para personas', 'Opción correcta', '"Where" es para lugares', '"Whom" es pronombre de objeto para personas'] }
   },
   {
     id: 'EN26', area: 'ingles', areaName: 'Inglés', difficulty: 'dificil',
@@ -2278,7 +2278,7 @@ Where would you most likely see this notice?`,
     question: `Choose the correct verb form:`,
     options: ['finishes', 'finished', 'will have finished', 'is finishing'],
     correct: 2,
-    explanation: { correct: '"By next year" refers to a point in the future by which an action will be completed. Future perfect is used: "will have finished".', wrongs: ['Present simple is not used for future completion', 'Past simple is for past events', 'Opción correcta', 'Present continuous is for ongoing actions'] }
+    explanation: { correct: '"By next year" = para el próximo año. Futuro perfecto: "will have finished" = habrá terminado. Indica acción completada antes de un punto futuro.', wrongs: ['Presente simple no funciona para futuro completado', 'Pasado simple es para eventos pasados', 'Opción correcta', 'Presente continuo es para acciones en progreso'] }
   },
   {
     id: 'EN27', area: 'ingles', areaName: 'Inglés', difficulty: 'facil',
@@ -2286,7 +2286,7 @@ Where would you most likely see this notice?`,
     question: `Choose the correct quantifier:`,
     options: ['many', 'much', 'few', 'several'],
     correct: 1,
-    explanation: { correct: '"Much" is used with uncountable nouns. "Milk" is uncountable, so "How much milk?"', wrongs: ['"Many" is for countable plural nouns', 'Opción correcta', '"Few" is for countable nouns with negative meaning', '"Several" is for countable plural nouns'] }
+    explanation: { correct: '"Much" se usa con sustantivos incontables. "Milk" (leche) es incontable. "How much milk?" = ¿Cuánta leche?', wrongs: ['"Many" es para contables plurales', 'Opción correcta', '"Few" es para contables con sentido negativo', '"Several" es para contables plurales'] }
   },
   {
     id: 'EN28', area: 'ingles', areaName: 'Inglés', difficulty: 'media',
@@ -2294,7 +2294,7 @@ Where would you most likely see this notice?`,
     question: `Choose the correct preposition:`,
     options: ['for', 'since', 'during', 'in'],
     correct: 1,
-    explanation: { correct: '"Since" is used with a specific point in time (2019). "I have been working here since 2019."', wrongs: ['"For" is used with duration (for 5 years)', 'Opción correcta', '"During" is within a period', '"In" is used with months/years but not with present perfect continuous'] }
+    explanation: { correct: '"Since" = desde. Se usa con un punto específico en el tiempo (2019). "I have been working here since 2019" = He estado trabajando aquí desde 2019.', wrongs: ['"For" se usa con duración (for 5 years)', 'Opción correcta', '"During" = durante, dentro de un período', '"In" se usa con meses/años pero no con presente perfecto continuo'] }
   },
   // ===== MÁS LECTURA =====
   {
@@ -2372,7 +2372,7 @@ Where would you most likely see this notice?`,
     question: `Choose the correct verb form:`,
     options: ['eat', 'ate', 'have eaten', 'am eating'],
     correct: 2,
-    explanation: { correct: 'The structure "This is the first time I..." is followed by present perfect: "This is the first time I have eaten sushi."', wrongs: ['Present simple is not used after "first time"', 'Past simple describes a finished action, not experience', 'Opción correcta', 'Present continuous is for actions in progress'] }
+    explanation: { correct: '"This is the first time I..." + presente perfecto: "have eaten" = he comido. "This is the first time I have eaten sushi" = Esta es la primera vez que como sushi.', wrongs: ['Presente simple no se usa después de "first time"', 'Pasado simple describe acción terminada, no experiencia', 'Opción correcta', 'Presente continuo es para acciones en progreso'] }
   },
   {
     id: 'EN30', area: 'ingles', areaName: 'Inglés', difficulty: 'dificil',
@@ -2380,7 +2380,7 @@ Where would you most likely see this notice?`,
     question: `Choose the correct option:`,
     options: ['the best', 'the better', 'better', 'the good'],
     correct: 1,
-    explanation: { correct: 'The structure "The more... the more..." uses comparative adjectives. "The more you practice, THE BETTER you will become."', wrongs: ['"Best" is superlative, not used in this comparative structure', 'Opción correcta', 'Needs "the" before "better" in this structure', '"Good" is not comparative'] }
+    explanation: { correct: 'Estructura "the more... the more..." usa adjetivos comparativos. "The more you practice, THE BETTER you will become" = Mientras más practiques, mejor serás. "Better" = mejor (comparativo de "good").', wrongs: ['"Best" = el mejor, superlativo, no se usa aquí', 'Opción correcta', 'Necesita "the" antes de "better" en esta estructura', '"Good" no es comparativo'] }
   },
 
   // ===== LECTURA CRÍTICA - BLOQUE 4 (LC31-LC60) =====
@@ -3272,7 +3272,7 @@ Where would you most likely see this notice?`,
     question: `Choose the correct verb form:`,
     options: ['wake', 'wakes', 'woke', 'waking'],
     correct: 0,
-    explanation: { correct: 'Present simple for habitual actions. "I usually wake up at 7 am." With "I", use the base form.', wrongs: ['Opción correcta', '"Wakes" is third person singular', '"Woke" is past simple, not for usual actions', '"Waking" needs a helper verb'] }
+    explanation: { correct: 'Presente simple para acciones habituales. Con "I" (yo) se usa el verbo en forma base. "Wake up" = despertarse. "I usually wake up at 7 am" = Normalmente me despierto a las 7 am.', wrongs: ['Opción correcta', '"Wakes" es tercera persona singular', '"Woke" es pasado simple, no para acciones habituales', '"Waking" necesita verbo auxiliar'] }
   },
   {
     id: 'EN32', area: 'ingles', areaName: 'Inglés', difficulty: 'media',
@@ -3280,7 +3280,7 @@ Where would you most likely see this notice?`,
     question: `Choose the correct tag question:`,
     options: ['does she', 'doesn\'t she', 'is she', 'isn\'t she'],
     correct: 0,
-    explanation: { correct: 'With a negative statement ("doesn\'t"), use a positive tag: "does she". Negative statement + positive tag.', wrongs: ['Opción correcta', 'Negative statement needs positive tag', '"Is" doesn\'t match the verb "does"', '"Isn\'t" doesn\'t match and is negative'] }
+    explanation: { correct: 'Question tags: oración negativa ("doesn\'t") → tag positiva: "does she"? "She doesn\'t like coffee, does she?" = A ella no le gusta el café, ¿verdad?', wrongs: ['Opción correcta', 'Oración negativa necesita tag positiva', '"Is" no coincide con el verbo "does"', '"Isn\'t" no coincide y es negativa'] }
   },
   {
     id: 'EN33', area: 'ingles', areaName: 'Inglés', difficulty: 'dificil',
@@ -3288,7 +3288,7 @@ Where would you most likely see this notice?`,
     question: `Choose the correct option:`,
     options: ['have', 'had', 'would have', 'did'],
     correct: 1,
-    explanation: { correct: 'Wish + past perfect expresses regret about the past: "I wish I had studied harder" meaning I didn\'t study hard enough.', wrongs: ['Present perfect is not used after "wish"', 'Opción correcta', '"Would have" needs "had" in the wish clause', 'Past simple is for present wishes'] }
+    explanation: { correct: '"I wish" + past perfect expresa arrepentimiento sobre el pasado: "I wish I HAD studied harder" = Ojalá hubiera estudiado más. "Study" = estudiar, "hard" = duro.', wrongs: ['Presente perfecto no se usa después de "wish"', 'Opción correcta', '"Would have" necesita "had" en la cláusula de wish', 'Pasado simple es para deseos presentes'] }
   },
   {
     id: 'EN34', area: 'ingles', areaName: 'Inglés', difficulty: 'facil',
@@ -3296,7 +3296,7 @@ Where would you most likely see this notice?`,
     question: `Choose the correct word:`,
     options: ['arrive', 'get', 'go', 'reach'],
     correct: 1,
-    explanation: { correct: '"How do I get to..." is the common phrase for asking directions. "Get to" means to arrive at or reach a place.', wrongs: ['"Arrive" requires "at" (arrive at)', 'Opción correcta', '"Go to" is possible but "get to" is more natural for directions', '"Reach" is transitive (reach the museum)'] }
+    explanation: { correct: '"Get to" = llegar a. "How do I get to...?" es la frase común para pedir direcciones. "How do I get to the museum?" = ¿Cómo llego al museo?', wrongs: ['"Arrive" requiere "at" (arrive at)', 'Opción correcta', '"Go to" es posible pero "get to" es más natural para direcciones', '"Reach" es transitivo (reach the museum)'] }
   },
   {
     id: 'EN35', area: 'ingles', areaName: 'Inglés', difficulty: 'media',
@@ -3304,7 +3304,7 @@ Where would you most likely see this notice?`,
     question: `Choose the correct verb form:`,
     options: ['have', 'was having', 'am having', 'had had'],
     correct: 1,
-    explanation: { correct: 'Past continuous for an action in progress when another action (simple past) interrupted it. "While I was having a shower, the phone rang."', wrongs: ['Simple present doesn\'t fit past context', 'Opción correcta', 'Present continuous doesn\'t fit past context', 'Past perfect would be for earlier past'] }
+    explanation: { correct: 'Pasado continuo (was having = estaba tomando) para acción en progreso cuando otra acción (pasado simple) la interrumpió. "While I was having a shower, the phone rang" = Mientras me duchaba, sonó el teléfono.', wrongs: ['Presente simple no funciona en contexto pasado', 'Opción correcta', 'Presente continuo no funciona en contexto pasado', 'Pasado perfecto sería para un pasado anterior'] }
   },
   {
     id: 'EN36', area: 'ingles', areaName: 'Inglés', difficulty: 'dificil',
@@ -3312,7 +3312,7 @@ Where would you most likely see this notice?`,
     question: `Choose the correct relative pronoun:`,
     options: ['who', 'which', 'whose', 'whom'],
     correct: 2,
-    explanation: { correct: '"Whose" indicates possession. "The woman whose car was stolen" means the car belonging to the woman was stolen.', wrongs: ['"Who" is subject pronoun for people', '"Which" is for things', 'Opción correcta', '"Whom" is object pronoun for people'] }
+    explanation: { correct: '"Whose" = cuyo. Indica posesión. "The woman whose car was stolen" = La mujer cuyo carro fue robado.', wrongs: ['"Who" = quien, pronombre sujeto para personas', '"Which" = el cual, para cosas', 'Opción correcta', '"Whom" = a quien, pronombre objeto para personas'] }
   },
   {
     id: 'EN37', area: 'ingles', areaName: 'Inglés', difficulty: 'facil',
@@ -3320,7 +3320,7 @@ Where would you most likely see this notice?`,
     question: `Choose the correct modal verb:`,
     options: ['could', 'would', 'should', 'must'],
     correct: 1,
-    explanation: { correct: '"I would like" is the polite expression for making requests or orders. "Would like" is more formal and polite than "want".', wrongs: ['"Could like" is not grammatical', 'Opción correcta', '"Should" expresses obligation or advice', '"Must" expresses necessity'] }
+    explanation: { correct: '"I would like" = Me gustaría. Expresión educada para hacer pedidos o solicitudes. "Would like" es más formal y cortés que "want" (querer).', wrongs: ['"Could like" no es gramatical', 'Opción correcta', '"Should" expresa obligación o consejo', '"Must" expresa necesidad'] }
   },
   {
     id: 'EN38', area: 'ingles', areaName: 'Inglés', difficulty: 'media',
@@ -3328,7 +3328,7 @@ Where would you most likely see this notice?`,
     question: `Choose the correct preposition/conjunction:`,
     options: ['because of', 'because', 'so', 'despite'],
     correct: 0,
-    explanation: { correct: '"Because of" + noun (bad weather) gives the reason. "Because" + clause. "Despite" would mean the opposite.', wrongs: ['Opción correcta', '"Because" needs a clause (because the weather was bad)', '"So" indicates result, not cause', '"Despite" means in spite of, opposite meaning'] }
+    explanation: { correct: '"Because of" + sustantivo (bad weather = mal clima) da la razón. "The meeting was cancelled because of the bad weather" = La reunión fue cancelada por el mal clima.', wrongs: ['Opción correcta', '"Because" necesita una cláusula (because the weather was bad)', '"So" = así que, indica resultado, no causa', '"Despite" = a pesar de, significado opuesto'] }
   },
   {
     id: 'EN39', area: 'ingles', areaName: 'Inglés', difficulty: 'dificil',
@@ -3336,7 +3336,7 @@ Where would you most likely see this notice?`,
     question: `Choose the correct verb form:`,
     options: ['come', 'came', 'will come', 'coming'],
     correct: 1,
-    explanation: { correct: '"I would rather + subject + past simple" is used for preferences about another person\'s actions. "I would rather you came tomorrow."', wrongs: ['"Rather + subject" uses past tense', 'Opción correcta', 'No future after "would rather" + subject', 'Needs a conjugated verb, not gerund'] }
+    explanation: { correct: '"I would rather + sujeto + pasado simple" para preferencias sobre acciones de otros. "I would rather you CAME tomorrow" = Preferiría que vinieras mañana. "Come" = venir.', wrongs: ['"Rather + sujeto" usa pasado simple', 'Opción correcta', 'No se usa futuro después de "would rather + sujeto"', 'Necesita verbo conjugado, no gerundio'] }
   },
   {
     id: 'EN40', area: 'ingles', areaName: 'Inglés', difficulty: 'facil',
@@ -3344,7 +3344,7 @@ Where would you most likely see this notice?`,
     question: `Choose the correct option:`,
     options: ['is', 'does', 'are', 'has'],
     correct: 0,
-    explanation: { correct: 'Indirect question: "where the station IS" (not "where is the station"). Word order changes in indirect questions to subject + verb.', wrongs: ['Opción correcta', '"Does" is not correct for location', '"Is" is singular because "station" is singular', '"Has" is not correct for location'] }
+    explanation: { correct: 'Pregunta indirecta: "where the station IS" = dónde está la estación. En preguntas indirectas el orden cambia a sujeto + verbo.', wrongs: ['Opción correcta', '"Does" no es correcto para ubicación', '"Is" es singular porque "station" es singular', '"Has" no es correcto para ubicación'] }
   },
   {
     id: 'EN41', area: 'ingles', areaName: 'Inglés', difficulty: 'media',
@@ -3352,7 +3352,7 @@ Where would you most likely see this notice?`,
     question: `Choose the correct option:`,
     options: ['for', 'since', 'during', 'ago'],
     correct: 1,
-    explanation: { correct: '"Since" + a point in time (we were children). The present perfect continuous shows an action that started in the past and continues.', wrongs: ['"For" is used with duration (for 10 years)', 'Opción correcta', '"During" is within a period, not a starting point', '"Ago" is for finished time'] }
+    explanation: { correct: '"Since" + punto en el tiempo ("we were children" = éramos niños). "We have been friends since we were children" = Hemos sido amigos desde que éramos niños.', wrongs: ['"For" se usa con duración (for 10 years)', 'Opción correcta', '"During" = durante, dentro de un período', '"Ago" = hace, para tiempo terminado'] }
   },
   {
     id: 'EN42', area: 'ingles', areaName: 'Inglés', difficulty: 'dificil',
@@ -3360,7 +3360,7 @@ Where would you most likely see this notice?`,
     question: `Choose the correct option (inversion):`,
     options: ['he realized', 'did he realize', 'he did realize', 'realized he'],
     correct: 1,
-    explanation: { correct: '"Only after" at the beginning requires inversion: auxiliary verb before subject. "Only after the exam DID HE REALIZE how difficult it was."', wrongs: ['Needs inversion with "only after"', 'Opción correcta', 'Incorrect inversion order', 'Needs auxiliary for inversion'] }
+    explanation: { correct: '"Only after" (solo después de) al inicio requiere inversión: auxiliar antes del sujeto. "Only after the exam DID HE REALIZE" = Solo después del examen se dio cuenta. "Realize" = darse cuenta.', wrongs: ['Necesita inversión con "only after"', 'Opción correcta', 'Orden de inversión incorrecto', 'Necesita auxiliar para inversión'] }
   },
   {
     id: 'EN43', area: 'ingles', areaName: 'Inglés', difficulty: 'facil',
@@ -3368,7 +3368,7 @@ Where would you most likely see this notice?`,
     question: `Choose the correct verb form:`,
     options: ['take', 'to take', 'taking', 'took'],
     correct: 1,
-    explanation: { correct: '"Forget + to + infinitive" means not remembering to do something. "Don\'t forget to take an umbrella."', wrongs: ['"Forget" + base form is not grammatical', 'Opción correcta', '"Forget taking" means forget the act of taking', 'Past tense is not correct here'] }
+    explanation: { correct: '"Forget + to + infinitivo" = no acordarse de hacer algo. "Don\'t forget to take an umbrella" = No olvides llevar un paraguas. "Take" = llevar.', wrongs: ['"Forget" + forma base no es gramatical', 'Opción correcta', '"Forget taking" significa olvidar el acto de tomar', 'Pasado no es correcto aquí'] }
   },
   {
     id: 'EN44', area: 'ingles', areaName: 'Inglés', difficulty: 'media',
@@ -3376,7 +3376,7 @@ Where would you most likely see this notice?`,
     question: `Choose the correct verb form:`,
     options: ['will stay', 'would stay', 'stayed', 'stay'],
     correct: 0,
-    explanation: { correct: 'First conditional: If + present simple, will + infinitive. "If it rains tomorrow, I will stay at home."', wrongs: ['Opción correcta', '"Would stay" is for second conditional (unreal)', 'Past is not used in first conditional', 'Present simple in the result is incorrect'] }
+    explanation: { correct: 'Primer condicional: If + presente simple, will + infinitivo. "If it rains tomorrow, I will stay at home" = Si llueve mañana, me quedaré en casa.', wrongs: ['Opción correcta', '"Would stay" es para segundo condicional', 'Pasado no se usa en primer condicional', 'Presente simple en resultado es incorrecto'] }
   },
   {
     id: 'EN45', area: 'ingles', areaName: 'Inglés', difficulty: 'dificil',
@@ -3384,7 +3384,7 @@ Where would you most likely see this notice?`,
     question: `Choose the correct verb form:`,
     options: ['is', 'were', 'was', 'has been'],
     correct: 1,
-    explanation: { correct: '"As if/as though" use subjunctive "were" (not "was") for unreal present situations. "He speaks as if he were a native speaker." (He is not.)', wrongs: ['Present is not used for unreal comparison', 'Opción correcta', 'In formal English, use "were" not "was"', 'Present perfect is not correct here'] }
+    explanation: { correct: '"As if/as though" (como si) usan "were" (subjuntivo) para situaciones irreales. "He speaks as if he were a native speaker" = Él habla como si fuera un hablante nativo.', wrongs: ['Presente no se usa para comparación irreal', 'Opción correcta', 'En inglés formal usa "were" no "was"', 'Presente perfecto no es correcto aquí'] }
   },
   {
     id: 'EN46', area: 'ingles', areaName: 'Inglés', difficulty: 'facil',
@@ -3392,7 +3392,7 @@ Where would you most likely see this notice?`,
     question: `Choose the correct preposition:`,
     options: ['to', 'at', 'in', 'on'],
     correct: 1,
-    explanation: { correct: '"Arrive at" is used for specific places like airports, stations, buildings. "Arrive in" is for cities/countries.', wrongs: ['"Arrive to" is incorrect; use "get to"', 'Opción correcta', '"Arrive in" is for larger areas', '"Arrive on" is not standard'] }
+    explanation: { correct: '"Arrive at" se usa para lugares específicos (aeropuertos, estaciones). "Arrive in" para ciudades/países. "We arrived at the airport" = Llegamos al aeropuerto.', wrongs: ['"Arrive to" es incorrecto; usa "get to"', 'Opción correcta', '"Arrive in" es para áreas más grandes', '"Arrive on" no es estándar'] }
   },
   {
     id: 'EN47', area: 'ingles', areaName: 'Inglés', difficulty: 'media',
@@ -3400,7 +3400,7 @@ Where would you most likely see this notice?`,
     question: `Choose the correct adverb:`,
     options: ['yet', 'just', 'already', 'still'],
     correct: 1,
-    explanation: { correct: '"Just" with present perfect means a very short time ago. "I have just finished my homework."', wrongs: ['"Yet" is used in negatives/questions', 'Opción correcta', '"Already" means before expected', '"Still" is for continuing situations'] }
+    explanation: { correct: '"Just" = justo/acabo de. Con presente perfecto indica hace muy poco tiempo. "I have just finished my homework" = Acabo de terminar mi tarea.', wrongs: ['"Yet" se usa en negativas/preguntas', 'Opción correcta', '"Already" = ya, antes de lo esperado', '"Still" = todavía, situaciones que continúan'] }
   },
   {
     id: 'EN48', area: 'ingles', areaName: 'Inglés', difficulty: 'dificil',
@@ -3408,7 +3408,7 @@ Where would you most likely see this notice?`,
     question: `Choose the correct option:`,
     options: ['when', 'had', 'did', 'then'],
     correct: 1,
-    explanation: { correct: '"No sooner + had + subject + past participle" is an inverted structure. "No sooner HAD we left than it started raining."', wrongs: ['"No sooner" needs inversion + "than"', 'Opción correcta', 'Past perfect (had) is needed, not past simple', '"No sooner...than" is the correct structure'] }
+    explanation: { correct: '"No sooner + had + sujeto + participio" es estructura invertida. "No sooner HAD we left than it started raining" = Apenas habíamos salido cuando empezó a llover.', wrongs: ['"No sooner" necesita inversión + "than"', 'Opción correcta', 'Past perfect (had) es necesario', '"No sooner...than" es la estructura correcta'] }
   },
   {
     id: 'EN49', area: 'ingles', areaName: 'Inglés', difficulty: 'facil',
@@ -3416,7 +3416,7 @@ Where would you most likely see this notice?`,
     question: `Choose the correct quantifier:`,
     options: ['much', 'many', 'some', 'a few'],
     correct: 0,
-    explanation: { correct: '"Much" is used with uncountable nouns in negative sentences. "Milk" is uncountable. "There isn\'t much milk left."', wrongs: ['Opción correcta', '"Many" is for countable plural nouns', '"Some" is for affirmative sentences', '"A few" is for countable nouns'] }
+    explanation: { correct: '"Much" con incontables en negativas. "Milk" (leche) es incontable. "There isn\'t much milk left" = No queda mucha leche.', wrongs: ['Opción correcta', '"Many" es para contables plurales', '"Some" es para afirmativas', '"A few" es para contables'] }
   },
   {
     id: 'EN50', area: 'ingles', areaName: 'Inglés', difficulty: 'media',
@@ -3424,7 +3424,7 @@ Where would you most likely see this notice?`,
     question: `Choose the correct option:`,
     options: ['does she live', 'she lives', 'she does live', 'lives she'],
     correct: 1,
-    explanation: { correct: 'Indirect questions keep normal word order: subject + verb. "I\'m not sure where she lives" (not "where does she live").', wrongs: ['Incorrect word order for indirect question', 'Opción correcta', 'Unnecessary "does" in affirmative', 'Incorrect word order'] }
+    explanation: { correct: 'Preguntas indirectas mantienen orden normal: sujeto + verbo. "I\'m not sure where SHE LIVES" = No estoy segura de dónde vive ella.', wrongs: ['Orden incorrecto para pregunta indirecta', 'Opción correcta', '"Does" innecesario en afirmativa', 'Orden incorrecto'] }
   },
   {
     id: 'EN51', area: 'ingles', areaName: 'Inglés', difficulty: 'dificil',
@@ -3432,7 +3432,7 @@ Where would you most likely see this notice?`,
     question: `Choose the correct verb form:`,
     options: ['make', 'made', 'will make', 'are making'],
     correct: 1,
-    explanation: { correct: '"It\'s high time" is followed by past simple to express that something should have been done already. "It\'s high time you MADE a decision."', wrongs: ['Present is not used after "it\'s high time"', 'Opción correcta', 'Future is not used here', 'Present continuous is not used here'] }
+    explanation: { correct: '"It\'s high time" (ya es hora) + pasado simple. "It\'s high time you MADE a decision" = Ya es hora de que tomes una decisión.', wrongs: ['Presente no se usa después de "it\'s high time"', 'Opción correcta', 'Futuro no se usa aquí', 'Presente continuo no se usa aquí'] }
   },
   {
     id: 'EN52', area: 'ingles', areaName: 'Inglés', difficulty: 'facil',
@@ -3440,7 +3440,7 @@ Where would you most likely see this notice?`,
     question: `Choose the correct option:`,
     options: ['older', 'old', 'oldest', 'more old'],
     correct: 0,
-    explanation: { correct: '"Than" indicates comparison. One-syllable adjectives use -er: "older than". "My sister is older than me."', wrongs: ['Opción correcta', '"Old" is positive, not comparative', '"Oldest" is superlative (the oldest)', '"More old" is incorrect form'] }
+    explanation: { correct: '"Than" = que. Comparativo de una sílaba: -er. "Older" = mayor. "My sister is older than me" = Mi hermana es mayor que yo.', wrongs: ['Opción correcta', '"Old" es positivo, no comparativo', '"Oldest" es superlativo', '"More old" es incorrecto'] }
   },
   {
     id: 'EN53', area: 'ingles', areaName: 'Inglés', difficulty: 'media',
@@ -3448,7 +3448,7 @@ Where would you most likely see this notice?`,
     question: `Choose the correct preposition:`,
     options: ['since', 'for', 'during', 'from'],
     correct: 1,
-    explanation: { correct: '"For" + duration of time (five years). "Since" + specific point. Present perfect continuous shows the action continues to now.', wrongs: ['"Since" requires a specific point in time', 'Opción correcta', '"During" is within a period', '"From" usually pairs with "to"'] }
+    explanation: { correct: '"For" + duración (five years). "He has been working here for five years" = Él ha estado trabajando aquí por cinco años.', wrongs: ['"Since" requiere punto específico', 'Opción correcta', '"During" = durante', '"From" va con "to"'] }
   },
   {
     id: 'EN54', area: 'ingles', areaName: 'Inglés', difficulty: 'dificil',
@@ -3456,7 +3456,7 @@ Where would you most likely see this notice?`,
     question: `Choose the correct option:`,
     options: ['will', 'would', 'am', 'should'],
     correct: 1,
-    explanation: { correct: '"Were I you" is an inverted form of "If I were you" (second conditional). The result clause uses "would". "Were I you, I would accept."', wrongs: ['Second conditional needs "would"', 'Opción correcta', '"Am" is present, not conditional', '"Should" can work but "would" is more common'] }
+    explanation: { correct: '"Were I you" = Si yo fuera tú (inversión de segundo condicional). Resultado usa "would". "Were I you, I would accept" = Si yo fuera tú, aceptaría.', wrongs: ['Segundo condicional necesita "would"', 'Opción correcta', '"Am" es presente', '"Should" podría funcionar pero "would" es más común'] }
   },
   {
     id: 'EN55', area: 'ingles', areaName: 'Inglés', difficulty: 'facil',
@@ -3464,7 +3464,7 @@ Where would you most likely see this notice?`,
     question: `Choose the correct possessive pronoun:`,
     options: ['my', 'mine', 'me', 'I'],
     correct: 1,
-    explanation: { correct: '"Mine" is a possessive pronoun that replaces "my + noun". "This bag is MINE" = "This is my bag."', wrongs: ['"My" needs a noun after it (my bag)', 'Opción correcta', '"Me" is object pronoun', '"I" is subject pronoun'] }
+    explanation: { correct: '"Mine" = mío. Pronombre posesivo que reemplaza "my + sustantivo". "This bag is MINE" = Esta bolsa es mía.', wrongs: ['"My" necesita un sustantivo después', 'Opción correcta', '"Me" es pronombre objeto', '"I" es pronombre sujeto'] }
   },
   {
     id: 'EN56', area: 'ingles', areaName: 'Inglés', difficulty: 'media',
@@ -3472,7 +3472,7 @@ Where would you most likely see this notice?`,
     question: `Choose the correct particle:`,
     options: ['off', 'over', 'asleep', 'down'],
     correct: 2,
-    explanation: { correct: '"Fall asleep" means to begin sleeping. The movie was so boring that I fell asleep watching it.', wrongs: ['"Fall off" is physical (fall off a chair)', '"Fall over" means lose balance', 'Opción correcta', '"Fall down" is to fall to the ground'] }
+    explanation: { correct: '"Fall asleep" = quedarse dormido. "The movie was so boring that I fell asleep" = La película era tan aburrida que me quedé dormido.', wrongs: ['"Fall off" = caerse de', '"Fall over" = perder equilibrio', 'Opción correcta', '"Fall down" = caer al suelo'] }
   },
   {
     id: 'EN57', area: 'ingles', areaName: 'Inglés', difficulty: 'dificil',
@@ -3480,7 +3480,7 @@ Where would you most likely see this notice?`,
     question: `Choose the correct verb form:`,
     options: ['drive', 'to drive', 'driving', 'drove'],
     correct: 0,
-    explanation: { correct: '"Would rather" + base verb (without to) compares preferences. "She would rather DRIVE than fly."', wrongs: ['Opción correcta', '"Would rather" takes base form, not infinitive', '"Rather" + gerund is not grammatical', 'Past is not used with "would rather" same subject'] }
+    explanation: { correct: '"Would rather" + verbo base (sin to). "She would rather DRIVE than fly" = Ella prefiere conducir antes que volar.', wrongs: ['Opción correcta', '"Would rather" toma base, no infinitivo', '"Rather" + gerundio no es gramatical', 'Pasado no se usa con "would rather" mismo sujeto'] }
   },
   {
     id: 'EN58', area: 'ingles', areaName: 'Inglés', difficulty: 'facil',
@@ -3488,7 +3488,7 @@ Where would you most likely see this notice?`,
     question: `Choose the correct option:`,
     options: ['library', 'pharmacy', 'gym', 'church'],
     correct: 1,
-    explanation: { correct: 'A pharmacy is a place where medicine is sold. "I\'m going to the pharmacy to buy some medicine."', wrongs: ['Libraries have books', 'Opción correcta', 'Gyms are for exercise', 'Churches are for religious services'] }
+    explanation: { correct: '"Pharmacy" = farmacia. Lugar donde se venden medicamentos. "I\'m going to the pharmacy" = Voy a la farmacia.', wrongs: ['"Library" = biblioteca', 'Opción correcta', '"Gym" = gimnasio', '"Church" = iglesia'] }
   },
   {
     id: 'EN59', area: 'ingles', areaName: 'Inglés', difficulty: 'media',
@@ -3496,7 +3496,7 @@ Where would you most likely see this notice?`,
     question: `Choose the correct verb form:`,
     options: ['hear', 'heard', 'have heard', 'am hearing'],
     correct: 2,
-    explanation: { correct: '"This is the second time" + present perfect. "This is the second time I have heard that song today."', wrongs: ['Present simple is not used here', 'Past simple is for finished time', 'Opción correcta', 'Present continuous is not used with "time" count'] }
+    explanation: { correct: '"This is the second time" + presente perfecto. "This is the second time I have heard that song" = Esta es la segunda vez que escucho esa canción.', wrongs: ['Presente simple no se usa aquí', 'Pasado simple es para tiempo terminado', 'Opción correcta', 'Presente continuo no se usa con conteo de veces'] }
   },
   {
     id: 'EN60', area: 'ingles', areaName: 'Inglés', difficulty: 'dificil',
@@ -3504,7 +3504,7 @@ Where would you most likely see this notice?`,
     question: `Choose the correct verb form:`,
     options: ['drive', 'to drive', 'driving', 'drove'],
     correct: 2,
-    explanation: { correct: 'After prepositions ("on"), use the gerund (-ing). "Insist on + gerund." "He insisted on driving to the airport."', wrongs: ['Base verb not used after prepositions', 'Infinitive not used after prepositions', 'Opción correcta', 'Past tense not used as object of preposition'] }
+    explanation: { correct: 'Después de preposición ("on") se usa gerundio (-ing). "Insist on + gerundio". "He insisted on driving to the airport" = Él insistió en conducir al aeropuerto.', wrongs: ['Verbo base no después de preposición', 'Infinitivo no después de preposición', 'Opción correcta', 'Pasado no como objeto de preposición'] }
   }
 ];
 
