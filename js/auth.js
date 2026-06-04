@@ -173,7 +173,6 @@ window.handleRegister = handleRegister;
 function renderAdmin() {
   const cu = AUTH.getCurrentUser();
   if (!cu || !AUTH.isAdmin()) { navigate('home'); return; }
-  const pending = AUTH.getPendingUsers();
   const allUsers = AUTH.getAllNonAdminUsers();
 
   const ans = Object.keys(APP.studyAnswers).filter(k => !k.endsWith('_selected'));
@@ -194,14 +193,6 @@ function renderAdmin() {
         <div class="stat-card"><div class="stat-value gold">${simCorrect}/${simTotal}</div><div class="stat-label">En simulacros</div></div>
         <div class="stat-card"><div class="stat-value" style="color:var(--primary)">${AUTH.getStreak()} días 🔥</div><div class="stat-label">Racha actual</div></div>
       </div>
-    </div>
-
-    <div style="background:var(--card);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow);margin-bottom:20px">
-      <h3 style="margin-bottom:16px">⏳ Solicitudes pendientes (${pending.length})</h3>
-      ${pending.length === 0 ? '<p style="color:var(--text-light)">No hay solicitudes pendientes.</p>' :
-        `<div style="overflow-x:auto"><table class="history-table"><thead><tr><th>Correo</th><th>Fecha registro</th><th>Acción</th></tr></thead><tbody>
-          ${pending.map(u => `<tr><td>${u.email}</td><td>${u.registeredDate}</td><td><button class="btn btn-sm btn-success" onclick="adminApprove('${u.email}')">✅ Aprobar</button> <button class="btn btn-sm btn-danger" onclick="adminReject('${u.email}')">❌ Rechazar</button></td></tr>`).join('')}
-        </tbody></table></div>`}
     </div>
 
     <div style="background:var(--card);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow);margin-bottom:20px">
