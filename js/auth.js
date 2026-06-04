@@ -206,6 +206,7 @@ function renderAdmin() {
 
     <div style="background:var(--card);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow);margin-bottom:20px">
       <h3 style="margin-bottom:16px">👥 Todos los usuarios (${allUsers.length})</h3>
+      <p style="font-size:13px;color:var(--text-light);margin-bottom:12px">⚠️ Solo muestra usuarios registrados en <strong>este</strong> navegador/dispositivo (almacenamiento local). Los usuarios de otros dispositivos no aparecen aquí.</p>
       ${allUsers.length === 0 ? '<p style="color:var(--text-light)">No hay usuarios registrados.</p>' :
         `<div style="overflow-x:auto"><table class="history-table"><thead><tr><th>Correo</th><th>Contraseña</th><th>Registro</th><th>Racha</th><th>Estado</th><th>Acciones</th></tr></thead><tbody>
           ${allUsers.map(u => `<tr>
