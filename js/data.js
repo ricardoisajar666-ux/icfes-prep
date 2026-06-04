@@ -626,12 +626,340 @@ const QUESTIONS = [
     options: ['You can park here sometimes', 'You cannot park here ever', 'You can park here only at night', 'You must pay to park here'],
     correct: 1,
     explanation: {
-      correct: '"No parking at any time" means parking is prohibited 24 hours a day, 7 days a week. "At any time" reinforces that there are no exceptions.',
+      correct: '"No parking at any time" significa "No estacionar en ningún momento". "At any time" refuerza que no hay excepciones. Es un letrero común que prohíbe estacionar las 24 horas.',
       wrongs: [
-        '"At any time" means NO exceptions for parking',
+        '"At any time" significa "en ningún momento", sin excepciones',
         'Opción correcta',
-        '"At any time" includes night time as well',
-        'The notice says nothing about payment'
+        '"At any time" incluye también la noche, no hay excepciones',
+        'El letrero no dice nada sobre pagar'
+      ]
+    }
+  },
+  {
+    id: 'EN02',
+    area: 'ingles',
+    areaName: 'Inglés',
+    difficulty: 'facil',
+    context: `Martha ___ a teacher. She works at a school.`,
+    question: `Choose the correct option to complete the sentence:`,
+    options: ['am', 'are', 'is', 'be'],
+    correct: 2,
+    explanation: {
+      correct: '"Is" es la forma correcta del verbo "to be" (ser/estar) para la tercera persona singular (he/she/it). "She is a teacher" = "Ella es profesora". El verbo "to be" es el verbo más importante en inglés y cambia según la persona.',
+      wrongs: [
+        '"Am" se usa con la primera persona singular (I am = yo soy)',
+        '"Are" se usa con you, we, they (tú eres, nosotros somos, ellos son)',
+        'Opción correcta',
+        '"Be" es la forma base del verbo sin conjugar (infinitivo)'
+      ]
+    }
+  },
+  {
+    id: 'EN03',
+    area: 'ingles',
+    areaName: 'Inglés',
+    difficulty: 'media',
+    context: `Read the text:
+"Tom was feeling very tired. He had been working on his project all night. His friend Sarah called him and invited him to go to the cinema, but Tom decided to stay home and rest."`,
+    question: `Why did Tom decide to stay home?`,
+    options: ['He was angry with Sarah', 'He had already seen the movie', 'He was tired from working all night', 'He had to go to work'],
+    correct: 2,
+    explanation: {
+      correct: 'Tom decidió quedarse en casa porque "was feeling very tired" (se sentía muy cansado) ya que "had been working on his project all night" (había estado trabajando en su proyecto toda la noche). "Stay home" significa "quedarse en casa".',
+      wrongs: [
+        'El texto no menciona que Tom estuviera enojado con Sarah',
+        'No dice nada sobre haber visto la película antes',
+        'Opción correcta',
+        'El texto dice que trabajaba en un proyecto, no que iba a trabajar'
+      ]
+    }
+  },
+  {
+    id: 'EN04',
+    area: 'ingles',
+    areaName: 'Inglés',
+    difficulty: 'dificil',
+    context: `"If I ___ more time, I would travel around the world."`,
+    question: `Choose the correct option:`,
+    options: ['have', 'had', 'will have', 'would have'],
+    correct: 1,
+    explanation: {
+      correct: 'Es un "second conditional" (condicional tipo 2) para situaciones irreales en presente/futuro. Estructura: If + pasado simple, would + verbo base. "If I had more time, I would travel..." = "Si tuviera más tiempo, viajaría...". "Had" es pasado simple del verbo "have" (tener).',
+      wrongs: [
+        'El "first conditional" usa presente, pero la cláusula "would travel" requiere pasado en el "if"',
+        'Opción correcta',
+        '"Will have" es futuro, no se usa en el segundo condicional',
+        '"Would have" en la cláusula con "if" es incorrecto; se usa "had"'
+      ]
+    }
+  },
+  {
+    id: 'EN05',
+    area: 'ingles',
+    areaName: 'Inglés',
+    difficulty: 'media',
+    context: `Match the word with its definition:
+"_______: a person who designs buildings and oversees their construction."`,
+    question: `Which word matches this definition?`,
+    options: ['Doctor', 'Architect', 'Engineer', 'Teacher'],
+    correct: 1,
+    explanation: {
+      correct: '"Architect" significa "arquitecto": una persona que diseña edificios y supervisa su construcción. Es un sustantivo (noun) que designa una profesión. Este tipo de pregunta de vocabulario por definición es común en el ICFES.',
+      wrongs: [
+        '"Doctor" (médico) trabaja en salud, no en diseño de edificios',
+        'Opción correcta',
+        '"Engineer" (ingeniero) puede trabajar en estructuras pero la definición específica de diseñar edificios es "architect"',
+        '"Teacher" (profesor) trabaja en educación'
+      ]
+    }
+  },
+  {
+    id: 'EN06',
+    area: 'ingles',
+    areaName: 'Inglés',
+    difficulty: 'facil',
+    context: `"The restaurant is ___ the bank and the supermarket."`,
+    question: `Choose the correct preposition:`,
+    options: ['in', 'on', 'between', 'at'],
+    correct: 2,
+    explanation: {
+      correct: '"Between" significa "entre". Se usa para describir algo que está en medio de dos puntos u objetos distintos. "The restaurant is between the bank and the supermarket" = "El restaurante está entre el banco y el supermercado". Las preposiciones de lugar indican posición.',
+      wrongs: [
+        '"In" se usa para espacios cerrados (dentro de), no para indicar posición entre dos puntos',
+        '"On" se usa para superficies (sobre)',
+        'Opción correcta',
+        '"At" se usa para puntos o ubicaciones específicas'
+      ]
+    }
+  },
+  {
+    id: 'EN07',
+    area: 'ingles',
+    areaName: 'Inglés',
+    difficulty: 'dificil',
+    context: `Read the text:
+"Sunglasses have an interesting history. The first sunglasses were used by judges in ancient China to hide their facial expressions during trials. Later, in the 1930s, sunglasses became popular for protecting eyes from the sun. Today, sunglasses are both a fashion accessory and a necessity for eye health."`,
+    question: `According to the text, why did Chinese judges first use sunglasses?`,
+    options: ['To protect their eyes from the sun', 'To look fashionable', 'To hide their facial expressions', 'To improve their vision'],
+    correct: 2,
+    explanation: {
+      correct: 'Los jueces chinos usaron gafas de sol por primera vez "to hide their facial expressions during trials" (para ocultar sus expresiones faciales durante los juicios). "To hide" = "ocultar", es un verbo en infinitivo que expresa propósito.',
+      wrongs: [
+        'La protección solar se popularizó en los años 30, no en la China antigua',
+        'La moda fue un desarrollo posterior; el uso original era diferente',
+        'Opción correcta',
+        'No se menciona mejorar la visión'
+      ]
+    }
+  },
+  {
+    id: 'EN08',
+    area: 'ingles',
+    areaName: 'Inglés',
+    difficulty: 'media',
+    context: `"She has been studying English ___ three years."`,
+    question: `Choose the correct option:`,
+    options: ['since', 'for', 'during', 'ago'],
+    correct: 1,
+    explanation: {
+      correct: '"For" se usa con una DURACIÓN de tiempo (tres años). "For three years" = "por/durante tres años". "For" + período de tiempo (hours, days, years). "Since" se usa con un punto específico en el tiempo (since 2020 = desde 2020).',
+      wrongs: [
+        '"Since" requiere un punto de inicio específico, no una duración',
+        'Opción correcta',
+        '"During" se usa dentro de un período, no para indicar duración de una acción',
+        '"Ago" se usa para decir cuándo pasó algo (three years ago = hace tres años)'
+      ]
+    }
+  },
+  {
+    id: 'EN09',
+    area: 'ingles',
+    areaName: 'Inglés',
+    difficulty: 'media',
+    context: `"I'm really looking forward ___ my vacation next month."`,
+    question: `Choose the correct preposition:`,
+    options: ['for', 'to', 'at', 'on'],
+    correct: 1,
+    explanation: {
+      correct: '"Look forward to" es un "phrasal verb" que significa "esperar con ilusión/ansias". Siempre va seguido de "to" + sustantivo o gerundio (-ing). "I look forward to my vacation" = "Espero con ilusión mis vacaciones".',
+      wrongs: [
+        '"Look forward for" NO es una expresión correcta en inglés',
+        'Opción correcta',
+        '"Look forward at" no es gramaticalmente correcto',
+        '"Look forward on" no es gramaticalmente correcto'
+      ]
+    }
+  },
+  {
+    id: 'EN10',
+    area: 'ingles',
+    areaName: 'Inglés',
+    difficulty: 'facil',
+    context: `"This is ___ book that I was telling you about."`,
+    question: `Choose the correct option:`,
+    options: ['a', 'an', 'the', '—'],
+    correct: 2,
+    explanation: {
+      correct: '"The" es el artículo definido (el/la/los/las). Se usa cuando el hablante y el oyente saben de qué se habla. "That I was telling you about" especifica de qué libro se trata, por eso usamos "the". "The book" = "el libro" (específico).',
+      wrongs: [
+        '"A" es indefinido, se usa para cosas no específicas',
+        '"An" se usa antes de sonidos vocálicos, también es indefinido',
+        'Opción correcta',
+        'Se necesita un artículo porque el libro está especificado'
+      ]
+    }
+  },
+  {
+    id: 'EN11',
+    area: 'ingles',
+    areaName: 'Inglés',
+    difficulty: 'dificil',
+    context: `"By the time we arrived at the theater, the movie ___ already started."`,
+    question: `Choose the correct verb form:`,
+    options: ['has', 'had', 'have', 'was'],
+    correct: 1,
+    explanation: {
+      correct: '"Had" + participio pasado forma el "Past Perfect" (pasado perfecto). Se usa para una acción que ocurrió ANTES de otra acción en el pasado. "By the time we arrived" (llegamos - pasado simple), the movie "had already started" (ya había empezado - pasado perfecto, porque ocurrió antes).',
+      wrongs: [
+        '"Has" es presente perfecto, incompatible con el pasado "arrived"',
+        'Opción correcta',
+        '"Have" es tiempo presente',
+        '"Was" + participio sería voz pasiva, no apropiado aquí'
+      ]
+    }
+  },
+  {
+    id: 'EN12',
+    area: 'ingles',
+    areaName: 'Inglés',
+    difficulty: 'media',
+    context: `"The Amazon rainforest ___ millions of species of plants and animals."`,
+    question: `Choose the correct verb form:`,
+    options: ['contain', 'contains', 'is containing', 'are containing'],
+    correct: 1,
+    explanation: {
+      correct: '"Contains" es la tercera persona singular del verbo "contain" (contener). "The Amazon rainforest" es sujeto singular (it). En presente simple, la tercera persona singular añade -s al verbo. "Contains" = "contiene". Es un hecho general, por eso usamos presente simple.',
+      wrongs: [
+        '"Contain" se usa con sujetos plurales (they contain = ellos contienen)',
+        'Opción correcta',
+        '"Is containing" es presente continuo, no se usa para hechos generales',
+        '"Are containing" es plural y presente continuo, ambos incorrectos aquí'
+      ]
+    }
+  },
+  {
+    id: 'EN13',
+    area: 'ingles',
+    areaName: 'Inglés',
+    difficulty: 'facil',
+    context: `"John ___ to school every day by bus."`,
+    question: `Choose the correct verb form:`,
+    options: ['go', 'goes', 'going', 'gone'],
+    correct: 1,
+    explanation: {
+      correct: '"Goes" es la tercera persona singular del verbo "go" (ir). "John" es tercera persona singular (he), por eso añadimos -es: "goes". "John goes to school" = "John va a la escuela". La frase describe una rutina diaria (every day), por eso usamos presente simple.',
+      wrongs: [
+        '"Go" se usa con I, you, we, they',
+        'Opción correcta',
+        '"Going" necesita un verbo auxiliar (is going = está yendo)',
+        '"Gone" es participio pasado, necesita un auxiliar (has gone = ha ido)'
+      ]
+    }
+  },
+  {
+    id: 'EN14',
+    area: 'ingles',
+    areaName: 'Inglés',
+    difficulty: 'media',
+    context: `"The test was ___ difficult that nobody passed it."`,
+    question: `Choose the correct option:`,
+    options: ['to', 'so', 'such', 'too'],
+    correct: 1,
+    explanation: {
+      correct: '"So" + adjetivo + "that" expresa causa y efecto (tan... que). "So difficult that nobody passed" = "Tan difícil que nadie lo aprobó". "So" es un adverbio que intensifica al adjetivo "difficult" (difícil). Es una estructura muy común en inglés.',
+      wrongs: [
+        '"To" + adjetivo no es una estructura correcta aquí',
+        'Opción correcta',
+        '"Such" se usa con sustantivos (such a difficult test that...)',
+        '"Too" significa "demasiado" y necesita "to" (too difficult to finish)'
+      ]
+    }
+  },
+  {
+    id: 'EN15',
+    area: 'ingles',
+    areaName: 'Inglés',
+    difficulty: 'dificil',
+    context: `"I wish I ___ more time to finish the project."`,
+    question: `Choose the correct option:`,
+    options: ['have', 'had', 'will have', 'would have'],
+    correct: 1,
+    explanation: {
+      correct: '"I wish" (ojalá) expresa un deseo sobre algo irreal o contrario a la realidad. Para deseos en presente, usamos pasado simple. "I wish I had more time" = "Ojalá tuviera más tiempo" (pero no tengo). "Had" es el pasado de "have" (tener).',
+      wrongs: [
+        'El presente simple NO se usa después de "wish" para deseos irreales',
+        'Opción correcta',
+        '"Will have" es futuro, no se usa en cláusulas con "wish"',
+        '"Would have" se usa para arrepentimientos del pasado con "wish" + past perfect'
+      ]
+    }
+  },
+  {
+    id: 'EN16',
+    area: 'ingles',
+    areaName: 'Inglés',
+    difficulty: 'media',
+    context: `Read the notice:
+"Please do not feed the animals."
+Where would you most likely see this notice?`,
+    question: `Choose the correct answer:`,
+    options: ['In a library', 'At a zoo', 'In a restaurant', 'At a school'],
+    correct: 1,
+    explanation: {
+      correct: '"Please do not feed the animals" = "Por favor, no alimente a los animales". Es un letrero común en zoológicos. "Feed" es un verbo que significa "alimentar". "Do not" (don\'t) se usa para dar órdenes negativas en imperativo.',
+      wrongs: [
+        'En bibliotecas hay letreros de silencio, no sobre alimentar animales',
+        'Opción correcta',
+        'En restaurantes hay letreros sobre consumo de alimentos, no sobre alimentar animales',
+        'En escuelas pueden haber reglas de cafetería, pero no típicamente sobre alimentar animales'
+      ]
+    }
+  },
+  {
+    id: 'EN17',
+    area: 'ingles',
+    areaName: 'Inglés',
+    difficulty: 'dificil',
+    context: `"Despite ___ early, we missed the train due to heavy traffic."`,
+    question: `Choose the correct option:`,
+    options: ['leave', 'left', 'leaving', 'to leave'],
+    correct: 2,
+    explanation: {
+      correct: '"Leaving" es el gerundio (-ing) del verbo "leave" (salir/irse). Después de preposiciones como "despite" (a pesar de), usamos el gerundio. "Despite leaving early" = "A pesar de salir temprano". "Despite" + sustantivo/gerundio.',
+      wrongs: [
+        '"Despite" NO puede ir seguido del verbo base',
+        '"Despite" NO puede ir seguido de pasado simple',
+        'Opción correcta',
+        '"Despite" NO puede ir seguido de infinitivo'
+      ]
+    }
+  },
+  {
+    id: 'EN18',
+    area: 'ingles',
+    areaName: 'Inglés',
+    difficulty: 'facil',
+    context: `"There are ___ apples on the table."`,
+    question: `Choose the correct quantifier:`,
+    options: ['a', 'an', 'some', 'much'],
+    correct: 2,
+    explanation: {
+      correct: '"Some" es un determinante que significa "algunos/as". Se usa con sustantivos contables en plural en oraciones afirmativas. "Some apples" = "algunas manzanas". "Apples" es contable y plural, por lo que "some" es correcto.',
+      wrongs: [
+        '"A" se usa con sustantivos contables SINGULARES',
+        '"An" se usa antes de sonidos vocálicos en singular',
+        'Opción correcta',
+        '"Much" se usa con sustantivos INCONTABLES (much water), no con plurales contables'
       ]
     }
   },
