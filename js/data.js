@@ -1943,9 +1943,9 @@ Del poema XX: "Puedo escribir los versos más tristes esta noche. / Escribir, po
     id: 'EN25', area: 'ingles', areaName: 'Inglés', difficulty: 'dificil',
     context: `Read the text: "The term 'FOMO' stands for 'Fear Of Missing Out.' It describes the anxiety people feel when they think others are having rewarding experiences without them. Psychologists link FOMO to social media use, where users constantly see curated highlights of other people's lives. This can lead to decreased life satisfaction and increased feelings of inadequacy."`,
     question: `According to the text, what is FOMO linked to?`,
-    options: ['Fear of flying', 'Social media use and seeing others' experiences', 'Fear of public speaking', 'Working too many hours'],
+    options: ['Fear of flying', 'Social media use and seeing others\u2019 experiences', 'Fear of public speaking', 'Working too many hours'],
     correct: 1,
-    explanation: { correct: 'The text says "Psychologists link FOMO to social media use, where users constantly see curated highlights of other people\'s lives." The constant exposure to others' positive experiences triggers the anxiety.', wrongs: ['FOMO is "Fear Of Missing Out," not fear of flying', 'Opción correcta', 'Public speaking fear is unrelated', 'Work hours are not mentioned'] }
+    explanation: { correct: 'The text says "Psychologists link FOMO to social media use, where users constantly see curated highlights of other people\'s lives." The constant exposure to others\u2019 positive experiences triggers the anxiety.', wrongs: ['FOMO is "Fear Of Missing Out," not fear of flying', 'Opción correcta', 'Public speaking fear is unrelated', 'Work hours are not mentioned'] }
   },
   {
     id: 'EN26', area: 'ingles', areaName: 'Inglés', difficulty: 'media',
@@ -2590,7 +2590,7 @@ Del poema XX: "Puedo escribir los versos más tristes esta noche. / Escribir, po
   {
     id: 'SC37', area: 'sociales', areaName: 'Sociales y Ciudadanía', difficulty: 'dificil',
     question: `Cuando la Corte Constitucional declara inexequible una ley aprobada por el Congreso, está ejerciendo:`,
-    options: ['Un control político del Ejecutivo sobre el Legislativo', 'Un control de constitucionalidad que permite mantener el equilibrio entre las ramas del poder público', ['Una función administrativa propia del Consejo de Estado', 'Una interferencia indebida en las funciones del Congreso'],
+    options: ['Un control político del Ejecutivo sobre el Legislativo', 'Un control de constitucionalidad que permite mantener el equilibrio entre las ramas del poder público', 'Una interferencia indebida en las funciones del Congreso', 'Una función administrativa propia del Consejo de Estado'],
     correct: 1,
     explanation: { correct: 'El control de constitucionalidad es un mecanismo de frenos y contrapesos (checks and balances). La Corte Constitucional revisa que las leyes del Congreso se ajusten a la Constitución. Si una ley es declarada inexequible, se elimina del ordenamiento por ser contraria a la Constitución. Este control puede ser preventivo o posterior, abstracto o concreto.', wrongs: ['Es un control judicial, no ejecutivo', 'Opción correcta', 'Los límites no son correctos en las otras opciones', 'Es un control previsto en la Constitución, no una interferencia indebida'] }
   },
