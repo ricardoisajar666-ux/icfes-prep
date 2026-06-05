@@ -860,5 +860,210 @@ QUESTIONS.push(
     options:['Colombia','Brazil','Peru','Ecuador'],
     correct:1,
     explanation:{correct:'The text states that "60% of it is in Brazil," making Brazil the country with the largest portion of the Amazon.',wrongs:['Colombia has part of the Amazon but not the majority','Opcion correcta','Peru has part but not the majority','Ecuador has a very small portion']}
+  },
+
+  // ===== GRAPH-CHOICE QUESTIONS (respuesta = grafico que representa el texto) =====
+  {
+    id:'MT77',area:'matematicas',areaName:'Matematicas',difficulty:'media',
+    question:'Una funcion lineal tiene pendiente 2 e intercepto con el eje Y en 1. ?Cual de las siguientes graficas representa correctamente esta funcion?',
+    options:[
+      `<div class="option-graph"><svg viewBox="0 0 180 160" xmlns="http://www.w3.org/2000/svg">
+        <line x1="20" y1="140" x2="170" y2="140" stroke="#333" stroke-width="1.5"/>
+        <line x1="30" y1="10" x2="30" y2="150" stroke="#333" stroke-width="1.5"/>
+        <text x="170" y="155" text-anchor="end" font-size="9" fill="#666">x</text>
+        <text x="20" y="14" text-anchor="middle" font-size="9" fill="#666">y</text>
+        <line x1="30" y1="40" x2="60" y2="40" stroke="#ccc" stroke-width="0.5" stroke-dasharray="3"/>
+        <line x1="30" y1="90" x2="60" y2="90" stroke="#ccc" stroke-width="0.5" stroke-dasharray="3"/>
+        <line x1="80" y1="140" x2="80" y2="110" stroke="#ccc" stroke-width="0.5" stroke-dasharray="3"/>
+        <line x1="130" y1="140" x2="130" y2="60" stroke="#ccc" stroke-width="0.5" stroke-dasharray="3"/>
+        <line x1="30" y1="140" x2="170" y2="60" stroke="#E91E63" stroke-width="3" stroke-linecap="round"/>
+        <circle cx="30" cy="140" r="4" fill="#E91E63"/>
+        <text x="60" y="155" text-anchor="middle" font-size="8" fill="#666">1</text>
+        <text x="90" y="155" text-anchor="middle" font-size="8" fill="#666">2</text>
+        <text x="130" y="155" text-anchor="middle" font-size="8" fill="#666">3</text>
+        <text x="18" y="142" text-anchor="end" font-size="8" fill="#666">0</text>
+        <text x="18" y="92" text-anchor="end" font-size="8" fill="#666">1</text>
+        <text x="18" y="42" text-anchor="end" font-size="8" fill="#666">2</text>
+      </svg></div>`,
+      `<div class="option-graph"><svg viewBox="0 0 180 160" xmlns="http://www.w3.org/2000/svg">
+        <line x1="20" y1="140" x2="170" y2="140" stroke="#333" stroke-width="1.5"/>
+        <line x1="30" y1="10" x2="30" y2="150" stroke="#333" stroke-width="1.5"/>
+        <line x1="30" y1="40" x2="60" y2="40" stroke="#ccc" stroke-width="0.5" stroke-dasharray="3"/>
+        <line x1="30" y1="90" x2="60" y2="90" stroke="#ccc" stroke-width="0.5" stroke-dasharray="3"/>
+        <line x1="30" y1="140" x2="170" y2="140" stroke="#E91E63" stroke-width="3" stroke-linecap="round"/>
+        <circle cx="30" cy="140" r="4" fill="#E91E63"/>
+      </svg></div>`,
+      `<div class="option-graph"><svg viewBox="0 0 180 160" xmlns="http://www.w3.org/2000/svg">
+        <line x1="20" y1="140" x2="170" y2="140" stroke="#333" stroke-width="1.5"/>
+        <line x1="30" y1="10" x2="30" y2="150" stroke="#333" stroke-width="1.5"/>
+        <line x1="30" y1="40" x2="60" y2="40" stroke="#ccc" stroke-width="0.5" stroke-dasharray="3"/>
+        <line x1="30" y1="90" x2="60" y2="90" stroke="#ccc" stroke-width="0.5" stroke-dasharray="3"/>
+        <line x1="80" y1="140" x2="80" y2="110" stroke="#ccc" stroke-width="0.5" stroke-dasharray="3"/>
+        <line x1="130" y1="140" x2="130" y2="60" stroke="#ccc" stroke-width="0.5" stroke-dasharray="3"/>
+        <line x1="30" y1="140" x2="170" y2="180" stroke="#E91E63" stroke-width="3" stroke-linecap="round"/>
+        <circle cx="30" cy="140" r="4" fill="#E91E63"/>
+      </svg></div>`,
+      `<div class="option-graph"><svg viewBox="0 0 180 160" xmlns="http://www.w3.org/2000/svg">
+        <line x1="20" y1="140" x2="170" y2="140" stroke="#333" stroke-width="1.5"/>
+        <line x1="30" y1="10" x2="30" y2="150" stroke="#333" stroke-width="1.5"/>
+        <line x1="30" y1="40" x2="60" y2="40" stroke="#ccc" stroke-width="0.5" stroke-dasharray="3"/>
+        <line x1="30" y1="90" x2="60" y2="90" stroke="#ccc" stroke-width="0.5" stroke-dasharray="3"/>
+        <line x1="80" y1="140" x2="80" y2="110" stroke="#ccc" stroke-width="0.5" stroke-dasharray="3"/>
+        <line x1="130" y1="140" x2="130" y2="60" stroke="#ccc" stroke-width="0.5" stroke-dasharray="3"/>
+        <line x1="30" y1="60" x2="170" y2="180" stroke="#E91E63" stroke-width="3" stroke-linecap="round"/>
+        <circle cx="30" cy="60" r="4" fill="#E91E63"/>
+      </svg></div>`
+    ],
+    correct:0,
+    explanation:{correct:'La funcion y = 2x + 1 tiene pendiente 2 (sube 2 unidades por cada unidad horizontal) e intercepto en 1 (cruza el eje Y en y=1). La grafica A muestra una linea que pasa por (0,1) y sube con pendiente positiva.',wrongs:['Opcion correcta','Esta linea es horizontal (pendiente 0), no tiene pendiente 2','Esta linea tiene pendiente negativa, no positiva','Esta linea pasa por (0,-1), el intercepto es incorrecto']}
+  },
+  {
+    id:'MT78',area:'matematicas',areaName:'Matematicas',difficulty:'dificil',
+    context:'Un automovil sale de Bogota hacia Mosquera. Viaja a 60 km/h durante las primeras 2 horas (120 km), luego se detiene 1 hora para almorzar, y finalmente continua a 40 km/h durante 1 hora adicional (40 km).',
+    question:'?Cual de las siguientes graficas de distancia vs. tiempo representa correctamente el recorrido del automovil?',
+    options:[
+      `<div class="option-graph"><svg viewBox="0 0 200 160" xmlns="http://www.w3.org/2000/svg">
+        <line x1="20" y1="140" x2="190" y2="140" stroke="#333" stroke-width="1.5"/>
+        <line x1="40" y1="10" x2="40" y2="150" stroke="#333" stroke-width="1.5"/>
+        <line x1="40" y1="140" x2="100" y2="40" stroke="#2196F3" stroke-width="3" stroke-linecap="round"/>
+        <line x1="100" y1="40" x2="130" y2="40" stroke="#2196F3" stroke-width="3"/>
+        <line x1="130" y1="40" x2="170" y2="140" stroke="#2196F3" stroke-width="3" stroke-linecap="round"/>
+        <circle cx="40" cy="140" r="4" fill="#2196F3"/>
+        <circle cx="100" cy="40" r="4" fill="#2196F3"/>
+        <circle cx="130" cy="40" r="4" fill="#2196F3"/>
+        <circle cx="170" cy="0" r="4" fill="#2196F3"/>
+        <text x="65" y="155" text-anchor="middle" font-size="8" fill="#666">1</text>
+        <text x="90" y="155" text-anchor="middle" font-size="8" fill="#666">2</text>
+        <text x="115" y="155" text-anchor="middle" font-size="8" fill="#666">3</text>
+        <text x="140" y="155" text-anchor="middle" font-size="8" fill="#666">4</text>
+        <text x="32" y="90" text-anchor="end" font-size="8" fill="#666">60</text>
+        <text x="32" y="42" text-anchor="end" font-size="8" fill="#666">120</text>
+        <text x="32" y="142" text-anchor="end" font-size="8" fill="#666">0</text>
+        <text x="100" y="162" text-anchor="middle" font-size="8" fill="#666">t (horas)</text>
+      </svg></div>`,
+      `<div class="option-graph"><svg viewBox="0 0 200 160" xmlns="http://www.w3.org/2000/svg">
+        <line x1="20" y1="140" x2="190" y2="140" stroke="#333" stroke-width="1.5"/>
+        <line x1="40" y1="10" x2="40" y2="150" stroke="#333" stroke-width="1.5"/>
+        <line x1="40" y1="140" x2="170" y2="10" stroke="#2196F3" stroke-width="3" stroke-linecap="round"/>
+        <circle cx="40" cy="140" r="4" fill="#2196F3"/>
+        <circle cx="170" cy="10" r="4" fill="#2196F3"/>
+      </svg></div>`,
+      `<div class="option-graph"><svg viewBox="0 0 200 160" xmlns="http://www.w3.org/2000/svg">
+        <line x1="20" y1="140" x2="190" y2="140" stroke="#333" stroke-width="1.5"/>
+        <line x1="40" y1="10" x2="40" y2="150" stroke="#333" stroke-width="1.5"/>
+        <line x1="40" y1="140" x2="80" y2="140" stroke="#2196F3" stroke-width="3"/>
+        <line x1="80" y1="140" x2="120" y2="60" stroke="#2196F3" stroke-width="3"/>
+        <line x1="120" y1="60" x2="170" y2="60" stroke="#2196F3" stroke-width="3"/>
+      </svg></div>`,
+      `<div class="option-graph"><svg viewBox="0 0 200 160" xmlns="http://www.w3.org/2000/svg">
+        <line x1="20" y1="140" x2="190" y2="140" stroke="#333" stroke-width="1.5"/>
+        <line x1="40" y1="10" x2="40" y2="150" stroke="#333" stroke-width="1.5"/>
+        <line x1="40" y1="140" x2="90" y2="140" stroke="#2196F3" stroke-width="3"/>
+        <line x1="90" y1="140" x2="90" y2="10" stroke="#2196F3" stroke-width="3"/>
+        <line x1="90" y1="10" x2="170" y2="10" stroke="#2196F3" stroke-width="3"/>
+      </svg></div>`
+    ],
+    correct:0,
+    explanation:{correct:'La grafica debe mostrar: (1) pendiente positiva de 0 a 2h (60 km/h → 120 km), (2) segmento horizontal de 2h a 3h (detenido), (3) pendiente menor de 3h a 4h (40 km/h). La opcion A muestra exactamente este patron.',wrongs:['Opcion correcta','Linea recta continua sin pausa: no representa la parada','Comienza con pausa, luego avanza, luego otra pausa: el orden es incorrecto','Comienza con pausa, luego salta verticalmente: la distancia no cambia instantaneamente']}
+  },
+  {
+    id:'CN79',area:'ciencias',areaName:'Ciencias Naturales',difficulty:'media',
+    context:'Se deja caer una pelota desde el reposo desde lo alto de un edificio. Se desprecia la resistencia del aire.',
+    question:'?Cual de las siguientes graficas representa correctamente la velocidad de la pelota en funcion del tiempo durante la caida? (considere positiva la direccion hacia abajo)',
+    options:[
+      `<div class="option-graph"><svg viewBox="0 0 180 160" xmlns="http://www.w3.org/2000/svg">
+        <line x1="20" y1="140" x2="170" y2="140" stroke="#333" stroke-width="1.5"/>
+        <line x1="30" y1="10" x2="30" y2="150" stroke="#333" stroke-width="1.5"/>
+        <line x1="30" y1="90" x2="60" y2="90" stroke="#ccc" stroke-width="0.5" stroke-dasharray="3"/>
+        <line x1="30" y1="40" x2="60" y2="40" stroke="#ccc" stroke-width="0.5" stroke-dasharray="3"/>
+        <line x1="80" y1="140" x2="80" y2="110" stroke="#ccc" stroke-width="0.5" stroke-dasharray="3"/>
+        <line x1="130" y1="140" x2="130" y2="60" stroke="#ccc" stroke-width="0.5" stroke-dasharray="3"/>
+        <line x1="30" y1="140" x2="170" y2="20" stroke="#4CAF50" stroke-width="3" stroke-linecap="round"/>
+        <circle cx="30" cy="140" r="4" fill="#4CAF50"/>
+        <text x="170" y="155" text-anchor="end" font-size="9" fill="#666">t</text>
+        <text x="20" y="14" text-anchor="middle" font-size="9" fill="#666">v</text>
+        <text x="80" y="155" text-anchor="middle" font-size="8" fill="#666">t1</text>
+        <text x="130" y="155" text-anchor="middle" font-size="8" fill="#666">t2</text>
+      </svg></div>`,
+      `<div class="option-graph"><svg viewBox="0 0 180 160" xmlns="http://www.w3.org/2000/svg">
+        <line x1="20" y1="140" x2="170" y2="140" stroke="#333" stroke-width="1.5"/>
+        <line x1="30" y1="10" x2="30" y2="150" stroke="#333" stroke-width="1.5"/>
+        <line x1="30" y1="90" x2="60" y2="90" stroke="#ccc" stroke-width="0.5" stroke-dasharray="3"/>
+        <line x1="30" y1="40" x2="60" y2="40" stroke="#ccc" stroke-width="0.5" stroke-dasharray="3"/>
+        <line x1="30" y1="140" x2="170" y2="140" stroke="#4CAF50" stroke-width="3"/>
+        <circle cx="30" cy="140" r="4" fill="#4CAF50"/>
+      </svg></div>`,
+      `<div class="option-graph"><svg viewBox="0 0 180 160" xmlns="http://www.w3.org/2000/svg">
+        <line x1="20" y1="140" x2="170" y2="140" stroke="#333" stroke-width="1.5"/>
+        <line x1="30" y1="10" x2="30" y2="150" stroke="#333" stroke-width="1.5"/>
+        <line x1="30" y1="90" x2="60" y2="90" stroke="#ccc" stroke-width="0.5" stroke-dasharray="3"/>
+        <line x1="30" y1="40" x2="60" y2="40" stroke="#ccc" stroke-width="0.5" stroke-dasharray="3"/>
+        <path d="M30 140 Q60 60 170 10" fill="none" stroke="#4CAF50" stroke-width="3"/>
+        <circle cx="30" cy="140" r="4" fill="#4CAF50"/>
+      </svg></div>`,
+      `<div class="option-graph"><svg viewBox="0 0 180 160" xmlns="http://www.w3.org/2000/svg">
+        <line x1="20" y1="140" x2="170" y2="140" stroke="#333" stroke-width="1.5"/>
+        <line x1="30" y1="10" x2="30" y2="150" stroke="#333" stroke-width="1.5"/>
+        <line x1="30" y1="90" x2="60" y2="90" stroke="#ccc" stroke-width="0.5" stroke-dasharray="3"/>
+        <line x1="30" y1="40" x2="60" y2="40" stroke="#ccc" stroke-width="0.5" stroke-dasharray="3"/>
+        <line x1="80" y1="140" x2="80" y2="110" stroke="#ccc" stroke-width="0.5" stroke-dasharray="3"/>
+        <line x1="130" y1="140" x2="130" y2="60" stroke="#ccc" stroke-width="0.5" stroke-dasharray="3"/>
+        <line x1="30" y1="140" x2="170" y2="140" stroke="#4CAF50" stroke-width="3"/>
+        <line x1="120" y1="140" x2="120" y2="30" stroke="#4CAF50" stroke-width="3"/>
+        <circle cx="30" cy="140" r="4" fill="#4CAF50"/>
+      </svg></div>`
+    ],
+    correct:0,
+    explanation:{correct:'En caida libre sin resistencia del aire, la velocidad aumenta linealmente con el tiempo (v = g·t, donde g = 10 m/s2). La grafica es una linea recta que parte del origen con pendiente positiva constante. Esto corresponde a la opcion A.',wrongs:['Opcion correcta','Velocidad constante significaria velocidad terminal instantanea, lo que no ocurre en caida libre ideal','La velocidad aumenta linealmente, no de forma curvilinea (parabolica)','Esta grafica muestra velocidad cero seguida de un salto vertical, lo cual es fisicamente imposible']}
+  },
+  {
+    id:'CN80',area:'ciencias',areaName:'Ciencias Naturales',difficulty:'media',
+    context:'Se estudio la actividad de una enzima digestiva humana a diferentes temperaturas. La enzima mostro baja actividad a 10°C, actividad maxima a 37°C, y perdio casi toda su actividad a 60°C.',
+    question:'?Cual de las siguientes graficas representa correctamente la relacion entre la temperatura y la actividad enzimatica descrita?',
+    options:[
+      `<div class="option-graph"><svg viewBox="0 0 180 160" xmlns="http://www.w3.org/2000/svg">
+        <line x1="20" y1="140" x2="170" y2="140" stroke="#333" stroke-width="1.5"/>
+        <line x1="30" y1="10" x2="30" y2="150" stroke="#333" stroke-width="1.5"/>
+        <line x1="30" y1="100" x2="60" y2="100" stroke="#ccc" stroke-width="0.5" stroke-dasharray="3"/>
+        <line x1="30" y1="60" x2="60" y2="60" stroke="#ccc" stroke-width="0.5" stroke-dasharray="3"/>
+        <line x1="80" y1="140" x2="80" y2="110" stroke="#ccc" stroke-width="0.5" stroke-dasharray="3"/>
+        <line x1="130" y1="140" x2="130" y2="60" stroke="#ccc" stroke-width="0.5" stroke-dasharray="3"/>
+        <path d="M30 120 Q60 100 100 30 Q120 40 140 130 L170 138" fill="none" stroke="#FF9800" stroke-width="3" stroke-linecap="round"/>
+        <circle cx="100" cy="30" r="4" fill="#FF9800"/>
+        <text x="30" y="155" text-anchor="end" font-size="8" fill="#666">0</text>
+        <text x="80" y="155" text-anchor="middle" font-size="8" fill="#666">37</text>
+        <text x="130" y="155" text-anchor="middle" font-size="8" fill="#666">60</text>
+      </svg></div>`,
+      `<div class="option-graph"><svg viewBox="0 0 180 160" xmlns="http://www.w3.org/2000/svg">
+        <line x1="20" y1="140" x2="170" y2="140" stroke="#333" stroke-width="1.5"/>
+        <line x1="30" y1="10" x2="30" y2="150" stroke="#333" stroke-width="1.5"/>
+        <line x1="30" y1="100" x2="60" y2="100" stroke="#ccc" stroke-width="0.5" stroke-dasharray="3"/>
+        <line x1="30" y1="60" x2="60" y2="60" stroke="#ccc" stroke-width="0.5" stroke-dasharray="3"/>
+        <line x1="30" y1="140" x2="170" y2="20" stroke="#FF9800" stroke-width="3" stroke-linecap="round"/>
+        <circle cx="30" cy="140" r="4" fill="#FF9800"/>
+      </svg></div>`,
+      `<div class="option-graph"><svg viewBox="0 0 180 160" xmlns="http://www.w3.org/2000/svg">
+        <line x1="20" y1="140" x2="170" y2="140" stroke="#333" stroke-width="1.5"/>
+        <line x1="30" y1="10" x2="30" y2="150" stroke="#333" stroke-width="1.5"/>
+        <line x1="30" y1="100" x2="60" y2="100" stroke="#ccc" stroke-width="0.5" stroke-dasharray="3"/>
+        <line x1="30" y1="60" x2="60" y2="60" stroke="#ccc" stroke-width="0.5" stroke-dasharray="3"/>
+        <line x1="30" y1="140" x2="170" y2="140" stroke="#FF9800" stroke-width="3"/>
+        <circle cx="30" cy="140" r="4" fill="#FF9800"/>
+      </svg></div>`,
+      `<div class="option-graph"><svg viewBox="0 0 180 160" xmlns="http://www.w3.org/2000/svg">
+        <line x1="20" y1="140" x2="170" y2="140" stroke="#333" stroke-width="1.5"/>
+        <line x1="30" y1="10" x2="30" y2="150" stroke="#333" stroke-width="1.5"/>
+        <line x1="30" y1="100" x2="60" y2="100" stroke="#ccc" stroke-width="0.5" stroke-dasharray="3"/>
+        <line x1="30" y1="60" x2="60" y2="60" stroke="#ccc" stroke-width="0.5" stroke-dasharray="3"/>
+        <line x1="80" y1="140" x2="80" y2="110" stroke="#ccc" stroke-width="0.5" stroke-dasharray="3"/>
+        <line x1="130" y1="140" x2="130" y2="60" stroke="#ccc" stroke-width="0.5" stroke-dasharray="3"/>
+        <line x1="30" y1="140" x2="80" y2="140" stroke="#FF9800" stroke-width="3"/>
+        <line x1="80" y1="140" x2="100" y2="30" stroke="#FF9800" stroke-width="3"/>
+        <line x1="100" y1="30" x2="170" y2="30" stroke="#FF9800" stroke-width="3"/>
+        <circle cx="30" cy="140" r="4" fill="#FF9800"/>
+      </svg></div>`
+    ],
+    correct:0,
+    explanation:{correct:'La actividad enzimatica aumenta con la temperatura hasta alcanzar un optimo (37°C para enzimas humanas), luego disminuye bruscamente por desnaturalizacion. La grafica correcta es una curva en forma de campana (opcion A).',wrongs:['Opcion correcta','Linea recta creciente: la actividad no sigue aumentando, disminuye despues del optimo','Linea horizontal: la actividad no es constante, depende de la temperatura','Escalonada: el cambio es gradual, no da pasos discretos']}
   }
 );

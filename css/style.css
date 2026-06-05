@@ -510,6 +510,22 @@ nav {
   color: white;
 }
 
+.option-item .option-graph {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+}
+.option-item .option-graph svg {
+  max-width: 280px;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+  background: #fff;
+}
+[data-theme="dark"] .option-item .option-graph svg {
+  background: #1a1a2e;
+}
+
 /* Explanation */
 .explanation-box {
   margin-top: 20px;
