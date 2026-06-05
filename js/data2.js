@@ -1065,5 +1065,153 @@ QUESTIONS.push(
     ],
     correct:0,
     explanation:{correct:'La actividad enzimatica aumenta con la temperatura hasta alcanzar un optimo (37°C para enzimas humanas), luego disminuye bruscamente por desnaturalizacion. La grafica correcta es una curva en forma de campana (opcion A).',wrongs:['Opcion correcta','Linea recta creciente: la actividad no sigue aumentando, disminuye despues del optimo','Linea horizontal: la actividad no es constante, depende de la temperatura','Escalonada: el cambio es gradual, no da pasos discretos']}
+  },
+
+  // ===== VISUAL QUESTIONS (mapas, diagramas, estructuras en SVG) =====
+  {
+    id:'SC76',area:'sociales',areaName:'Sociales y Ciudadania',difficulty:'media',
+    svg:`<svg viewBox="0 0 300 340" xmlns="http://www.w3.org/2000/svg" style="max-width:300px">
+      <text x="150" y="20" text-anchor="middle" font-size="13" font-weight="bold" fill="#333">Regiones naturales de Colombia</text>
+      <path d="M150 40 L180 60 L190 90 L170 110 L160 140 L180 160 L170 200 L150 220 L130 200 L110 160 L100 140 L80 120 L90 90 L110 70 Z" fill="#E8F5E9" stroke="#4CAF50" stroke-width="2"/>
+      <text x="150" y="105" text-anchor="middle" font-size="8" fill="#2E7D32" font-weight="bold">Andina</text>
+      <path d="M70 130 L90 140 L80 170 L60 180 L40 160 L50 140 Z" fill="#FFF3E0" stroke="#FF9800" stroke-width="2"/>
+      <text x="62" y="158" text-anchor="middle" font-size="7" fill="#E65100">Caribe</text>
+      <path d="M160 140 L200 150 L220 180 L210 220 L190 230 L170 210 Z" fill="#E3F2FD" stroke="#2196F3" stroke-width="2"/>
+      <text x="190" y="190" text-anchor="middle" font-size="7" fill="#1565C0">Ori.</text>
+      <path d="M140 220 L170 230 L180 260 L160 280 L140 270 L120 250 Z" fill="#FCE4EC" stroke="#E91E63" stroke-width="2"/>
+      <text x="155" y="252" text-anchor="middle" font-size="7" fill="#C62828">Amazonia</text>
+      <path d="M100 180 L110 195 L100 220 L80 230 L60 210 L70 190 Z" fill="#F3E5F5" stroke="#9C27B0" stroke-width="2"/>
+      <text x="82" y="208" text-anchor="middle" font-size="7" fill="#6A1B9A">Pac.</text>
+      <circle cx="150" cy="90" r="3" fill="#E91E63"/>
+      <text x="155" y="88" font-size="7" fill="#E91E63">Bogota</text>
+      <circle cx="52" cy="155" r="3" fill="#E91E63"/>
+      <text x="30" y="152" font-size="7" fill="#E91E63">Barranquilla</text>
+      <circle cx="198" cy="165" r="3" fill="#E91E63"/>
+      <text x="203" y="163" font-size="7" fill="#E91E63">Villavicencio</text>
+      <circle cx="140" cy="240" r="3" fill="#E91E63"/>
+      <text x="120" y="255" font-size="7" fill="#E91E63">Leticia</text>
+    </svg>`,
+    context:'El mapa muestra las regiones naturales de Colombia con algunas ciudades.',
+    question:'Segun el mapa, ?en cual region natural se encuentra la ciudad de Bogota?',
+    options:['Caribe','Andina','Amazonica','Pacifico'],
+    correct:1,
+    explanation:{correct:'Bogota se encuentra en la region Andina, que atraviesa el centro del pais de sur a norte siguiendo las tres cordilleras.',wrongs:['La region Caribe esta al norte, Bogota esta en el centro','Opcion correcta','La Amazonia esta al sureste, Bogota esta en el centro','La region Pacifica esta al occidente, Bogota esta en el centro']}
+  },
+  {
+    id:'CN81',area:'ciencias',areaName:'Ciencias Naturales',difficulty:'media',
+    svg:`<svg viewBox="0 0 320 240" xmlns="http://www.w3.org/2000/svg" style="max-width:320px">
+      <text x="160" y="20" text-anchor="middle" font-size="12" font-weight="bold" fill="#333">Estructura de una celula animal</text>
+      <ellipse cx="160" cy="130" rx="120" ry="80" fill="#FFF9C4" stroke="#F9A825" stroke-width="2"/>
+      <circle cx="160" cy="120" r="35" fill="#BBDEFB" stroke="#1565C0" stroke-width="2"/>
+      <text x="160" y="118" text-anchor="middle" font-size="7" fill="#0D47A1" font-weight="bold">Nucleo</text>
+      <circle cx="160" cy="120" r="8" fill="#1565C0" opacity="0.5"/>
+      <text x="160" y="138" text-anchor="middle" font-size="6" fill="#0D47A1">nucleolo</text>
+      <ellipse cx="115" cy="145" rx="18" ry="10" fill="#C8E6C9" stroke="#388E3C" stroke-width="1.5"/>
+      <text x="108" y="168" text-anchor="middle" font-size="6" fill="#1B5E20">Mitocondria</text>
+      <ellipse cx="215" cy="140" rx="15" ry="8" fill="#C8E6C9" stroke="#388E3C" stroke-width="1.5"/>
+      <rect x="80" y="90" width="30" height="18" fill="#FFE0B2" stroke="#E65100" stroke-width="1.5" rx="3"/>
+      <text x="90" y="84" text-anchor="middle" font-size="6" fill="#E65100">A. de Golgi</text>
+      <rect x="210" y="95" width="25" height="15" fill="#FFE0B2" stroke="#E65100" stroke-width="1.5" rx="2"/>
+      <path d="M120 80 Q130 70 140 80" fill="none" stroke="#7B1FA2" stroke-width="1.5"/>
+      <text x="130" y="74" text-anchor="middle" font-size="6" fill="#7B1FA2">RER</text>
+      <ellipse cx="100" cy="170" rx="10" ry="6" fill="#F8BBD0" stroke="#C2185B" stroke-width="1"/>
+      <text x="85" y="190" text-anchor="middle" font-size="6" fill="#C2185B">Lisosoma</text>
+      <line x1="160" y1="85" x2="160" y2="50" stroke="#F9A825" stroke-width="1" stroke-dasharray="3"/>
+      <text x="165" y="62" text-anchor="middle" font-size="6" fill="#E65100">Membrana</text>
+      <text x="165" y="70" text-anchor="middle" font-size="6" fill="#E65100">celular</text>
+      <text x="160" y="225" text-anchor="middle" font-size="9" fill="#666">Fuente: Diagrama educativo</text>
+    </svg>`,
+    context:'Observe el diagrama de una celula animal.',
+    question:'?Cual organelo se encarga de producir la energia (ATP) en la celula?',
+    options:['El nucleo','La mitocondria','El aparato de Golgi','El lisosoma'],
+    correct:1,
+    explanation:{correct:'La mitocondria es el organelo encargado de la respiracion celular y la produccion de ATP, la principal fuente de energia para las funciones celulares.',wrongs:['El nucleo contiene el material genetico, no produce energia','Opcion correcta','El aparato de Golgi modifica y empaca proteinas, no produce energia','Los lisosomas digieren materiales, no producen energia']}
+  },
+  {
+    id:'CN82',area:'ciencias',areaName:'Ciencias Naturales',difficulty:'facil',
+    svg:`<svg viewBox="0 0 380 220" xmlns="http://www.w3.org/2000/svg" style="max-width:380px">
+      <text x="190" y="20" text-anchor="middle" font-size="12" font-weight="bold" fill="#333">Cadena trofica en un ecosistema</text>
+      <!-- Sun -->
+      <circle cx="50" cy="50" r="20" fill="#FFC107" stroke="#FF9800" stroke-width="2"/>
+      <text x="50" y="54" text-anchor="middle" font-size="7" fill="#E65100">Sol</text>
+      <!-- Arrow sun to plant -->
+      <line x1="70" y1="50" x2="100" y2="80" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+      <path d="M75 48 Q85 42 95 50" fill="none" stroke="#FFC107" stroke-width="1.5"/>
+      <text x="82" y="40" font-size="7" fill="#FF9800">energia</text>
+      <!-- Plant -->
+      <rect x="100" y="95" width="30" height="15" fill="#66BB6A" stroke="#2E7D32" stroke-width="2" rx="3"/>
+      <text x="115" y="107" text-anchor="middle" font-size="7" fill="#1B5E20">Pastos</text>
+      <line x1="120" y1="95" x2="115" y2="80" stroke="#2E7D32" stroke-width="2"/>
+      <line x1="120" y1="95" x2="125" y2="80" stroke="#2E7D32" stroke-width="2"/>
+      <line x1="115" y1="85" x2="110" y2="75" stroke="#4CAF50" stroke-width="2"/>
+      <line x1="125" y1="85" x2="130" y2="75" stroke="#4CAF50" stroke-width="2"/>
+      <ellipse cx="115" cy="78" rx="8" ry="4" fill="#66BB6A" stroke="#2E7D32" stroke-width="1"/>
+      <!-- Arrow 1 -->
+      <line x1="120" y1="110" x2="145" y2="130" stroke="#666" stroke-width="1.5"/>
+      <polygon points="145,130 138,126 142,134" fill="#666"/>
+      <!-- Grasshopper -->
+      <rect x="150" y="135" width="35" height="15" fill="#8D6E63" stroke="#4E342E" stroke-width="2" rx="3"/>
+      <text x="167" y="147" text-anchor="middle" font-size="7" fill="#fff">Saltamontes</text>
+      <!-- Arrow 2 -->
+      <line x1="185" y1="140" x2="210" y2="115" stroke="#666" stroke-width="1.5"/>
+      <polygon points="210,115 203,119 207,111" fill="#666"/>
+      <!-- Mouse -->
+      <rect x="215" y="100" width="35" height="15" fill="#A1887F" stroke="#4E342E" stroke-width="2" rx="3"/>
+      <text x="232" y="112" text-anchor="middle" font-size="7" fill="#fff">Raton</text>
+      <!-- Arrow 3 -->
+      <line x1="250" y1="105" x2="275" y2="80" stroke="#666" stroke-width="1.5"/>
+      <polygon points="275,80 268,84 272,76" fill="#666"/>
+      <!-- Eagle -->
+      <rect x="280" y="60" width="40" height="20" fill="#5D4037" stroke="#3E2723" stroke-width="2" rx="3"/>
+      <text x="300" y="74" text-anchor="middle" font-size="7" fill="#fff">Aguila</text>
+      <!-- Decomposer -->
+      <text x="300" y="185" text-anchor="middle" font-size="7" fill="#666">Descomponedores</text>
+      <rect x="265" y="170" width="70" height="12" fill="#BCAAA4" stroke="#795548" stroke-width="1" rx="2"/>
+      <text x="300" y="179" text-anchor="middle" font-size="6" fill="#fff">Hongos y bacterias</text>
+      <line x1="300" y1="170" x2="300" y2="158" stroke="#666" stroke-width="1" stroke-dasharray="3"/>
+      <path d="M300 158 Q295 150 300 145" fill="none" stroke="#666" stroke-width="1"/>
+    </svg>`,
+    context:'Observe la cadena trofica del ecosistema.',
+    question:'?Que organismo es el productor primario en esta cadena trofica?',
+    options:['El aguila','El raton','Los pastos','El saltamontes'],
+    correct:2,
+    explanation:{correct:'Los productores primarios son los organismos que producen su propio alimento mediante fotosintesis. En esta cadena, los pastos son los productores porque convierten la energia solar en materia organica.',wrongs:['El aguila es un consumidor terciario (depredador tope)','El raton es un consumidor primario (herbivoro)','Opcion correcta','El saltamontes es un consumidor primario (herbivoro)']}
+  },
+  {
+    id:'SC77',area:'sociales',areaName:'Sociales y Ciudadania',difficulty:'media',
+    svg:`<svg viewBox="0 0 380 280" xmlns="http://www.w3.org/2000/svg" style="max-width:380px">
+      <text x="190" y="20" text-anchor="middle" font-size="12" font-weight="bold" fill="#333">Estructura del Estado colombiano</text>
+      <!-- Ramas -->
+      <rect x="30" y="45" width="100" height="35" fill="#E3F2FD" stroke="#1565C0" stroke-width="2" rx="5"/>
+      <text x="80" y="67" text-anchor="middle" font-size="9" fill="#0D47A1" font-weight="bold">Ejecutiva</text>
+      <rect x="150" y="45" width="100" height="35" fill="#E8F5E9" stroke="#2E7D32" stroke-width="2" rx="5"/>
+      <text x="200" y="67" text-anchor="middle" font-size="9" fill="#1B5E20" font-weight="bold">Legislativa</text>
+      <rect x="270" y="45" width="100" height="35" fill="#FFF3E0" stroke="#E65100" stroke-width="2" rx="5"/>
+      <text x="320" y="67" text-anchor="middle" font-size="9" fill="#E65100" font-weight="bold">Judicial</text>
+      <!-- Labels below -->
+      <text x="58" y="95" text-anchor="middle" font-size="7" fill="#1565C0">Presidente</text>
+      <text x="105" y="95" text-anchor="middle" font-size="7" fill="#1565C0">Ministros</text>
+      <text x="180" y="95" text-anchor="middle" font-size="7" fill="#2E7D32">Congreso</text>
+      <text x="220" y="95" text-anchor="middle" font-size="7" fill="#2E7D32">Senado+Camara</text>
+      <text x="305" y="95" text-anchor="middle" font-size="7" fill="#E65100">C. Constitucional</text>
+      <text x="340" y="105" text-anchor="middle" font-size="7" fill="#E65100">C. Suprema</text>
+      <!-- Organos de control -->
+      <rect x="80" y="125" width="240" height="28" fill="#F3E5F5" stroke="#7B1FA2" stroke-width="1.5" rx="4"/>
+      <text x="200" y="143" text-anchor="middle" font-size="8" fill="#6A1B9A" font-weight="bold">Organos de control: Procuraduria, Contraloria, Defensoria</text>
+      <!-- Organos autonimos -->
+      <rect x="100" y="165" width="200" height="28" fill="#FCE4EC" stroke="#C2185B" stroke-width="1.5" rx="4"/>
+      <text x="200" y="183" text-anchor="middle" font-size="8" fill="#C2185B" font-weight="bold">Organos autonomos: CNE, B. de la Republica, Univ. publicas</text>
+      <!-- Niveles territoriales -->
+      <rect x="40" y="210" width="320" height="25" fill="#E0F7FA" stroke="#00838F" stroke-width="1.5" rx="4"/>
+      <text x="200" y="227" text-anchor="middle" font-size="8" fill="#006064" font-weight="bold">Niveles territoriales: Departamentos - Municipios - Distritos - Territorios indigenas</text>
+      <!-- Ramas arrows -->
+      <line x1="130" y1="62" x2="150" y2="62" stroke="#666" stroke-width="1"/>
+      <line x1="250" y1="62" x2="270" y2="62" stroke="#666" stroke-width="1"/>
+    </svg>`,
+    context:'Observe el diagrama de la estructura del Estado colombiano.',
+    question:'?Cual de las siguientes NO es una de las tres ramas del poder publico en Colombia?',
+    options:['Rama Ejecutiva','Rama Legislativa','Rama Electoral','Rama Judicial'],
+    correct:2,
+    explanation:{correct:'Las tres ramas del poder publico en Colombia son: Ejecutiva, Legislativa y Judicial. La "Rama Electoral" no existe como rama independiente; las funciones electorales corresponden a la Registraduria y al CNE, que son organismos autonomos.',wrongs:['La Rama Ejecutiva es una de las tres ramas del poder publico','La Rama Legislativa es una de las tres ramas del poder publico','Opcion correcta (la Rama Electoral no existe como rama del poder)','La Rama Judicial es una de las tres ramas del poder publico']}
   }
 );
