@@ -48,7 +48,7 @@ function showImportDialog() {
         <input type="file" accept=".json" id="json-file-input" style="display:none" onchange="handleImportFile(event)">
         <button class="btn btn-primary" onclick="document.getElementById('json-file-input').click()">Seleccionar archivo</button>
       </div>
-      <p style="font-size:12px;color:var(--text-light);margin-bottom:12px">Formato requerido: Array de objetos con id, area, areaName, difficulty, question, options[], correct (índice 0-3), explanation{correct, wrongs[]}</p>
+      <p style="font-size:12px;color:var(--text-light);margin-bottom:12px">Formato: Array con id, area, difficulty, question, options[], correct (0-3), explanation{correct, wrongs[]}. Opcional: images[{src,alt,type?,caption?}], table{headers[],rows[][],caption?}, context</p>
       <button class="btn btn-sm btn-outline" onclick="downloadTemplate()">📝 Descargar plantilla</button>
       <div class="modal-actions" style="margin-top:12px">
         <button class="btn btn-secondary" onclick="document.getElementById('import-overlay').remove()">Cancelar</button>
@@ -118,6 +118,21 @@ function normalizeQuestion(q) {
 
   if (q.imagen && !q.image) q.image = q.imagen;
 
+  // Normalize images array
+  if (q.images && Array.isArray(q.images)) {
+    q.images = q.images.map(img => {
+      if (typeof img === 'string') return { src: img, alt: '', type: '' };
+      return { src: img.src || '', alt: img.alt || '', type: img.type || '', caption: img.caption || '' };
+    }).filter(img => img.src);
+  }
+
+  // Normalize table
+  if (q.table) {
+    if (!Array.isArray(q.table.headers)) q.table.headers = [];
+    if (!Array.isArray(q.table.rows)) q.table.rows = [];
+    q.table.caption = q.table.caption || '';
+  }
+
   if (!q.explanation) {
     q.explanation = {
       correct: 'La respuesta correcta es la opción ' + 'ABCD'[q.correct] + '.',
@@ -181,7 +196,18 @@ function downloadTemplate() {
       area: 'lectura',
       areaName: 'Lectura Crítica',
       difficulty: 'media',
-      image: 'images/ejemplo.png',
+      images: [
+        { src: 'images/ejemplo.png', alt: 'Figura 1', type: 'figure', caption: 'Figura 1: Descripción de la figura' }
+      ],
+      table: {
+        headers: ['Curso', 'Promedio 2023', 'Promedio 2024'],
+        rows: [
+          ['I', '63', '65'],
+          ['II', '61', '45'],
+          ['III', '50', '53']
+        ],
+        caption: 'Tabla 1: Puntajes promedio por curso'
+      },
       context: 'Texto opcional de contexto aquí...',
       question: '¿Cuál es el propósito del autor?',
       options: ['Opción A', 'Opción B', 'Opción C', 'Opción D'],

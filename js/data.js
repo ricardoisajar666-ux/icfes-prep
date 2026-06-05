@@ -3505,6 +3505,120 @@ Where would you most likely see this notice?`,
     options: ['drive', 'to drive', 'driving', 'drove'],
     correct: 2,
     explanation: { correct: 'Después de preposición ("on") se usa gerundio (-ing). "Insist on + gerundio". "He insisted on driving to the airport" = Él insistió en conducir al aeropuerto.', wrongs: ['Verbo base no después de preposición', 'Infinitivo no después de preposición', 'Opción correcta', 'Pasado no como objeto de preposición'] }
+  },
+
+  // ===== PREGUNTAS CON TABLAS (NUEVO FORMATO) =====
+  {
+    id: 'MT101', area: 'matematicas', areaName: 'Matemáticas', difficulty: 'media',
+    table: {
+      headers: ['Franja', 'Horario', 'Cantidad máxima', 'Precio por estudiante'],
+      rows: [
+        ['1', '8:00 a.m. - 10:00 a.m.', '40', '$12.000'],
+        ['2', '10:00 a.m. - 12:00 p.m.', '35', '$15.000'],
+        ['3', '1:00 p.m. - 3:00 p.m.', '30', '$18.000'],
+        ['4', '3:00 p.m. - 5:00 p.m.', '25', '$20.000']
+      ],
+      caption: 'Franjas disponibles para visita al museo'
+    },
+    context: 'Un colegio quiere llevar a 100 estudiantes al museo. La tabla muestra las franjas disponibles, la cantidad máxima de estudiantes por franja y el precio por estudiante.',
+    question: 'Si el colegio quiere minimizar el costo total y puede distribuir los estudiantes en diferentes franjas, ¿cuál es el costo mínimo posible?',
+    options: ['$1.200.000', '$1.380.000', '$1.500.000', '$1.620.000'],
+    correct: 1,
+    explanation: {
+      correct: 'Para minimizar costo, usar primero las franjas más baratas: Franja 1: 40×$12.000=$480.000, Franja 2: 35×$15.000=$525.000, Franja 3: 25×$18.000=$450.000. Total 100 estudiantes: $480.000+$525.000+$450.000=$1.380.000. No podemos usar solo la Franja 1 porque su capacidad es 40, y la Franja 2 tiene capacidad 35 (75 entre ambas), necesitamos 25 más de la Franja 3.',
+      wrongs: ['Corresponde a 100 estudiantes todos en la franja más barata, pero no hay cupo', 'Opción correcta', 'Demasiado alto, no es la combinación óptima', 'Demasiado alto']
+    }
+  },
+  {
+    id: 'MT102', area: 'matematicas', areaName: 'Matemáticas', difficulty: 'media',
+    table: {
+      headers: ['Año', 'Gasto en publicidad', 'Ganancia'],
+      rows: [
+        ['2020', '$5.000.000', '$30.000.000'],
+        ['2021', '$8.000.000', '$45.000.000'],
+        ['2022', '$12.000.000', '$60.000.000']
+      ],
+      caption: 'Relación entre gasto en publicidad y ganancia'
+    },
+    question: 'Según la tabla, ¿cuál es la razón entre el aumento en la ganancia y el aumento en el gasto en publicidad entre 2020 y 2022?',
+    options: ['3,75', '4,29', '5,00', '2,50'],
+    correct: 1,
+    explanation: {
+      correct: 'Aumento en ganancia: $60.000.000 - $30.000.000 = $30.000.000. Aumento en gasto: $12.000.000 - $5.000.000 = $7.000.000. Razón = $30.000.000/$7.000.000 ≈ 4,29.',
+      wrongs: ['Dividiste ganancia total entre gasto total: 60/5', 'Opción correcta', 'Usaste solo un año', 'No es el cálculo correcto']
+    }
+  },
+  {
+    id: 'MT103', area: 'matematicas', areaName: 'Matemáticas', difficulty: 'dificil',
+    table: {
+      headers: ['Curso', 'Mujeres', 'Hombres', 'Total'],
+      rows: [
+        ['11A', '22', '18', '40'],
+        ['11B', '23', '12', '35']
+      ],
+      caption: 'Composición de los cursos 11A y 11B'
+    },
+    context: 'Se sortea un representante al azar entre todos los estudiantes de ambos cursos.',
+    question: '¿Cuál es la probabilidad de que el estudiante seleccionado sea mujer del curso 11A?',
+    options: ['22/75', '22/40', '22/35', '45/75'],
+    correct: 0,
+    explanation: {
+      correct: 'Total estudiantes = 40 + 35 = 75. Mujeres de 11A = 22. Probabilidad = 22/75.',
+      wrongs: ['Opción correcta', 'Usaste solo el total de 11A en el denominador', 'Usaste solo el total de 11B en el denominador', 'Esa es la probabilidad de que sea mujer de cualquier curso']
+    }
+  },
+
+  // ===== PREGUNTAS CON MÚLTIPLES IMÁGENES / FIGURAS (NUEVO FORMATO) =====
+  {
+    id: 'CN61', area: 'ciencias', areaName: 'Ciencias Naturales', difficulty: 'media',
+    images: [
+      { src: 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 120%22%3E%3Crect width=%22200%22 height=%22120%22 fill=%22%23f0f4f8%22/%3E%3Ccircle cx=%2260%22 cy=%2260%22 r=%2230%22 fill=%22%233949ab%22/%3E%3Ccircle cx=%22140%22 cy=%2260%22 r=%2230%22 fill=%22%23e53935%22/%3E%3Ctext x=%2260%22 y=%2265%22 text-anchor=%22middle%22 fill=%22white%22 font-size=%2214%22 font-weight=%22bold%22%3E1%3C/text%3E%3Ctext x=%22140%22 y=%2265%22 text-anchor=%22middle%22 fill=%22white%22 font-size=%2214%22 font-weight=%22bold%22%3E2%3C/text%3E%3C/svg%3E',
+        alt: 'Dos esferas de masas diferentes', type: 'figure',
+        caption: 'Figura 1: Esfera 1 (m=2kg) y Esfera 2 (m=4kg)' }
+    ],
+    context: 'Dos esferas de masas diferentes se sueltan desde la misma altura.',
+    question: 'Si se desprecia la resistencia del aire, ¿cuál de las siguientes afirmaciones es correcta?',
+    options: ['La esfera más pesada llega primero al suelo', 'La esfera más liviana llega primero al suelo', 'Ambas esferas llegan al mismo tiempo', 'La que tiene mayor volumen llega primero'],
+    correct: 2,
+    explanation: {
+      correct: 'En ausencia de resistencia del aire, la aceleración de la gravedad es la misma para todos los objetos independientemente de su masa. Ambas esferas caen con la misma aceleración (9.8 m/s²) y, soltadas desde la misma altura, llegan al mismo tiempo.',
+      wrongs: ['La masa no afecta la velocidad de caída libre', 'La masa no afecta la velocidad de caída libre', 'Opción correcta', 'El volumen no determina la velocidad de caída']
+    }
+  },
+  {
+    id: 'CN62', area: 'ciencias', areaName: 'Ciencias Naturales', difficulty: 'dificil',
+    images: [
+      { src: 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 300 150%22%3E%3Crect width=%22300%22 height=%22150%22 fill=%22%23f0f4f8%22/%3E%3Crect x=%2220%22 y=%2280%22 width=%22260%22 height=%2240%22 fill=%22%23ccc%22 rx=%225%22/%3E%3Crect x=%2230%22 y=%2260%22 width=%2240%22 height=%2260%22 fill=%22%23e53935%22 rx=%222%22/%3E%3Crect x=%2290%22 y=%2245%22 width=%2240%22 height=%2275%22 fill=%22%233949ab%22 rx=%222%22/%3E%3Crect x=%22150%22 y=%2230%22 width=%2240%22 height=%2290%22 fill=%22%232e7d32%22 rx=%222%22/%3E%3Crect x=%22210%22 y=%2255%22 width=%2240%22 height=%2265%22 fill=%22%23ff9800%22 rx=%222%22/%3E%3Ctext x=%2250%22 y=%2250%22 text-anchor=%22middle%22 font-size=%2210%22 fill=%22white%22%3EM1%3C/text%3E%3Ctext x=%22110%22 y=%2235%22 text-anchor=%22middle%22 font-size=%2210%22 fill=%22white%22%3EM2%3C/text%3E%3Ctext x=%22170%22 y=%2220%22 text-anchor=%22middle%22 font-size=%2210%22 fill=%22white%22%3EM3%3C/text%3E%3Ctext x=%22230%22 y=%2245%22 text-anchor=%22middle%22 font-size=%2210%22 fill=%22white%22%3EM4%3C/text%3E%3C/svg%3E',
+        alt: 'Barras de alturas diferentes', type: 'graph',
+        caption: 'Gráfica: Altura de caída de 4 objetos' }
+    ],
+    context: 'Cuatro objetos (M1, M2, M3, M4) se dejan caer desde diferentes alturas. La gráfica muestra la altura de cada objeto.',
+    question: 'Si los cuatro objetos se dejan caer al mismo tiempo, ¿cuál llega primero al suelo?',
+    options: ['M1', 'M2', 'M3', 'M4'],
+    correct: 2,
+    explanation: {
+      correct: 'El objeto M3 está a la menor altura (la barra más corta en la gráfica), por lo tanto recorrerá menos distancia y llegará primero al suelo.',
+      wrongs: ['M1 está a mayor altura que M3', 'M2 está a mayor altura que M3', 'Opción correcta', 'M4 está a mayor altura que M3']
+    }
+  },
+  {
+    id: 'SC61', area: 'sociales', areaName: 'Sociales y Ciudadanía', difficulty: 'media',
+    table: {
+      headers: ['Indicador', '2020', '2021', '2022'],
+      rows: [
+        ['PIB (%)', '-6.8', '10.6', '7.5'],
+        ['Desempleo (%)', '15.9', '13.7', '11.2'],
+        ['Inflación (%)', '1.6', '3.5', '9.2']
+      ],
+      caption: 'Indicadores económicos de Colombia 2020-2022'
+    },
+    question: 'Según la tabla, ¿qué tendencia se observa en la tasa de desempleo entre 2020 y 2022?',
+    options: ['Aumentó constantemente', 'Disminuyó constantemente', 'Se mantuvo igual', 'Aumentó en 2021 y disminuyó en 2022'],
+    correct: 1,
+    explanation: {
+      correct: 'La tasa de desempleo pasó de 15.9% en 2020 a 13.7% en 2021 y a 11.2% en 2022, mostrando una disminución constante durante el período.',
+      wrongs: ['Los datos muestran disminución, no aumento', 'Opción correcta', 'Los datos varían cada año', 'No aumentó en ningún año']
+    }
   }
 ];
 
@@ -3534,4 +3648,51 @@ const EXAM_CONFIG = {
 // Helper to format area name
 function getAreaInfo(areaId) {
   return EXAM_CONFIG.areas.find(a => a.id === areaId);
+}
+
+// Render visual content (tables, images, comics, figures)
+function renderVisualContent(q) {
+  let html = '';
+
+  // Single image (backward compat)
+  if (q.image && (!q.images || q.images.length === 0)) {
+    html += `<div class="question-image"><img src="${q.image}" alt="Imagen de la pregunta" loading="lazy"></div>`;
+  }
+
+  // Multiple images
+  if (q.images && q.images.length > 0) {
+    const isComic = q.images.some(i => i.type === 'comic');
+    html += `<div class="question-image-gallery ${isComic ? 'comic-gallery' : ''}">`;
+    q.images.forEach(img => {
+      const src = typeof img === 'string' ? img : img.src;
+      const alt = typeof img === 'string' ? 'Imagen' : (img.alt || '');
+      const caption = typeof img === 'string' ? '' : (img.caption || '');
+      const type = typeof img === 'string' ? '' : img.type || '';
+      html += '<div class="gallery-item">';
+      html += `<img src="${src}" alt="${alt}" loading="lazy">`;
+      if (type) html += `<span class="visual-badge visual-badge-${type}">${type}</span>`;
+      if (caption) html += `<div class="gallery-caption">${caption}</div>`;
+      html += '</div>';
+    });
+    html += '</div>';
+  }
+
+  // Table
+  if (q.table && q.table.headers && q.table.rows) {
+    html += '<div class="question-table-wrapper"><table class="question-table"><thead><tr>';
+    q.table.headers.forEach(h => { html += `<th>${h}</th>`; });
+    html += '</tr></thead><tbody>';
+    q.table.rows.forEach(row => {
+      html += '<tr>';
+      row.forEach(cell => { html += `<td>${cell}</td>`; });
+      html += '</tr>';
+    });
+    html += '</tbody></table>';
+    if (q.table.caption) {
+      html += `<div class="question-table-caption">${q.table.caption}</div>`;
+    }
+    html += '</div>';
+  }
+
+  return html;
 }

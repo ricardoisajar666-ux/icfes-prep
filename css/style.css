@@ -1110,6 +1110,124 @@ nav {
 .justify-between { justify-content: space-between; }
 .flex-wrap { flex-wrap: wrap; }
 
+/* Visual content: Tables */
+.question-table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 20px;
+}
+.question-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  line-height: 1.6;
+}
+.question-table th {
+  background: var(--primary);
+  color: white;
+  padding: 10px 14px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 13px;
+}
+.question-table td {
+  padding: 10px 14px;
+  border-bottom: 1px solid #e0e0e0;
+}
+.question-table tr:nth-child(even) td {
+  background: #f8f9fa;
+}
+.question-table tr:hover td {
+  background: #e8eaf6;
+}
+.question-table-caption {
+  font-size: 12px;
+  color: var(--text-light);
+  margin-top: 6px;
+  text-align: center;
+  font-style: italic;
+}
+[data-theme="dark"] .question-table th {
+  background: #3949ab;
+}
+[data-theme="dark"] .question-table td {
+  border-color: #333350;
+}
+[data-theme="dark"] .question-table tr:nth-child(even) td {
+  background: #1e1e32;
+}
+[data-theme="dark"] .question-table tr:hover td {
+  background: #22223a;
+}
+
+/* Visual content: Multiple images gallery */
+.question-image-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-bottom: 20px;
+}
+.question-image-gallery .gallery-item {
+  text-align: center;
+}
+.question-image-gallery img {
+  max-width: 100%;
+  max-height: 350px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  object-fit: contain;
+  background: #fff;
+}
+.question-image-gallery .gallery-caption {
+  font-size: 12px;
+  color: var(--text-light);
+  margin-top: 4px;
+  font-style: italic;
+}
+[data-theme="dark"] .question-image-gallery img {
+  background: #1a1a2e;
+}
+
+/* Comic panel specific */
+.comic-gallery {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+.comic-gallery img {
+  border: 2px solid #e0e0e0;
+  border-radius: 4px;
+}
+
+/* Visual type badges */
+.visual-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 600;
+  margin-right: 4px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+.visual-badge-figure {
+  background: #e3f2fd;
+  color: #1565c0;
+}
+.visual-badge-graph {
+  background: #fff3e0;
+  color: #e65100;
+}
+.visual-badge-comic {
+  background: #fce4ec;
+  color: #c62828;
+}
+.visual-badge-diagram {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+.visual-badge-table {
+  background: #f3e5f5;
+  color: #7b1fa2;
+}
+
 /* Dark theme */
 [data-theme="dark"] {
   --bg: #0d0d1a;
