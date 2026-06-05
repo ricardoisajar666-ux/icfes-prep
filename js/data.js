@@ -170,6 +170,35 @@ const QUESTIONS = [
     },
     context: 'En una tienda de ropa en Medellín se ofrecen los descuentos mostrados en la tabla.',
     question: 'Un cliente compra una camiseta y un pantalón. ¿Cuánto paga en total?',
+    svg: `<svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" style="max-width:400px">
+  <text x="200" y="20" text-anchor="middle" font-size="14" font-weight="bold" fill="#333">Precio normal vs. con descuento</text>
+  <line x1="50" y1="180" x2="380" y2="180" stroke="#333" stroke-width="1.5"/>
+  <line x1="50" y1="180" x2="50" y2="20" stroke="#333" stroke-width="1.5"/>
+  <text x="50" y="195" text-anchor="middle" font-size="11" fill="#333">Camiseta</text>
+  <text x="130" y="195" text-anchor="middle" font-size="11" fill="#333">Pantalón</text>
+  <text x="210" y="195" text-anchor="middle" font-size="11" fill="#333">Zapatos</text>
+  <text x="290" y="195" text-anchor="middle" font-size="11" fill="#333">Chaqueta</text>
+  <rect x="60" y="60" width="30" height="120" fill="#2196F3" opacity="0.8" rx="2"/>
+  <rect x="100" y="80" width="30" height="100" fill="#2196F3" opacity="0.8" rx="2"/>
+  <rect x="180" y="20" width="30" height="160" fill="#2196F3" opacity="0.8" rx="2"/>
+  <rect x="220" y="0" width="30" height="180" fill="#2196F3" opacity="0.8" rx="2"/>
+  <rect x="60" y="96" width="30" height="84" fill="#4CAF50" opacity="0.8" rx="2"/>
+  <rect x="100" y="100" width="30" height="80" fill="#4CAF50" opacity="0.8" rx="2"/>
+  <rect x="180" y="44" width="30" height="136" fill="#4CAF50" opacity="0.8" rx="2"/>
+  <rect x="220" y="30" width="30" height="150" fill="#4CAF50" opacity="0.8" rx="2"/>
+  <text x="75" y="56" text-anchor="middle" font-size="9" fill="#fff">45</text>
+  <text x="115" y="76" text-anchor="middle" font-size="9" fill="#fff">80</text>
+  <text x="195" y="16" text-anchor="middle" font-size="9" fill="#fff">120</text>
+  <text x="235" y="174" text-anchor="middle" font-size="9" fill="#fff">150</text>
+  <text x="75" y="92" text-anchor="middle" font-size="9" fill="#fff">36</text>
+  <text x="115" y="96" text-anchor="middle" font-size="9" fill="#fff">60</text>
+  <text x="195" y="40" text-anchor="middle" font-size="9" fill="#fff">102</text>
+  <text x="235" y="26" text-anchor="middle" font-size="9" fill="#fff">105</text>
+  <rect x="310" y="18" width="12" height="12" fill="#2196F3" opacity="0.8"/>
+  <text x="326" y="28" font-size="11" fill="#333">Normal</text>
+  <rect x="310" y="36" width="12" height="12" fill="#4CAF50" opacity="0.8"/>
+  <text x="326" y="46" font-size="11" fill="#333">Desc ($ miles)</text>
+</svg>`,
     options: ['$96.000', '$102.500', '$112.000', '$125.000'],
     correct: 0,
     explanation: {
@@ -217,6 +246,37 @@ const QUESTIONS = [
     },
     context: 'La tabla muestra la temperatura promedio en cuatro ciudades durante el primer trimestre.',
     question: '¿Cuál es la mediana de las temperaturas registradas en marzo?',
+    svg: `<svg viewBox="0 0 420 220" xmlns="http://www.w3.org/2000/svg" style="max-width:420px">
+  <text x="210" y="20" text-anchor="middle" font-size="13" font-weight="bold" fill="#333">Temperatura promedio por ciudad</text>
+  <line x1="50" y1="180" x2="380" y2="180" stroke="#333" stroke-width="1.5"/>
+  <line x1="50" y1="180" x2="50" y2="30" stroke="#333" stroke-width="1.5"/>
+  <text x="110" y="195" text-anchor="middle" font-size="11" fill="#333">Enero</text>
+  <text x="210" y="195" text-anchor="middle" font-size="11" fill="#333">Febrero</text>
+  <text x="310" y="195" text-anchor="middle" font-size="11" fill="#333">Marzo</text>
+  <text x="40" y="180" text-anchor="end" font-size="10" fill="#666">0</text>
+  <text x="40" y="130" text-anchor="end" font-size="10" fill="#666">10</text>
+  <text x="40" y="80" text-anchor="end" font-size="10" fill="#666">20</text>
+  <text x="40" y="30" text-anchor="end" font-size="10" fill="#666">30</text>
+  <line x1="50" y1="130" x2="380" y2="130" stroke="#ccc" stroke-width="0.5" stroke-dasharray="4"/>
+  <line x1="50" y1="80" x2="380" y2="80" stroke="#ccc" stroke-width="0.5" stroke-dasharray="4"/>
+  <line x1="50" y1="30" x2="380" y2="30" stroke="#ccc" stroke-width="0.5" stroke-dasharray="4"/>
+  <polyline points="110,170 210,165 310,160" fill="none" stroke="#E91E63" stroke-width="2.5"/>
+  <polyline points="110,90 210,85 310,90" fill="none" stroke="#2196F3" stroke-width="2.5"/>
+  <polyline points="110,60 210,50 310,60" fill="none" stroke="#FF9800" stroke-width="2.5"/>
+  <polyline points="110,30 210,20 310,30" fill="none" stroke="#4CAF50" stroke-width="2.5"/>
+  <circle cx="110" cy="170" r="4" fill="#E91E63"/><circle cx="210" cy="165" r="4" fill="#E91E63"/><circle cx="310" cy="160" r="4" fill="#E91E63"/>
+  <circle cx="110" cy="90" r="4" fill="#2196F3"/><circle cx="210" cy="85" r="4" fill="#2196F3"/><circle cx="310" cy="90" r="4" fill="#2196F3"/>
+  <circle cx="110" cy="60" r="4" fill="#FF9800"/><circle cx="210" cy="50" r="4" fill="#FF9800"/><circle cx="310" cy="60" r="4" fill="#FF9800"/>
+  <circle cx="110" cy="30" r="4" fill="#4CAF50"/><circle cx="210" cy="20" r="4" fill="#4CAF50"/><circle cx="310" cy="30" r="4" fill="#4CAF50"/>
+  <rect x="60" y="206" width="10" height="10" fill="#E91E63"/>
+  <text x="73" y="215" font-size="10" fill="#333">Bogotá</text>
+  <rect x="130" y="206" width="10" height="10" fill="#2196F3"/>
+  <text x="143" y="215" font-size="10" fill="#333">Medellín</text>
+  <rect x="210" y="206" width="10" height="10" fill="#FF9800"/>
+  <text x="223" y="215" font-size="10" fill="#333">Cali</text>
+  <rect x="260" y="206" width="10" height="10" fill="#4CAF50"/>
+  <text x="273" y="215" font-size="10" fill="#333">Barranquilla</text>
+</svg>`,
     options: ['22°C', '23,5°C', '24,5°C', '25°C'],
     correct: 1,
     explanation: {
@@ -272,6 +332,26 @@ const QUESTIONS = [
     areaName: 'Matemáticas',
     difficulty: 'media',
     question: `Una escalera de 5 m de longitud se apoya contra una pared vertical. Si la base de la escalera está a 3 m de la pared, ¿qué altura alcanza la escalera?`,
+    svg: `<svg viewBox="0 0 300 240" xmlns="http://www.w3.org/2000/svg" style="max-width:300px">
+  <!-- Wall -->
+  <rect x="200" y="10" width="12" height="210" fill="#BDBDBD" stroke="#757575" stroke-width="1"/>
+  <!-- Ground -->
+  <rect x="20" y="200" width="200" height="8" fill="#A5D6A7" stroke="#4CAF50" stroke-width="1"/>
+  <!-- Ladder -->
+  <line x1="60" y1="200" x2="200" y2="40" stroke="#FF9800" stroke-width="5" stroke-linecap="round"/>
+  <!-- Right angle marker -->
+  <polyline points="200,200 190,200 190,210" fill="none" stroke="#333" stroke-width="1"/>
+  <!-- 3m label (horizontal) -->
+  <line x1="60" y1="215" x2="200" y2="215" stroke="#666" stroke-width="0.8" stroke-dasharray="3"/>
+  <text x="130" y="228" text-anchor="middle" font-size="13" fill="#E91E63" font-weight="bold">3 m</text>
+  <!-- 5m label (ladder) -->
+  <text x="115" y="115" transform="rotate(-65 110 115)" font-size="13" fill="#2196F3" font-weight="bold">5 m</text>
+  <!-- h label (vertical) -->
+  <line x1="210" y1="40" x2="210" y2="200" stroke="#666" stroke-width="0.8" stroke-dasharray="3"/>
+  <text x="218" y="125" text-anchor="middle" font-size="14" fill="#4CAF50" font-weight="bold">h = ?</text>
+  <!-- Floor -->
+  <rect x="20" y="230" width="230" height="8" fill="#A5D6A7" stroke="#4CAF50" stroke-width="1"/>
+</svg>`,
     options: ['3 m', '4 m', '5 m', '6 m'],
     correct: 1,
     explanation: {
@@ -1124,6 +1204,44 @@ Sarah"`,
     difficulty: 'facil',
     context: `"Un estudiante coloca una vela encendida en un recipiente con agua y la cubre con un vaso invertido. Al cabo de unos segundos, la vela se apaga y el agua sube dentro del vaso."`,
     question: `¿Qué combinación de fenómenos explica lo ocurrido?`,
+    svg: `<svg viewBox="0 0 400 180" xmlns="http://www.w3.org/2000/svg" style="max-width:400px">
+  <text x="100" y="20" text-anchor="middle" font-size="12" font-weight="bold" fill="#333">Antes</text>
+  <text x="300" y="20" text-anchor="middle" font-size="12" font-weight="bold" fill="#333">DespuÃ©s</text>
+  <!-- Beaker left -->
+  <rect x="40" y="40" width="120" height="120" fill="none" stroke="#78909C" stroke-width="2" rx="2"/>
+  <rect x="40" y="40" width="120" height="120" fill="#E3F2FD" opacity="0.4" rx="2"/>
+  <rect x="40" y="120" width="120" height="40" fill="#BBDEFB" opacity="0.6"/>
+  <text x="100" y="148" text-anchor="middle" font-size="9" fill="#1565C0">Agua</text>
+  <!-- Inverted glass -->
+  <rect x="60" y="50" width="80" height="100" fill="none" stroke="#90A4AE" stroke-width="1.5" rx="3"/>
+  <!-- Candle -->
+  <rect x="93" y="90" width="14" height="30" fill="#FFF9C4" stroke="#F9A825" stroke-width="1"/>
+  <rect x="94" y="80" width="12" height="12" fill="#FFB300" rx="2"/>
+  <!-- Flame -->
+  <ellipse cx="100" cy="72" rx="5" ry="10" fill="#FFC107"/>
+  <ellipse cx="100" cy="74" rx="3" ry="6" fill="#FF9800"/>
+  <!-- Oxygen label -->
+  <text x="72" y="68" font-size="9" fill="#1565C0">O2</text>
+  <!-- Beaker right -->
+  <rect x="240" y="40" width="120" height="120" fill="none" stroke="#78909C" stroke-width="2" rx="2"/>
+  <rect x="240" y="40" width="120" height="120" fill="#E3F2FD" opacity="0.4" rx="2"/>
+  <rect x="240" y="100" width="120" height="60" fill="#BBDEFB" opacity="0.6"/>
+  <text x="300" y="142" text-anchor="middle" font-size="9" fill="#1565C0">Agua subiÃ³</text>
+  <!-- Water up arrow -->
+  <path d="M280 115 L280 100 M275 105 L280 100 L285 105" fill="none" stroke="#E91E63" stroke-width="1.5"/>
+  <!-- Inverted glass right -->
+  <rect x="260" y="50" width="80" height="100" fill="none" stroke="#90A4AE" stroke-width="1.5" rx="3"/>
+  <!-- Burnt candle -->
+  <rect x="293" y="100" width="14" height="20" fill="#FFF9C4" stroke="#F9A825" stroke-width="1"/>
+  <rect x="294" y="95" width="12" height="7" fill="#424242" rx="1"/>
+  <!-- No flame -->
+  <!-- Smoke -->
+  <path d="M300 90 Q295 80 300 70 Q305 60 300 50" fill="none" stroke="#9E9E9E" stroke-width="1" stroke-dasharray="2"/>
+  <!-- Arrow between -->
+  <text x="185" y="100" font-size="18" fill="#666">→</text>
+  <!-- CO2 label right -->
+  <text x="310" y="68" font-size="9" fill="#E91E63">CO2</text>
+</svg>`,
     options: ['El oxígeno se consume en la combustión y la disminución de presión hace que el agua suba; el CO₂ producido se disuelve parcialmente en el agua', 'La vela apaga porque el vaso bloquea el viento; el agua sube por capilaridad', 'El calor derrite la cera que sella el vaso; el agua sube por evaporación', 'El dióxido de carbono producido empuja el agua hacia arriba por su menor densidad'],
     correct: 0,
     explanation: {
@@ -1275,6 +1393,40 @@ Del poema XX: "Puedo escribir los versos más tristes esta noche. / Escribir, po
     },
     context: 'La tabla muestra las preferencias deportivas de los estudiantes de un colegio.',
     question: '¿Cuál es el total de estudiantes mujeres que participaron en la encuesta?',
+    svg: `<svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" style="max-width:400px">
+  <text x="200" y="20" text-anchor="middle" font-size="13" font-weight="bold" fill="#333">Preferencias deportivas por género</text>
+  <line x1="50" y1="180" x2="380" y2="180" stroke="#333" stroke-width="1.5"/>
+  <line x1="50" y1="180" x2="50" y2="25" stroke="#333" stroke-width="1.5"/>
+  <text x="90" y="195" text-anchor="middle" font-size="10" fill="#333">Fútbol</text>
+  <text x="175" y="195" text-anchor="middle" font-size="10" fill="#333">Baloncesto</text>
+  <text x="260" y="195" text-anchor="middle" font-size="10" fill="#333">Natación</text>
+  <text x="345" y="195" text-anchor="middle" font-size="10" fill="#333">Atletismo</text>
+  <text x="40" y="180" text-anchor="end" font-size="9" fill="#666">0</text>
+  <text x="40" y="100" text-anchor="end" font-size="9" fill="#666">20</text>
+  <text x="40" y="40" text-anchor="end" font-size="9" fill="#666">40</text>
+  <line x1="50" y1="100" x2="380" y2="100" stroke="#ccc" stroke-width="0.5" stroke-dasharray="3"/>
+  <line x1="50" y1="40" x2="380" y2="40" stroke="#ccc" stroke-width="0.5" stroke-dasharray="3"/>
+  <rect x="62" y="54" width="25" height="126" fill="#2196F3" opacity="0.8" rx="2"/>
+  <rect x="93" y="84" width="25" height="96" fill="#E91E63" opacity="0.8" rx="2"/>
+  <rect x="147" y="100" width="25" height="80" fill="#2196F3" opacity="0.8" rx="2"/>
+  <rect x="178" y="90" width="25" height="90" fill="#E91E63" opacity="0.8" rx="2"/>
+  <rect x="232" y="110" width="25" height="70" fill="#2196F3" opacity="0.8" rx="2"/>
+  <rect x="263" y="100" width="25" height="80" fill="#E91E63" opacity="0.8" rx="2"/>
+  <rect x="317" y="130" width="25" height="50" fill="#2196F3" opacity="0.8" rx="2"/>
+  <rect x="348" y="120" width="25" height="60" fill="#E91E63" opacity="0.8" rx="2"/>
+  <text x="74" y="50" text-anchor="middle" font-size="9" fill="#fff">45</text>
+  <text x="105" y="80" text-anchor="middle" font-size="9" fill="#fff">30</text>
+  <text x="159" y="96" text-anchor="middle" font-size="9" fill="#fff">20</text>
+  <text x="190" y="86" text-anchor="middle" font-size="9" fill="#fff">25</text>
+  <text x="244" y="106" text-anchor="middle" font-size="9" fill="#fff">15</text>
+  <text x="275" y="96" text-anchor="middle" font-size="9" fill="#fff">20</text>
+  <text x="329" y="126" text-anchor="middle" font-size="9" fill="#fff">10</text>
+  <text x="360" y="116" text-anchor="middle" font-size="9" fill="#fff">15</text>
+  <rect x="60" y="206" width="10" height="10" fill="#2196F3" opacity="0.8"/>
+  <text x="73" y="215" font-size="10" fill="#333">Hombres</text>
+  <rect x="140" y="206" width="10" height="10" fill="#E91E63" opacity="0.8"/>
+  <text x="153" y="215" font-size="10" fill="#333">Mujeres</text>
+</svg>`,
     options: ['80', '90', '85', '95'],
     correct: 1,
     explanation: { correct: 'Suma de mujeres: 30 + 25 + 20 + 15 = 90.', wrongs: ['Sumaste hombres en lugar de mujeres', 'Opción correcta', 'Olvidaste incluir un deporte', 'Sumaste incorrectamente'] }
@@ -1282,6 +1434,24 @@ Del poema XX: "Puedo escribir los versos más tristes esta noche. / Escribir, po
   {
     id: 'MT15', area: 'matematicas', areaName: 'Matemáticas', difficulty: 'dificil',
     question: `Un tanque de agua cilíndrico en una finca antioqueña tiene 2 m de radio y 3 m de altura. ¿Cuál es su volumen? (Use π = 3,14)`,
+    svg: `<svg viewBox="0 0 250 240" xmlns="http://www.w3.org/2000/svg" style="max-width:250px">
+  <ellipse cx="125" cy="45" rx="80" ry="20" fill="#B3E5FC" stroke="#0288D1" stroke-width="2"/>
+  <rect x="45" y="45" width="160" height="150" fill="#E1F5FE" stroke="#0288D1" stroke-width="2"/>
+  <ellipse cx="125" cy="195" rx="80" ry="20" fill="#B3E5FC" stroke="#0288D1" stroke-width="2"/>
+  <rect x="45" y="45" width="160" height="150" fill="#E1F5FE" stroke="#0288D1" stroke-width="2" opacity="0.6"/>
+  <ellipse cx="125" cy="45" rx="80" ry="20" fill="none" stroke="#0288D1" stroke-width="2"/>
+  <ellipse cx="125" cy="195" rx="80" ry="20" fill="none" stroke="#0288D1" stroke-width="2"/>
+  <!-- Water fill -->
+  <rect x="48" y="100" width="154" height="95" fill="#4FC3F7" opacity="0.5"/>
+  <ellipse cx="125" cy="100" rx="77" ry="18" fill="#4FC3F7" opacity="0.5" stroke="#0288D1" stroke-width="1"/>
+  <!-- Height label -->
+  <line x1="20" y1="45" x2="20" y2="195" stroke="#666" stroke-width="0.8" stroke-dasharray="3"/>
+  <text x="18" y="125" text-anchor="end" font-size="13" fill="#E91E63" font-weight="bold">h = 3 m</text>
+  <!-- Radius label -->
+  <line x1="45" y1="215" x2="125" y2="215" stroke="#666" stroke-width="0.8"/>
+  <text x="85" y="228" text-anchor="middle" font-size="13" fill="#4CAF50" font-weight="bold">r = 2 m</text>
+  <text x="125" y="235" text-anchor="middle" font-size="10" fill="#666">V = πr²h</text>
+</svg>`,
     options: ['18,84 m³', '37,68 m³', '9,42 m³', '28,26 m³'],
     correct: 1,
     explanation: { correct: 'V = πr²h = 3,14 x 2² x 3 = 3,14 x 4 x 3 = 37,68 m³.', wrongs: ['Usaste π x r x h, olvidaste elevar al cuadrado', 'Opción correcta', 'Usaste el diámetro en lugar del radio: 3,14 x 4 x 3 = 37,68? Revisa', 'Calculaste el área de la base solamente'] }
@@ -1465,6 +1635,42 @@ Del poema XX: "Puedo escribir los versos más tristes esta noche. / Escribir, po
     difficulty: 'media',
     context: `"Un estudio de salud pública compara dos comunidades: en la comunidad A, el 90% de los niños está vacunado contra el sarampión; en la comunidad B, solo el 40% está vacunado. Se reporta un brote de sarampión en la comunidad B pero no en la A."`,
     question: `¿Qué concepto epidemiológico explica mejor esta diferencia?`,
+    svg: `<svg viewBox="0 0 400 180" xmlns="http://www.w3.org/2000/svg" style="max-width:400px">
+  <text x="100" y="20" text-anchor="middle" font-size="12" font-weight="bold" fill="#333">Comunidad A - 90% vacunada</text>
+  <text x="300" y="20" text-anchor="middle" font-size="12" font-weight="bold" fill="#333">Comunidad B - 40% vacunada</text>
+  <!-- People dots - Community A -->
+  <circle cx="55" cy="50" r="6" fill="#4CAF50"/><circle cx="75" cy="55" r="6" fill="#4CAF50"/><circle cx="95" cy="45" r="6" fill="#4CAF50"/>
+  <circle cx="115" cy="52" r="6" fill="#4CAF50"/><circle cx="135" cy="48" r="6" fill="#4CAF50"/><circle cx="55" cy="75" r="6" fill="#4CAF50"/>
+  <circle cx="75" cy="80" r="6" fill="#4CAF50"/><circle cx="95" cy="78" r="6" fill="#4CAF50"/><circle cx="115" cy="82" r="6" fill="#4CAF50"/>
+  <circle cx="135" cy="72" r="6" fill="#4CAF50"/><circle cx="55" cy="100" r="6" fill="#4CAF50"/><circle cx="75" cy="105" r="6" fill="#4CAF50"/>
+  <circle cx="95" cy="102" r="6" fill="#4CAF50"/><circle cx="115" cy="98" r="6" fill="#4CAF50"/><circle cx="135" cy="95" r="6" fill="#4CAF50"/>
+  <circle cx="55" cy="125" r="6" fill="#4CAF50"/><circle cx="75" cy="128" r="6" fill="#4CAF50"/><circle cx="95" cy="120" r="6" fill="#4CAF50"/>
+  <circle cx="115" cy="125" r="6" fill="#4CAF50"/><circle cx="135" cy="122" r="6" fill="#4CAF50"/><circle cx="55" cy="148" r="6" fill="#4CAF50"/>
+  <circle cx="75" cy="145" r="6" fill="#4CAF50"/><circle cx="95" cy="142" r="6" fill="#4CAF50"/><circle cx="115" cy="150" r="6" fill="#4CAF50"/>
+  <circle cx="135" cy="140" r="6" fill="#4CAF50"/><circle cx="150" cy="50" r="6" fill="#FF5252"/><circle cx="150" cy="75" r="6" fill="#FF5252"/>
+  <circle cx="150" cy="100" r="6" fill="#FF5252"/>
+  <!-- Shield -->
+  <path d="M100 155 L100 165 L120 160 L100 155" fill="#4CAF50" opacity="0.6"/>
+  <text x="100" y="173" text-anchor="middle" font-size="9" fill="#4CAF50" font-weight="bold">PROTEGIDA</text>
+  <!-- People dots - Community B -->
+  <circle cx="255" cy="50" r="6" fill="#4CAF50"/><circle cx="275" cy="55" r="6" fill="#4CAF50"/><circle cx="295" cy="45" r="6" fill="#4CAF50"/>
+  <circle cx="315" cy="52" r="6" fill="#4CAF50"/><circle cx="335" cy="48" r="6" fill="#4CAF50"/><circle cx="255" cy="75" r="6" fill="#4CAF50"/>
+  <circle cx="275" cy="80" r="6" fill="#4CAF50"/><circle cx="295" cy="78" r="6" fill="#4CAF50"/><circle cx="315" cy="82" r="6" fill="#4CAF50"/>
+  <circle cx="335" cy="72" r="6" fill="#4CAF50"/><circle cx="255" cy="100" r="6" fill="#4CAF50"/><circle cx="275" cy="105" r="6" fill="#4CAF50"/>
+  <circle cx="295" cy="102" r="6" fill="#4CAF50"/><circle cx="315" cy="98" r="6" fill="#4CAF50"/><circle cx="335" cy="95" r="6" fill="#4CAF50"/>
+  <circle cx="255" cy="125" r="6" fill="#4CAF50"/><circle cx="275" cy="128" r="6" fill="#4CAF50"/><circle cx="295" cy="120" r="6" fill="#4CAF50"/>
+  <circle cx="315" cy="125" r="6" fill="#4CAF50"/><circle cx="335" cy="122" r="6" fill="#4CAF50"/>
+  <!-- Unvaccinated -->
+  <circle cx="355" cy="50" r="6" fill="#FF5252"/><circle cx="355" cy="75" r="6" fill="#FF5252"/><circle cx="355" cy="100" r="6" fill="#FF5252"/>
+  <circle cx="355" cy="125" r="6" fill="#FF5252"/><circle cx="375" cy="55" r="6" fill="#FF5252"/><circle cx="375" cy="80" r="6" fill="#FF5252"/>
+  <circle cx="375" cy="105" r="6" fill="#FF5252"/><circle cx="375" cy="130" r="6" fill="#FF5252"/><circle cx="390" cy="65" r="6" fill="#FF5252"/>
+  <circle cx="390" cy="95" r="6" fill="#FF5252"/>
+  <!-- Virus spread -->
+  <text x="320" y="155" font-size="14" fill="#E91E63">BROTE</text>
+  <path d="M355 50 Q365 40 370 50 Q375 60 365 65" fill="none" stroke="#E91E63" stroke-width="1.5"/>
+  <circle cx="362" cy="42" r="3" fill="#E91E63" opacity="0.6"/>
+  <circle cx="370" cy="35" r="2" fill="#E91E63" opacity="0.4"/>
+</svg>`,
     options: ['Inmunidad de rebaño: cuando un porcentaje suficiente de la población está vacunado, se protege incluso a quienes no lo están', 'Los niños de la comunidad A son genéticamente resistentes al sarampión', 'La comunidad A tiene mejor nutrición que la B, lo que previene la infección', 'El sarampión solo afecta a comunidades con baja densidad poblacional'],
     correct: 0,
     explanation: {
@@ -1718,6 +1924,24 @@ Del poema XX: "Puedo escribir los versos más tristes esta noche. / Escribir, po
     },
     context: 'En una bolsa hay fichas de colores según la tabla. Se saca una ficha al azar.',
     question: '¿Cuál es la probabilidad de sacar una ficha azul?',
+    svg: `<svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg" style="max-width:320px">
+  <text x="160" y="20" text-anchor="middle" font-size="13" font-weight="bold" fill="#333">Distribución de fichas en la bolsa</text>
+  <circle cx="120" cy="110" r="75" fill="#fff" stroke="#333" stroke-width="1.5"/>
+  <path d="M120 35 A75 75 0 0 1 192.5 155.5 L120 110 Z" fill="#F44336" opacity="0.85"/>
+  <path d="M192.5 155.5 A75 75 0 0 1 63.5 155.5 L120 110 Z" fill="#2196F3" opacity="0.85"/>
+  <path d="M63.5 155.5 A75 75 0 0 1 74.5 52.5 L120 110 Z" fill="#4CAF50" opacity="0.85"/>
+  <path d="M74.5 52.5 A75 75 0 0 1 120 35 L120 110 Z" fill="#FFC107" opacity="0.85"/>
+  <circle cx="120" cy="110" r="30" fill="#fff"/>
+  <text x="120" y="114" text-anchor="middle" font-size="14" font-weight="bold" fill="#333">20</text>
+  <rect x="220" y="40" width="12" height="12" fill="#F44336" opacity="0.85"/>
+  <text x="236" y="51" font-size="11" fill="#333">Rojo (8)</text>
+  <rect x="220" y="60" width="12" height="12" fill="#2196F3" opacity="0.85"/>
+  <text x="236" y="71" font-size="11" fill="#333">Azul (5)</text>
+  <rect x="220" y="80" width="12" height="12" fill="#4CAF50" opacity="0.85"/>
+  <text x="236" y="91" font-size="11" fill="#333">Verde (4)</text>
+  <rect x="220" y="100" width="12" height="12" fill="#FFC107" opacity="0.85"/>
+  <text x="236" y="111" font-size="11" fill="#333">Amarillo (3)</text>
+</svg>`,
     options: ['1/4', '1/5', '1/8', '5/20'],
     correct: 0,
     explanation: { correct: 'Total fichas = 8+5+4+3 = 20. Azules = 5. Probabilidad = 5/20 = 1/4.', wrongs: ['Opción correcta', 'Usaste el total incorrecto o los azules sobre solo un color', 'Dividiste 1 entre la cantidad de azules', 'Simplifica 5/20 = 1/4, no lo dejaste reducido'] }
@@ -1830,6 +2054,43 @@ Del poema XX: "Puedo escribir los versos más tristes esta noche. / Escribir, po
     id: 'CN21', area: 'ciencias', areaName: 'Ciencias Naturales', difficulty: 'media',
     context: `"En un laboratorio, un estudiante coloca tres cilindros de papa de igual masa en tres vasos: uno con agua destilada, otro con solución salina al 10% y otro con solución salina al 25%. Después de 30 minutos, retira los cilindros y registra los cambios de masa."`,
     question: `Si el cilindro en agua destilada ganó masa y el de solución al 25% perdió masa, ¿cómo se explica este resultado?`,
+    svg: `<svg viewBox="0 0 420 190" xmlns="http://www.w3.org/2000/svg" style="max-width:420px">
+  <text x="75" y="18" text-anchor="middle" font-size="11" font-weight="bold" fill="#333">Agua destilada</text>
+  <text x="210" y="18" text-anchor="middle" font-size="11" font-weight="bold" fill="#333">Salina 10%</text>
+  <text x="345" y="18" text-anchor="middle" font-size="11" font-weight="bold" fill="#333">Salina 25%</text>
+  <!-- Beaker 1 -->
+  <rect x="25" y="35" width="100" height="130" fill="#E3F2FD" opacity="0.5" stroke="#90CAF9" stroke-width="1.5" rx="3"/>
+  <!-- Water -->
+  <rect x="27" y="55" width="96" height="108" fill="#BBDEFB" opacity="0.4"/>
+  <!-- Potato cylinder -->
+  <rect x="60" y="60" width="30" height="60" fill="#FFCC80" stroke="#FF9800" stroke-width="1" rx="4"/>
+  <!-- Arrow in -->
+  <path d="M50 80 L40 80 M45 75 L40 80 L45 85" fill="none" stroke="#4CAF50" stroke-width="1.5"/>
+  <text x="42" y="72" font-size="8" fill="#4CAF50">H2O</text>
+  <path d="M110 80 L120 80 M115 75 L120 80 L115 85" fill="none" stroke="#4CAF50" stroke-width="1.5"/>
+  <text x="118" y="72" font-size="8" fill="#4CAF50">H2O</text>
+  <text x="75" y="165" text-anchor="middle" font-size="9" fill="#1565C0">Gana masa</text>
+  <!-- Beaker 2 -->
+  <rect x="160" y="35" width="100" height="130" fill="#FFF3E0" opacity="0.5" stroke="#FFB74D" stroke-width="1.5" rx="3"/>
+  <rect x="162" y="55" width="96" height="108" fill="#FFE0B2" opacity="0.4"/>
+  <rect x="195" y="65" width="30" height="50" fill="#FFCC80" stroke="#FF9800" stroke-width="1" rx="4"/>
+  <!-- Equal arrows -->
+  <text x="210" y="140" text-anchor="middle" font-size="9" fill="#666">Equilibrio</text>
+  <line x1="190" y1="85" x2="200" y2="85" stroke="#666" stroke-width="0.8"/>
+  <line x1="220" y1="85" x2="230" y2="85" stroke="#666" stroke-width="0.8"/>
+  <!-- Beaker 3 -->
+  <rect x="295" y="35" width="100" height="130" fill="#FFF3E0" opacity="0.5" stroke="#EF5350" stroke-width="1.5" rx="3"/>
+  <rect x="297" y="55" width="96" height="108" fill="#FFCDD2" opacity="0.4"/>
+  <rect x="330" y="75" width="30" height="35" fill="#FFCC80" stroke="#FF9800" stroke-width="1" rx="4"/>
+  <!-- Arrow out -->
+  <path d="M320 80 L310 80 M315 75 L310 80 L315 85" fill="none" stroke="#E91E63" stroke-width="1.5"/>
+  <text x="312" y="72" font-size="8" fill="#E91E63">H2O</text>
+  <path d="M370 80 L380 80 M375 75 L380 80 L375 85" fill="none" stroke="#E91E63" stroke-width="1.5"/>
+  <text x="378" y="72" font-size="8" fill="#E91E63">H2O</text>
+  <text x="345" y="165" text-anchor="middle" font-size="9" fill="#E91E63">Pierde masa</text>
+  <!-- Salt labels -->
+  <text x="210" y="175" text-anchor="middle" font-size="8" fill="#666">NaCl: 0% | 10% | 25%</text>
+</svg>`,
     options: ['El agua destilada contiene más nutrientes que la salina', 'La ósmosis movió agua desde donde había mayor concentración de agua hacia donde había menor', 'Las células de la papa murieron por el exceso de sal', 'El agua destilada disolvió parte de la papa aumentando su masa'],
     correct: 1,
     explanation: { correct: 'Por ósmosis, el agua se desplaza desde la zona de mayor concentración de agua (menor concentración de solutos) hacia la de menor concentración de agua. En agua destilada, el agua entra a las células de la papa (turgencia). En solución salina al 25%, el agua sale de las células hacia el medio externo (plasmólisis), provocando pérdida de masa.', wrongs: ['El agua destilada no tiene nutrientes adicionales; el cambio se debe al movimiento de agua por ósmosis', 'Opción correcta', 'Las células no mueren inmediatamente; el cambio de masa se debe al flujo osmótico de agua', 'El agua destilada no disuelve la papa; la ósmosis explica el aumento de masa'] }
@@ -1862,6 +2123,44 @@ Del poema XX: "Puedo escribir los versos más tristes esta noche. / Escribir, po
     id: 'CN25', area: 'ciencias', areaName: 'Ciencias Naturales', difficulty: 'media',
     context: `"Un grupo de estudiantes prepara tres tubos de ensayo: tubo 1 con agua oxigenada (H₂O₂) a temperatura ambiente, tubo 2 con agua oxigenada más una gota de sangre, y tubo 3 con agua oxigenada hervida previamente y luego enfriada, más una gota de sangre. En el tubo 2 se observa una producción vigorosa de burbujas, mientras que en los tubos 1 y 3 no."`,
     question: `¿Cuál es la explicación más adecuada para los resultados?`,
+    svg: `<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg" style="max-width:400px">
+  <text x="75" y="20" text-anchor="middle" font-size="11" font-weight="bold" fill="#333">Tubo 1</text>
+  <text x="200" y="20" text-anchor="middle" font-size="11" font-weight="bold" fill="#333">Tubo 2</text>
+  <text x="325" y="20" text-anchor="middle" font-size="11" font-weight="bold" fill="#333">Tubo 3</text>
+  <text x="75" y="33" text-anchor="middle" font-size="9" fill="#666">Solo H2O2</text>
+  <text x="200" y="33" text-anchor="middle" font-size="9" fill="#666">H2O2 + Sangre</text>
+  <text x="325" y="33" text-anchor="middle" font-size="9" fill="#666">H2O2 + Sangre hervida</text>
+  <!-- Tube 1 -->
+  <rect x="55" y="45" width="40" height="130" fill="#E3F2FD" opacity="0.4" stroke="#90CAF9" stroke-width="1.5" rx="5"/>
+  <rect x="55" y="45" width="40" height="130" fill="#F3E5F5" opacity="0.3" rx="5"/>
+  <!-- Liquid -->
+  <rect x="55" y="90" width="40" height="85" fill="#CE93D8" opacity="0.5" rx="3"/>
+  <!-- No bubbles -->
+  <text x="75" y="150" text-anchor="middle" font-size="9" fill="#666">Sin burbujas</text>
+  <!-- Tube 2 -->
+  <rect x="180" y="45" width="40" height="130" fill="#E3F2FD" opacity="0.4" stroke="#90CAF9" stroke-width="1.5" rx="5"/>
+  <rect x="180" y="45" width="40" height="130" fill="#F3E5F5" opacity="0.3" rx="5"/>
+  <rect x="180" y="100" width="40" height="75" fill="#CE93D8" opacity="0.5" rx="3"/>
+  <!-- Bubbles -->
+  <circle cx="195" cy="65" r="4" fill="none" stroke="#4FC3F7" stroke-width="1"/>
+  <circle cx="205" cy="58" r="3" fill="none" stroke="#4FC3F7" stroke-width="1"/>
+  <circle cx="190" cy="78" r="5" fill="none" stroke="#4FC3F7" stroke-width="1"/>
+  <circle cx="200" cy="85" r="3" fill="none" stroke="#4FC3F7" stroke-width="1"/>
+  <circle cx="208" cy="72" r="2" fill="none" stroke="#4FC3F7" stroke-width="1"/>
+  <circle cx="195" cy="52" r="2" fill="none" stroke="#4FC3F7" stroke-width="1"/>
+  <text x="200" y="150" text-anchor="middle" font-size="9" fill="#4CAF50">Muchas burbujas</text>
+  <!-- Heartbeat indicator -->
+  <text x="200" y="58" text-anchor="middle" font-size="10" fill="#E91E63">¡O2!</text>
+  <!-- Tube 3 -->
+  <rect x="305" y="45" width="40" height="130" fill="#E3F2FD" opacity="0.4" stroke="#90CAF9" stroke-width="1.5" rx="5"/>
+  <rect x="305" y="45" width="40" height="130" fill="#F3E5F5" opacity="0.3" rx="5"/>
+  <rect x="305" y="90" width="40" height="85" fill="#CE93D8" opacity="0.5" rx="3"/>
+  <!-- No bubbles -->
+  <text x="325" y="150" text-anchor="middle" font-size="9" fill="#666">Sin burbujas</text>
+  <!-- Desnaturalized indicator -->
+  <text x="325" y="70" text-anchor="middle" font-size="8" fill="#E91E63">enzima</text>
+  <text x="325" y="80" text-anchor="middle" font-size="8" fill="#E91E63">muerta</text>
+</svg>`,
     options: ['La sangre contiene catalasa que descompone el H₂O₂; al hervir la sangre la enzima se desnaturalizó y perdió su función', 'La sangre reacciona químicamente con el H₂O₂ produciendo calor que genera las burbujas', 'El agua oxigenada hervida se descompone más rápido que la que está a temperatura ambiente', 'La sangre contiene hierro que cataliza la descomposición del H₂O₂ independientemente de la temperatura'],
     correct: 0,
     explanation: { correct: 'La catalasa de la sangre descompone el H₂O₂ en agua y oxígeno (las burbujas observadas). Al hervir la sangre, las proteínas, incluida la catalasa, se desnaturalizan irreversiblemente por el calor, perdiendo su estructura tridimensional y su función catalítica.', wrongs: ['Opción correcta', 'No es una reacción química directa con la sangre sino una catálisis enzimática', 'El agua oxigenada no se descompone significativamente solo por haber sido hervida', 'El calor desnaturaliza las enzimas, por lo que la catalasa no funciona después de hervir la sangre'] }
@@ -1870,6 +2169,50 @@ Del poema XX: "Puedo escribir los versos más tristes esta noche. / Escribir, po
     id: 'CN26', area: 'ciencias', areaName: 'Ciencias Naturales', difficulty: 'facil',
     context: `"En un experimento, se introduce una jeringa con 20 mL de aire a presión atmosférica y se tapa la salida. Al empujar el émbolo hasta reducir el volumen a 10 mL, se nota que es más difícil seguir empujando."`,
     question: `¿Qué ley física explica el aumento de la fuerza necesaria para comprimir el aire?`,
+    svg: `<svg viewBox="0 0 420 170" xmlns="http://www.w3.org/2000/svg" style="max-width:420px">
+  <text x="110" y="20" text-anchor="middle" font-size="12" font-weight="bold" fill="#333">Antes</text>
+  <text x="310" y="20" text-anchor="middle" font-size="12" font-weight="bold" fill="#333">DespuÃ©s</text>
+  <!-- Syringe before -->
+  <rect x="30" y="55" width="160" height="40" fill="#E3F2FD" opacity="0.5" stroke="#90CAF9" stroke-width="1.5" rx="4"/>
+  <rect x="30" y="60" width="160" height="30" fill="#BBDEFB" opacity="0.4"/>
+  <!-- Piston -->
+  <rect x="20" y="52" width="15" height="46" fill="#78909C" stroke="#546E7A" stroke-width="1.5" rx="2"/>
+  <text x="110" y="130" text-anchor="middle" font-size="13" fill="#1565C0" font-weight="bold">V = 20 mL</text>
+  <text x="100" y="80" text-anchor="middle" font-size="9" fill="#666">Aire</text>
+  <!-- Air molecules before -->
+  <circle cx="55" cy="75" r="3" fill="#E91E63" opacity="0.6"/>
+  <circle cx="75" cy="70" r="3" fill="#E91E63" opacity="0.6"/>
+  <circle cx="95" cy="80" r="3" fill="#E91E63" opacity="0.6"/>
+  <circle cx="115" cy="72" r="3" fill="#E91E63" opacity="0.6"/>
+  <circle cx="135" cy="78" r="3" fill="#E91E63" opacity="0.6"/>
+  <circle cx="155" cy="68" r="3" fill="#E91E63" opacity="0.6"/>
+  <circle cx="65" cy="82" r="3" fill="#E91E63" opacity="0.6"/>
+  <text x="110" y="145" text-anchor="middle" font-size="10" fill="#666">P = 1 atm</text>
+  <!-- Arrow -->
+  <text x="210" y="100" font-size="18" fill="#666">→</text>
+  <!-- Syringe after -->
+  <rect x="230" y="55" width="80" height="40" fill="#E3F2FD" opacity="0.5" stroke="#EF5350" stroke-width="1.5" rx="4"/>
+  <rect x="230" y="60" width="80" height="30" fill="#FFCDD2" opacity="0.4"/>
+  <!-- Piston -->
+  <rect x="310" y="52" width="15" height="46" fill="#78909C" stroke="#546E7A" stroke-width="1.5" rx="2"/>
+  <!-- Force arrow -->
+  <line x1="340" y1="75" x2="330" y2="75" stroke="#E91E63" stroke-width="2"/>
+  <text x="355" y="78" font-size="9" fill="#E91E63">Fuerza</text>
+  <text x="270" y="130" text-anchor="middle" font-size="13" fill="#E91E63" font-weight="bold">V = 10 mL</text>
+  <!-- Air molecules after (denser) -->
+  <circle cx="250" cy="72" r="3" fill="#E91E63" opacity="0.8"/>
+  <circle cx="265" cy="68" r="3" fill="#E91E63" opacity="0.8"/>
+  <circle cx="280" cy="75" r="3" fill="#E91E63" opacity="0.8"/>
+  <circle cx="255" cy="82" r="3" fill="#E91E63" opacity="0.8"/>
+  <circle cx="270" cy="78" r="3" fill="#E91E63" opacity="0.8"/>
+  <circle cx="285" cy="70" r="3" fill="#E91E63" opacity="0.8"/>
+  <circle cx="260" cy="62" r="3" fill="#E91E63" opacity="0.8"/>
+  <circle cx="275" cy="84" r="3" fill="#E91E63" opacity="0.8"/>
+  <circle cx="290" cy="78" r="3" fill="#E91E63" opacity="0.8"/>
+  <text x="270" y="145" text-anchor="middle" font-size="10" fill="#E91E63">P = 2 atm</text>
+  <!-- Formula -->
+  <text x="270" y="162" text-anchor="middle" font-size="10" fill="#333">PâVâ = PâVâ</text>
+</svg>`,
     options: ['Ley de Charles: a mayor presión menor temperatura', 'Ley de Boyle: a temperatura constante, la presión de un gas es inversamente proporcional al volumen', 'Ley de Gay-Lussac: el volumen es directamente proporcional a la temperatura', 'Principio de Pascal: la presión se transmite uniformemente en un fluido'],
     correct: 1,
     explanation: { correct: 'La ley de Boyle establece que, a temperatura constante, la presión de un gas es inversamente proporcional a su volumen (P₁V₁ = P₂V₂). Al reducir el volumen a la mitad (de 20 a 10 mL), la presión se duplica, por lo que se necesita más fuerza para comprimir el gas.', wrongs: ['La ley de Charles relaciona volumen y temperatura, no presión y volumen', 'Opción correcta', 'La ley de Gay-Lussac relaciona presión y temperatura a volumen constante', 'El principio de Pascal describe la transmisión de presión en fluidos, no la compresión de gases'] }
@@ -1886,6 +2229,59 @@ Del poema XX: "Puedo escribir los versos más tristes esta noche. / Escribir, po
     id: 'CN28', area: 'ciencias', areaName: 'Ciencias Naturales', difficulty: 'media',
     context: `"En un cultivo de guisantes, Mendel cruzó plantas de tallo alto (AA) con plantas de tallo enano (aa). Todas las plantas de la primera generación filial (F1) fueron altas. Luego, al cruzar dos plantas de la F1 entre sí, obtuvo una generación F2 con proporciones de 3:1 entre plantas altas y enanas."`,
     question: `Si en la F2 se obtuvieron 400 plantas, ¿cuántas se espera que sean homocigotas dominantes (AA)?`,
+    svg: `<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg" style="max-width:400px">
+  <text x="200" y="18" text-anchor="middle" font-size="12" font-weight="bold" fill="#333">Cruce parental (P): AA x aa</text>
+  <!-- Punnett Square F1 -->
+  <rect x="80" y="28" width="26" height="20" fill="none" stroke="#333" stroke-width="1"/>
+  <rect x="106" y="28" width="40" height="20" fill="none" stroke="#333" stroke-width="1"/>
+  <rect x="80" y="48" width="26" height="40" fill="#E8F5E9" stroke="#333" stroke-width="1"/>
+  <rect x="106" y="48" width="40" height="40" fill="#E8F5E9" stroke="#333" stroke-width="1"/>
+  <text x="93" y="42" text-anchor="middle" font-size="10" font-weight="bold" fill="#E91E63">A</text>
+  <text x="126" y="42" text-anchor="middle" font-size="10" font-weight="bold" fill="#E91E63">A</text>
+  <text x="93" y="73" text-anchor="middle" font-size="10" font-weight="bold" fill="#4CAF50">a</text>
+  <text x="126" y="73" text-anchor="middle" font-size="10" font-weight="bold" fill="#4CAF50">a</text>
+  <text x="93" y="68" text-anchor="middle" font-size="9" style="display:none">A</text>
+  <text x="126" y="68" text-anchor="middle" font-size="9" style="display:none">A</text>
+  <text x="93" y="68" text-anchor="middle" font-size="10" fill="#E91E63">A</text>
+  <text x="126" y="68" text-anchor="middle" font-size="10" fill="#E91E63">A</text>
+  <text x="93" y="86" text-anchor="middle" font-size="10" fill="#4CAF50">a</text>
+  <text x="126" y="86" text-anchor="middle" font-size="10" fill="#4CAF50">a</text>
+  <!-- Wait the grid is wrong. Let me redo it properly -->
+  <!-- Punnett: meed to show the 4 cells for F1 -->
+  <text x="200" y="40" text-anchor="middle" font-size="9" fill="#666">F1: 100% Aa (altas)</text>
+  <!-- Arrow -->
+  <text x="200" y="58" text-anchor="middle" font-size="14" fill="#666">â</text>
+  <text x="200" y="74" text-anchor="middle" font-size="9" fill="#666">F1 x F1: Aa x Aa</text>
+  <!-- Punnett Square F2 -->
+  <rect x="80" y="82" width="26" height="20" fill="none" stroke="#333" stroke-width="1"/>
+  <rect x="106" y="82" width="40" height="20" fill="none" stroke="#333" stroke-width="1"/>
+  <rect x="80" y="102" width="26" height="20" fill="#E8F5E9" stroke="#333" stroke-width="1"/>
+  <rect x="106" y="102" width="40" height="20" fill="#E8F5E9" stroke="#333" stroke-width="1"/>
+  <rect x="80" y="122" width="26" height="20" fill="#E8F5E9" stroke="#333" stroke-width="1"/>
+  <rect x="106" y="122" width="40" height="20" fill="#E8F5E9" stroke="#333" stroke-width="1"/>
+  <text x="93" y="95" text-anchor="middle" font-size="10" font-weight="bold" fill="#E91E63">A</text>
+  <text x="126" y="95" text-anchor="middle" font-size="10" font-weight="bold" fill="#4CAF50">a</text>
+  <text x="93" y="116" text-anchor="middle" font-size="10" fill="#E91E63">A</text>
+  <text x="126" y="116" text-anchor="middle" font-size="10" fill="#E91E63">A</text>
+  <text x="93" y="136" text-anchor="middle" font-size="10" fill="#4CAF50">a</text>
+  <text x="126" y="136" text-anchor="middle" font-size="10" fill="#4CAF50">a</text>
+  <!-- Labels over cells -->
+  <text x="93" y="112" text-anchor="middle" font-size="8" fill="#333">AA</text>
+  <text x="126" y="112" text-anchor="middle" font-size="8" fill="#333">Aa</text>
+  <text x="93" y="132" text-anchor="middle" font-size="8" fill="#333">Aa</text>
+  <text x="126" y="132" text-anchor="middle" font-size="8" fill="#333">aa</text>
+  <!-- F2 ratio bar chart -->
+  <text x="200" y="100" text-anchor="middle" font-size="11" font-weight="bold" fill="#333">F2: 100 : 200 : 100</text>
+  <rect x="165" y="110" width="20" height="80" fill="#4CAF50" opacity="0.8" rx="3"/>
+  <rect x="190" y="50" width="20" height="140" fill="#66BB6A" opacity="0.7" rx="3"/>
+  <rect x="215" y="110" width="20" height="80" fill="#81C784" opacity="0.6" rx="3"/>
+  <text x="175" y="195" text-anchor="middle" font-size="8" fill="#333">AA</text>
+  <text x="200" y="195" text-anchor="middle" font-size="8" fill="#333">Aa</text>
+  <text x="225" y="195" text-anchor="middle" font-size="8" fill="#333">aa</text>
+  <text x="175" y="106" text-anchor="middle" font-size="8" fill="#fff">100</text>
+  <text x="200" y="46" text-anchor="middle" font-size="8" fill="#fff">200</text>
+  <text x="225" y="106" text-anchor="middle" font-size="8" fill="#fff">100</text>
+</svg>`,
     options: ['300', '200', '100', '400'],
     correct: 2,
     explanation: { correct: 'En la F2, la proporción genotípica esperada es 1 AA : 2 Aa : 1 aa. Es decir, 1/4 de las plantas son AA homocigotas dominantes. De 400 plantas: 400 × 1/4 = 100 plantas AA.', wrongs: ['300 sería la suma de AA + Aa (plantas altas), no solo las homocigotas dominantes', '200 serían las heterocigotas (Aa), no las homocigotas dominantes (AA)', 'Opción correcta', 'No todas las plantas de la F2 son AA; la proporción esperada es 1/4 AA'] }
@@ -2032,6 +2428,40 @@ Del poema XX: "Puedo escribir los versos más tristes esta noche. / Escribir, po
     id: 'CN30', area: 'ciencias', areaName: 'Ciencias Naturales', difficulty: 'dificil',
     context: `"En un recipiente cerrado con un émbolo móvil, se tienen 2 litros de gas helio a 1 atm de presión y 27°C. Se calienta el gas hasta 127°C manteniendo la presión constante mediante el movimiento del émbolo."`,
     question: `¿Qué volumen ocupará el gas a 127°C?`,
+    svg: `<svg viewBox="0 0 420 180" xmlns="http://www.w3.org/2000/svg" style="max-width:420px">
+  <text x="110" y="20" text-anchor="middle" font-size="12" font-weight="bold" fill="#333">Antes: 27Â°C</text>
+  <text x="310" y="20" text-anchor="middle" font-size="12" font-weight="bold" fill="#E91E63">DespuÃ©s: 127Â°C</text>
+  <rect x="40" y="40" width="140" height="100" fill="#E3F2FD" opacity="0.4" stroke="#90CAF9" stroke-width="1.5" rx="5"/>
+  <rect x="40" y="40" width="140" height="100" fill="#BBDEFB" opacity="0.3" rx="5"/>
+  <rect x="35" y="35" width="150" height="10" fill="#78909C" stroke="#546E7A" stroke-width="1" rx="2"/>
+  <circle cx="65" cy="75" r="4" fill="#E91E63" opacity="0.5"/>
+  <circle cx="90" cy="65" r="4" fill="#E91E63" opacity="0.5"/>
+  <circle cx="115" cy="80" r="4" fill="#E91E63" opacity="0.5"/>
+  <circle cx="140" cy="70" r="4" fill="#E91E63" opacity="0.5"/>
+  <circle cx="75" cy="100" r="4" fill="#E91E63" opacity="0.5"/>
+  <circle cx="105" cy="95" r="4" fill="#E91E63" opacity="0.5"/>
+  <circle cx="135" cy="105" r="4" fill="#E91E63" opacity="0.5"/>
+  <circle cx="155" cy="85" r="4" fill="#E91E63" opacity="0.5"/>
+  <text x="110" y="155" text-anchor="middle" font-size="12" fill="#1565C0" font-weight="bold">V = 2 L</text>
+  <text x="200" y="100" font-size="22" fill="#666">→</text>
+  <text x="205" y="60" font-size="14" fill="#E91E63">Q</text>
+  <rect x="230" y="40" width="180" height="100" fill="#FFF3E0" opacity="0.4" stroke="#FFB74D" stroke-width="1.5" rx="5"/>
+  <rect x="230" y="40" width="180" height="100" fill="#FFE0B2" opacity="0.3" rx="5"/>
+  <rect x="225" y="35" width="190" height="10" fill="#78909C" stroke="#546E7A" stroke-width="1" rx="2"/>
+  <path d="M340 50 L340 35 M335 40 L340 35 L345 40" fill="none" stroke="#4CAF50" stroke-width="1.5"/>
+  <text x="355" y="38" font-size="8" fill="#4CAF50">Expande</text>
+  <circle cx="250" cy="75" r="4" fill="#E91E63" opacity="0.4"/>
+  <circle cx="280" cy="65" r="4" fill="#E91E63" opacity="0.4"/>
+  <circle cx="310" cy="85" r="4" fill="#E91E63" opacity="0.4"/>
+  <circle cx="340" cy="70" r="4" fill="#E91E63" opacity="0.4"/>
+  <circle cx="370" cy="80" r="4" fill="#E91E63" opacity="0.4"/>
+  <circle cx="260" cy="100" r="4" fill="#E91E63" opacity="0.4"/>
+  <circle cx="295" cy="105" r="4" fill="#E91E63" opacity="0.4"/>
+  <circle cx="330" cy="110" r="4" fill="#E91E63" opacity="0.4"/>
+  <circle cx="365" cy="105" r="4" fill="#E91E63" opacity="0.4"/>
+  <circle cx="390" cy="90" r="4" fill="#E91E63" opacity="0.4"/>
+  <text x="320" y="155" text-anchor="middle" font-size="12" fill="#E91E63" font-weight="bold">V = 2,67 L</text>
+</svg>`,
     options: ['2,67 L', '1,5 L', '2 L', '3 L'],
     correct: 0,
     explanation: { correct: 'A presión constante se aplica la ley de Charles: V₁/T₁ = V₂/T₂. Las temperaturas deben estar en Kelvin: T₁ = 27 + 273 = 300 K, T₂ = 127 + 273 = 400 K. V₂ = V₁ × T₂/T₁ = 2 L × 400/300 = 2 × 1,333 = 2,67 L.', wrongs: ['Opción correcta', 'Al aumentar la temperatura el volumen debe aumentar (ley de Charles), no disminuir', 'Si la temperatura cambia de 300 K a 400 K, el volumen debe aumentar proporcionalmente', '3 L requeriría una temperatura de 450 K (177°C), no 400 K'] }
@@ -2328,6 +2758,32 @@ Del poema XX: "Puedo escribir los versos más tristes esta noche. / Escribir, po
     },
     context: 'La tabla muestra el nÃºmero de hermanos de los estudiantes de un curso.',
     question: 'Â¿CuÃ¡l es el promedio de hermanos por estudiante?',
+    svg: `<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg" style="max-width:400px">
+  <text x="200" y="20" text-anchor="middle" font-size="13" font-weight="bold" fill="#333">NÃºmero de hermanos por estudiante</text>
+  <line x1="50" y1="170" x2="380" y2="170" stroke="#333" stroke-width="1.5"/>
+  <line x1="50" y1="170" x2="50" y2="30" stroke="#333" stroke-width="1.5"/>
+  <text x="95" y="185" text-anchor="middle" font-size="11" fill="#333">0</text>
+  <text x="165" y="185" text-anchor="middle" font-size="11" fill="#333">1</text>
+  <text x="235" y="185" text-anchor="middle" font-size="11" fill="#333">2</text>
+  <text x="305" y="185" text-anchor="middle" font-size="11" fill="#333">3</text>
+  <text x="375" y="185" text-anchor="middle" font-size="11" fill="#333">4</text>
+  <text x="40" y="170" text-anchor="end" font-size="10" fill="#666">0</text>
+  <text x="40" y="116" text-anchor="end" font-size="10" fill="#666">5</text>
+  <text x="40" y="60" text-anchor="end" font-size="10" fill="#666">10</text>
+  <line x1="50" y1="116" x2="380" y2="116" stroke="#ccc" stroke-width="0.5" stroke-dasharray="3"/>
+  <line x1="50" y1="60" x2="380" y2="60" stroke="#ccc" stroke-width="0.5" stroke-dasharray="3"/>
+  <rect x="72" y="74" width="46" height="96" fill="#42A5F5" opacity="0.8" rx="3"/>
+  <rect x="142" y="36" width="46" height="134" fill="#66BB6A" opacity="0.8" rx="3"/>
+  <rect x="212" y="100" width="46" height="70" fill="#FFA726" opacity="0.8" rx="3"/>
+  <rect x="282" y="120" width="46" height="50" fill="#EF5350" opacity="0.8" rx="3"/>
+  <rect x="352" y="135" width="46" height="35" fill="#AB47BC" opacity="0.8" rx="3"/>
+  <text x="95" y="70" text-anchor="middle" font-size="11" fill="#fff" font-weight="bold">8</text>
+  <text x="165" y="32" text-anchor="middle" font-size="11" fill="#fff" font-weight="bold">12</text>
+  <text x="235" y="96" text-anchor="middle" font-size="11" fill="#fff" font-weight="bold">5</text>
+  <text x="305" y="116" text-anchor="middle" font-size="11" fill="#fff" font-weight="bold">3</text>
+  <text x="375" y="131" text-anchor="middle" font-size="11" fill="#fff" font-weight="bold">2</text>
+  <text x="200" y="198" text-anchor="middle" font-size="10" fill="#666">NÃºmero de hermanos</text>
+</svg>`,
     options: ['1,3', '1,5', '1,7', '1,1'],
     correct: 0,
     explanation: { correct: 'Total estudiantes = 8+12+5+3+2 = 30. Suma hermanos = 0x8+1x12+2x5+3x3+4x2 = 0+12+10+9+8 = 39. Promedio = 39/30 = 1,3.', wrongs: ['Opción correcta', 'Calculaste la mediana en lugar del promedio', 'Calculaste la moda en lugar del promedio', 'Sumaste mal los datos'] }
@@ -2349,6 +2805,26 @@ Del poema XX: "Puedo escribir los versos más tristes esta noche. / Escribir, po
   {
     id: 'MT36', area: 'matematicas', areaName: 'Matemáticas', difficulty: 'dificil',
     question: `Una ventana en forma de rectángulo coronado por un semicírculo tiene 1 m de ancho y 2 m de alto en la parte rectangular. ¿Cuál es el área total de la ventana? (Use π = 3,14)`,
+    svg: `<svg viewBox="0 0 280 300" xmlns="http://www.w3.org/2000/svg" style="max-width:280px">
+  <!-- Semicircle top -->
+  <path d="M40 120 A100 100 0 0 1 240 120" fill="#B3E5FC" stroke="#0288D1" stroke-width="2"/>
+  <!-- Rectangle -->
+  <rect x="40" y="120" width="200" height="150" fill="#E1F5FE" stroke="#0288D1" stroke-width="2"/>
+  <!-- Window frame lines -->
+  <line x1="140" y1="120" x2="140" y2="270" stroke="#90CAF9" stroke-width="1.5"/>
+  <line x1="40" y1="195" x2="240" y2="195" stroke="#90CAF9" stroke-width="1.5"/>
+  <!-- Width label -->
+  <line x1="40" y1="285" x2="240" y2="285" stroke="#666" stroke-width="0.8"/>
+  <text x="140" y="295" text-anchor="middle" font-size="13" fill="#E91E63" font-weight="bold">1 m</text>
+  <!-- Height label -->
+  <line x1="250" y1="120" x2="250" y2="270" stroke="#666" stroke-width="0.8" stroke-dasharray="3"/>
+  <text x="260" y="200" text-anchor="middle" font-size="13" fill="#4CAF50" font-weight="bold">2 m</text>
+  <!-- Radius label for semicircle -->
+  <line x1="140" y1="120" x2="240" y2="120" stroke="#666" stroke-width="0.8" stroke-dasharray="3"/>
+  <text x="190" y="115" text-anchor="middle" font-size="10" fill="#FF9800">r = 0,5 m</text>
+  <text x="140" y="80" text-anchor="middle" font-size="10" fill="#333">Semicírculo</text>
+  <text x="140" y="230" text-anchor="middle" font-size="10" fill="#333">Rectángulo</text>
+</svg>`,
     options: ['2,39 m²', '2,00 m²', '2,79 m²', '3,14 m²'],
     correct: 0,
     explanation: { correct: 'Área rectángulo = 1 x 2 = 2 m². Semicírculo: radio = 0,5 m, área = (π x 0,5²)/2 = (3,14 x 0,25)/2 = 0,3925 m². Total = 2,3925 m² ≈ 2,39 m².', wrongs: ['Opción correcta', 'Solo calculaste el rectángulo, olvidaste el semicírculo', 'Calculaste círculo completo en lugar de semicírculo', 'Usaste diámetro en vez de radio'] }
@@ -2452,6 +2928,32 @@ Del poema XX: "Puedo escribir los versos más tristes esta noche. / Escribir, po
     },
     context: 'La tabla muestra la distribuciÃ³n de puntajes de 35 estudiantes.',
     question: 'Â¿En quÃ© intervalo de puntaje se encuentra la mediana?',
+    svg: `<svg viewBox="0 0 420 200" xmlns="http://www.w3.org/2000/svg" style="max-width:420px">
+  <text x="210" y="20" text-anchor="middle" font-size="13" font-weight="bold" fill="#333">DistribuciÃ³n de puntajes</text>
+  <line x1="50" y1="170" x2="400" y2="170" stroke="#333" stroke-width="1.5"/>
+  <line x1="50" y1="170" x2="50" y2="30" stroke="#333" stroke-width="1.5"/>
+  <text x="85" y="185" text-anchor="middle" font-size="9" fill="#333">10-19</text>
+  <text x="155" y="185" text-anchor="middle" font-size="9" fill="#333">20-29</text>
+  <text x="225" y="185" text-anchor="middle" font-size="9" fill="#333">30-39</text>
+  <text x="295" y="185" text-anchor="middle" font-size="9" fill="#333">40-49</text>
+  <text x="365" y="185" text-anchor="middle" font-size="9" fill="#333">50-59</text>
+  <text x="40" y="170" text-anchor="end" font-size="9" fill="#666">0</text>
+  <text x="40" y="100" text-anchor="end" font-size="9" fill="#666">6</text>
+  <text x="40" y="55" text-anchor="end" font-size="9" fill="#666">12</text>
+  <line x1="50" y1="100" x2="400" y2="100" stroke="#ccc" stroke-width="0.5" stroke-dasharray="3"/>
+  <line x1="50" y1="55" x2="400" y2="55" stroke="#ccc" stroke-width="0.5" stroke-dasharray="3"/>
+  <rect x="60" y="114" width="50" height="56" fill="#42A5F5" opacity="0.8" rx="2"/>
+  <rect x="130" y="92" width="50" height="78" fill="#42A5F5" opacity="0.8" rx="2"/>
+  <rect x="200" y="60" width="50" height="110" fill="#EF5350" opacity="0.8" rx="2"/>
+  <rect x="270" y="100" width="50" height="70" fill="#42A5F5" opacity="0.8" rx="2"/>
+  <rect x="340" y="128" width="50" height="42" fill="#42A5F5" opacity="0.8" rx="2"/>
+  <text x="85" y="110" text-anchor="middle" font-size="11" fill="#fff" font-weight="bold">5</text>
+  <text x="155" y="88" text-anchor="middle" font-size="11" fill="#fff" font-weight="bold">8</text>
+  <text x="225" y="56" text-anchor="middle" font-size="11" fill="#fff" font-weight="bold">12</text>
+  <text x="295" y="96" text-anchor="middle" font-size="11" fill="#fff" font-weight="bold">7</text>
+  <text x="365" y="124" text-anchor="middle" font-size="11" fill="#fff" font-weight="bold">3</text>
+  <text x="225" y="30" text-anchor="middle" font-size="10" fill="#E91E63" font-weight="bold">Â¡Mediana aquÃ!</text>
+</svg>`,
     options: ['20-29', '30-39', '40-49', '10-19'],
     correct: 1,
     explanation: { correct: 'Total = 35. Mediana = dato 18. Frecuencias acumuladas: 5, 13, 25... El dato 18 esta en el intervalo 30-39.', wrongs: ['OpciÃ³n correcta', 'Hasta 20-29 hay 13 datos, la mediana es el 18, esta en el siguiente', 'Hasta 40-49 hay 32 datos, la mediana es antes', 'El intervalo 30-39 contiene la posiciÃ³n 18'] }
@@ -3380,7 +3882,7 @@ function getAreaInfo(areaId) {
   return EXAM_CONFIG.areas.find(a => a.id === areaId);
 }
 
-// Render visual content (tables, images, comics, figures)
+// Render visual content (tables, images, SVG, comics, figures)
 function renderVisualContent(q) {
   let html = '';
 
@@ -3422,6 +3924,11 @@ function renderVisualContent(q) {
       html += `<div class="question-table-caption">${q.table.caption}</div>`;
     }
     html += '</div>';
+  }
+
+  // Inline SVG
+  if (q.svg) {
+    html += `<div class="question-svg">${q.svg}</div>`;
   }
 
   return html;

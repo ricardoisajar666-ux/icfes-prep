@@ -409,6 +409,23 @@ nav {
   background: #1a1a2e;
 }
 
+.question-svg {
+  margin-bottom: 16px;
+  text-align: center;
+  overflow-x: auto;
+  padding: 8px 0;
+}
+.question-svg svg {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  background: #fff;
+}
+[data-theme="dark"] .question-svg svg {
+  background: #1a1a2e;
+}
+
 .question-context {
   background: #f8f9fa;
   border-left: 3px solid var(--primary-light);
