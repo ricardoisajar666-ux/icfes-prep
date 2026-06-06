@@ -1,4 +1,4 @@
-// ===== PrepICFES - Stats Page =====
+﻿// ===== PrepICFES - Stats Page =====
 function renderStats() {
   const sims = window.simulacros || [];
   const studyCorrect = Object.values(APP.studyAnswers).filter(v => v === true).length;
@@ -47,8 +47,8 @@ function renderStats() {
 
   main.innerHTML = `
     <div class="container stats-page">
-      <h2 class="section-title">📈 Estadísticas</h2>
-      <p class="section-subtitle">Sigue tu progreso y encuentra áreas de mejora</p>
+      <h2 class="section-title">📈 Estad\u00edsticas</h2>
+      <p class="section-subtitle">Sigue tu progreso y encuentra \u00e1reas de mejora</p>
 
       <div class="stats-grid">
         <div class="stat-card">
@@ -64,7 +64,7 @@ function renderStats() {
         <div class="stat-card">
           <div class="stat-icon">🎯</div>
           <div class="stat-value" style="color:${lastScore >= bestScore - 50 ? 'var(--success)' : 'var(--error)'}">${lastScore}</div>
-          <div class="stat-label">Último puntaje</div>
+          <div class="stat-label">\u00faltimo puntaje</div>
         </div>
         <div class="stat-card">
           <div class="stat-icon">📝</div>
@@ -87,7 +87,7 @@ function renderStats() {
         <div class="stat-card">
           <div class="stat-icon">🎯</div>
           <div class="stat-value" style="color:${accuracyPct >= 70 ? 'var(--success)' : accuracyPct >= 40 ? 'var(--warning)' : 'var(--error)'}">${accuracyPct}%</div>
-          <div class="stat-label">Precisión general</div>
+          <div class="stat-label">Precisi\u00f3n general</div>
         </div>
         <div class="stat-card">
           <div class="stat-icon">⏱️</div>
@@ -98,7 +98,7 @@ function renderStats() {
 
       ${hasData ? `
         <div class="stat-card-large">
-          <h3 style="font-weight:800;margin-bottom:20px">📊 Desempeño por área</h3>
+          <h3 style="font-weight:800;margin-bottom:20px">📊 Desempe\u00f1o por \u00e1rea</h3>
           ${EXAM_CONFIG.areas.map(a => {
             const perf = areaPerf[a.id];
             const pct = perf.total > 0 ? Math.round((perf.correctas / perf.total) * 100) : 0;
@@ -119,7 +119,7 @@ function renderStats() {
 
         ${recentSims.length > 0 ? `
           <div class="stat-card-large">
-            <h3 style="font-weight:800;margin-bottom:20px">📈 Evolución de puntajes</h3>
+            <h3 style="font-weight:800;margin-bottom:20px">📈 Evoluci\u00f3n de puntajes</h3>
             <div class="stats-chart">
               ${recentSims.map((s, i) => {
                 const height = Math.max(4, (s.puntaje || 0) / 5);
@@ -127,7 +127,7 @@ function renderStats() {
                 return `<div class="chart-bar" style="height:${height}%;background:linear-gradient(180deg,${color},${color}cc)" title="${s.puntaje} pts - ${new Date(s.date).toLocaleDateString('es-CO')}"><span class="chart-label">#${i + 1}</span></div>`;
               }).join('')}
             </div>
-            <div style="text-align:center;font-size:13px;color:var(--text-light);margin-top:24px">Últimos ${recentSims.length} simulacros</div>
+            <div style="text-align:center;font-size:13px;color:var(--text-light);margin-top:24px">\u00faltimos ${recentSims.length} simulacros</div>
           </div>
         ` : ''}
 
@@ -150,8 +150,8 @@ function renderStats() {
       ` : `
         <div class="empty-state">
           <div class="icon">📊</div>
-          <h3>Aún no hay datos estadísticos</h3>
-          <p>Comienza a estudiar y a hacer simulacros para ver tu progreso aquí.</p>
+          <h3>A\u00fan no hay datos estad\u00edsticos</h3>
+          <p>Comienza a estudiar y a hacer simulacros para ver tu progreso aqu\u00ed.</p>
           <div class="flex gap-2" style="justify-content:center;margin-top:16px">
             <button class="btn btn-primary" onclick="navigate('study')">📖 Ir a estudiar</button>
             <button class="btn btn-outline" onclick="navigate('simulacro')">⏱️ Hacer simulacro</button>

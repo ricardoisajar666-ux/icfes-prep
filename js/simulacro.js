@@ -1,4 +1,4 @@
-// ===== PrepICFES - Simulacro Mode =====
+﻿// ===== PrepICFES - Simulacro Mode =====
 let simulacroTimer = null;
 let simulacroState = null;
 
@@ -7,35 +7,35 @@ function renderSimulacroSelect() {
   main.innerHTML = `
     <div class="container">
       <h2 class="section-title">⏱️ Modo Simulacro</h2>
-      <p class="section-subtitle">Elige el nivel que se ajuste a tu preparación. Cada simulacro tiene tiempo límite y un sistema de puntuación realista.</p>
+      <p class="section-subtitle">Elige el nivel que se ajuste a tu preparaci\u00f3n. Cada simulacro tiene tiempo l\u00edmite y un sistema de puntuaci\u00f3n realista.</p>
 
       <div class="simulacro-select">
         <div class="difficulty-card easy" onclick="startSimulacro('facil')">
           <div class="difficulty-icon">🌱</div>
-          <h3>Fácil</h3>
+          <h3>F\u00e1cil</h3>
           <p>Perfecto para empezar y ganar confianza</p>
-          <div class="difficulty-detail">50 preguntas · 45 minutos</div>
+          <div class="difficulty-detail">50 preguntas \u00b7 45 minutos</div>
         </div>
         <div class="difficulty-card medium" onclick="startSimulacro('intermedio')">
           <div class="difficulty-icon">🔥</div>
           <h3>Intermedio</h3>
           <p>Pon a prueba tu resistencia</p>
-          <div class="difficulty-detail">150 preguntas · 90 minutos</div>
+          <div class="difficulty-detail">150 preguntas \u00b7 90 minutos</div>
         </div>
         <div class="difficulty-card hard" onclick="startSimulacro('avanzado')">
           <div class="difficulty-icon">💀</div>
           <h3>Avanzado</h3>
-          <p>Simulación completa del examen real</p>
-          <div class="difficulty-detail">254 preguntas · 3 horas</div>
+          <p>Simulaci\u00f3n completa del examen real</p>
+          <div class="difficulty-detail">254 preguntas \u00b7 3 horas</div>
         </div>
       </div>
 
       <div class="question-card">
-        <h3 style="margin-bottom:16px;font-weight:800">📊 Distribución del examen avanzado</h3>
-        <p style="font-size:14px;color:var(--text-secondary);margin-bottom:20px">El simulacro avanzado replica la distribución oficial del ICFES Saber 11°:</p>
+        <h3 style="margin-bottom:16px;font-weight:800">📊 Distribuci\u00f3n del examen avanzado</h3>
+        <p style="font-size:14px;color:var(--text-secondary);margin-bottom:20px">El simulacro avanzado replica la distribuci\u00f3n oficial del ICFES Saber 11\u00b0:</p>
         ${Object.entries(EXAM_CONFIG.avanzadoBreakdown).map(([area, count]) => {
           const info = getAreaInfo(area);
-          return `<div class="area-row"><span class="area-name" style="color:${info ? info.color : '#333'}">${info ? info.icon + ' ' + info.name : area}</span><div class="area-bar"><div class="area-bar-fill" style="width:${(count / 254) * 100}%;background:${info ? info.color : '#333'}"></div></div><span class="area-score">${count} preg · ${info ? Math.round(info.weight * 100) : 0}%</span></div>`;
+          return `<div class="area-row"><span class="area-name" style="color:${info ? info.color : '#333'}">${info ? info.icon + ' ' + info.name : area}</span><div class="area-bar"><div class="area-bar-fill" style="width:${(count / 254) * 100}%;background:${info ? info.color : '#333'}"></div></div><span class="area-score">${count} preg \u00b7 ${info ? Math.round(info.weight * 100) : 0}%</span></div>`;
         }).join('')}
       </div>
     </div>
@@ -98,9 +98,9 @@ function renderSimulacroPlaying() {
   const answeredCount = Object.keys(state.answers).length;
   const timerClass = state.timeRemaining <= 60 ? 'danger' : state.timeRemaining <= 300 ? 'warning' : '';
 
-  const diffLabel = q.difficulty === 'dificil' ? '<span class="difficulty-badge dif dificil">Difícil</span>'
+  const diffLabel = q.difficulty === 'dificil' ? '<span class="difficulty-badge dif dificil">Dif\u00edcil</span>'
     : q.difficulty === 'media' ? '<span class="difficulty-badge dif media">Media</span>'
-    : '<span class="difficulty-badge dif facil">Fácil</span>';
+    : '<span class="difficulty-badge dif facil">F\u00e1cil</span>';
 
   const main = document.getElementById('main-content');
   main.innerHTML = `
@@ -204,8 +204,8 @@ function confirmEndSimulacro() {
   overlay.id = 'modal-overlay';
   overlay.innerHTML = `
     <div class="modal-box">
-      <h2>✋ ¿Terminar simulacro?</h2>
-      <p>Has respondido ${answered} de ${total} preguntas. ${total - answered} quedarán sin responder.</p>
+      <h2>✋ \u00bfTerminar simulacro?</h2>
+      <p>Has respondido ${answered} de ${total} preguntas. ${total - answered} quedar\u00e1n sin responder.</p>
       <div class="modal-actions">
         <button class="btn btn-secondary" onclick="document.getElementById('modal-overlay').remove()">Seguir</button>
         <button class="btn btn-danger" onclick="finishSimulacro()">Terminar ahora</button>
@@ -276,7 +276,7 @@ function renderSimulacroResults(results) {
     <div class="container">
       <div class="results-container">
         <div class="results-header">
-          <div style="font-size:14px;color:var(--text-secondary);margin-bottom:8px">${config.label} · ${new Date(results.date).toLocaleDateString('es-CO')}</div>
+          <div style="font-size:14px;color:var(--text-secondary);margin-bottom:8px">${config.label} \u00b7 ${new Date(results.date).toLocaleDateString('es-CO')}</div>
           <div class="results-score">${results.puntaje}</div>
           <div style="font-size:16px;color:var(--text-secondary)">de 500 puntos</div>
           <div class="score-bar" style="max-width:300px;margin:12px auto"><div class="score-bar-fill" style="width:${results.puntaje / 5}%"></div></div>
@@ -292,7 +292,7 @@ function renderSimulacroResults(results) {
         </div>
 
         <div class="area-breakdown">
-          <h3 style="margin-bottom:16px;font-weight:800">📊 Desempeño por área</h3>
+          <h3 style="margin-bottom:16px;font-weight:800">📊 Desempe\u00f1o por \u00e1rea</h3>
           ${EXAM_CONFIG.areas.map(a => {
             const ar = results.areaResults[a.id];
             if (!ar) return '';
@@ -305,7 +305,7 @@ function renderSimulacroResults(results) {
         <div class="question-nav" style="justify-content:center">
           <button class="btn btn-primary btn-lg" onclick="navigate('simulacro')">🔄 Nuevo simulacro</button>
           <button class="btn btn-outline btn-lg" onclick="reviewSimulacroAnswers(${window.simulacros.length - 1})">📝 Revisar respuestas</button>
-          <button class="btn btn-secondary btn-lg" onclick="navigate('stats')">📈 Ver estadísticas</button>
+          <button class="btn btn-secondary btn-lg" onclick="navigate('stats')">📈 Ver estad\u00edsticas</button>
           <button class="btn btn-sm btn-outline" onclick="shareResults(window.simulacros[${window.simulacros.length - 1}])" style="border-color:#25D366;color:#25D366">📤 Compartir</button>
         </div>
       </div>
@@ -320,8 +320,8 @@ function reviewSimulacroAnswers(simIndex) {
   let html = `
     <div class="container">
       <button class="btn btn-secondary mb-4" onclick="renderSimulacroResults(window.simulacros[${simIndex}])">← Volver a resultados</button>
-      <h2 class="section-title">📝 Revisión de respuestas</h2>
-      <p class="section-subtitle">Revisa cada pregunta para ver cuál era la respuesta correcta</p>
+      <h2 class="section-title">📝 Revisi\u00f3n de respuestas</h2>
+      <p class="section-subtitle">Revisa cada pregunta para ver cu\u00e1l era la respuesta correcta</p>
   `;
   sim.questions.forEach((qData, idx) => {
     const q = QUESTIONS.find(qq => qq.id === qData.id);
@@ -337,7 +337,7 @@ function reviewSimulacroAnswers(simIndex) {
         </div>
         <div style="font-size:14px;font-weight:500;margin-bottom:8px">${idx + 1}. ${q.question.length > 120 ? q.question.substring(0, 120) + '...' : q.question}</div>
         <div style="font-size:13px;color:var(--text-secondary)">
-          Tu respuesta: <strong>${userAns !== undefined ? 'ABCD'[userAns] : 'No respondiste'}</strong> · Correcta: <strong style="color:var(--success)">${'ABCD'[qData.correct]}</strong>
+          Tu respuesta: <strong>${userAns !== undefined ? 'ABCD'[userAns] : 'No respondiste'}</strong> \u00b7 Correcta: <strong style="color:var(--success)">${'ABCD'[qData.correct]}</strong>
         </div>
       </div>
     `;
@@ -350,7 +350,7 @@ function shareResults(results) {
   if (!results) return;
   const timeM = Math.floor(results.timeSpent / 60);
   const timeS = results.timeSpent % 60;
-  const text = `📚 PrepICFES - Resultado Simulacro\nPuntaje: ${results.puntaje}/500\n✅ Correctas: ${results.correctas}\n❌ Incorrectas: ${results.incorrectas}\n⏱️ Tiempo: ${timeM}m ${String(timeS).padStart(2, '0')}s\n\n🧠 Sigue practicando en icfes-prep.netlify.app`;
+  const text = `\u{1f4da} PrepICFES - Resultado Simulacro\nPuntaje: ${results.puntaje}/500\n\u2705 Correctas: ${results.correctas}\n\u274c Incorrectas: ${results.incorrectas}\n\u23f1\ufe0f Tiempo: ${timeM}m ${String(timeS).padStart(2, '0')}s\n\n\u{1f9e0} Sigue practicando en icfes-prep.vercel.app`;
   if (navigator.share) navigator.share({title: 'PrepICFES - Resultado', text}).catch(() => {});
   else if (navigator.clipboard) navigator.clipboard.writeText(text).then(() => alert('📋 Resultado copiado al portapapeles')).catch(() => {});
   else {

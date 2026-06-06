@@ -1,4 +1,4 @@
-QUESTIONS.push(
+﻿QUESTIONS.push(
   {
     id: "EX01",
     area: "lectura",
@@ -48,7 +48,7 @@ QUESTIONS.push(
     area: "lectura",
     areaName: "Lectura Cr\u00edtica",
     difficulty: 5,
-    context: "Lea el siguiente fragmento de un texto academico sobre educacion intercultural:\n\n\"El sistema educativo colombiano, heredero de una tradicion occidental y eurocentrica, ha enfrentado el reto de integrar las cosmogonias indigenas sin caer en una exoticizacion folklorica que reduzca las culturas ancestrales a meros objetos de estudio curricular. La Ley 115 de 1994 establece la obligatoriedad de la educacion intercultural, pero su implementacion efectiva ha sido desigual. En regiones como el Cauca, Nariño y La Guajira, existen experiencias exitosas donde comunidades indigenas han logrado co-gestionar escuelas que integran el conocimiento tradicional con el curriculum nacional. Sin embargo, estos casos excepcionales contrastan con la realidad de muchas zonas donde la educacion intercultural se reduce a la inclusion superficial de elementos culturalmente marcados (trajes, dances, festividades) sin un dialogue epistemologico genuino entre las diferentes formas de conocimiento.\"\n\nSegun el autor, el principal problema de la educacion intercultural en Colombia es:",
+    context: "Lea el siguiente fragmento de un texto academico sobre educacion intercultural:\n\n\"El sistema educativo colombiano, heredero de una tradicion occidental y eurocentrica, ha enfrentado el reto de integrar las cosmogonias indigenas sin caer en una exoticizacion folklorica que reduzca las culturas ancestrales a meros objetos de estudio curricular. La Ley 115 de 1994 establece la obligatoriedad de la educacion intercultural, pero su implementacion efectiva ha sido desigual. En regiones como el Cauca, Nari\u00f1o y La Guajira, existen experiencias exitosas donde comunidades indigenas han logrado co-gestionar escuelas que integran el conocimiento tradicional con el curriculum nacional. Sin embargo, estos casos excepcionales contrastan con la realidad de muchas zonas donde la educacion intercultural se reduce a la inclusion superficial de elementos culturalmente marcados (trajes, dances, festividades) sin un dialogue epistemologico genuino entre las diferentes formas de conocimiento.\"\n\nSegun el autor, el principal problema de la educacion intercultural en Colombia es:",
     options: [
       "La falta de recursos economicos para implementar programas educativos en zonas rurales.",
       "La ausencia de un marco legal que regule la educacion para comunidades indigenas.",
@@ -667,11 +667,11 @@ QUESTIONS.push(
     area: "ciencias",
     areaName: "Ciencias Naturales",
     difficulty: 4,
-    context: "El siguiente cuadro resume las propiedades del agua y su importancia biologica:\n\n| Propiedad            | Descripcion                                         | Importancia biologica                    |\n|----------------------|-----------------------------------------------------|------------------------------------------|\n| Cohesion             | Fuerza de atraccion entre moléculas de agua         | Formacion de gotas, tension superficial  |\n| Adhesion             | Atraccion entre agua y otras superficies            | Capilaridad en plantas                   |\n| Calor especifico     | Alta capacidad de absorber calor                    | Regulacion termica de organismos         |\n| Densidad anomala     | El hielo es menos denso que el agua liquida         | Supervivencia en cuerpos de agua         |\n| Polaridad            | Molécula polar con carga parcial                    | Disolvente universal                     |\n\nLa propiedad del agua que permite que los arboles transporten agua desde sus raices hasta las hojas mas altas es:",
+    context: "El siguiente cuadro resume las propiedades del agua y su importancia biologica:\n\n| Propiedad            | Descripcion                                         | Importancia biologica                    |\n|----------------------|-----------------------------------------------------|------------------------------------------|\n| Cohesion             | Fuerza de atraccion entre mol\u00e9culas de agua         | Formacion de gotas, tension superficial  |\n| Adhesion             | Atraccion entre agua y otras superficies            | Capilaridad en plantas                   |\n| Calor especifico     | Alta capacidad de absorber calor                    | Regulacion termica de organismos         |\n| Densidad anomala     | El hielo es menos denso que el agua liquida         | Supervivencia en cuerpos de agua         |\n| Polaridad            | Mol\u00e9cula polar con carga parcial                    | Disolvente universal                     |\n\nLa propiedad del agua que permite que los arboles transporten agua desde sus raices hasta las hojas mas altas es:",
     options: [
       "El alto calor especifico del agua.",
       "La cohesion y adhesion del agua.",
-      "La polaridad de la molécula de agua.",
+      "La polaridad de la mol\u00e9cula de agua.",
       "La densidad anomala del hielo."
     ],
     correct: 1,

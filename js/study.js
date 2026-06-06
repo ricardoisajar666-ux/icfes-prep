@@ -7,6 +7,9 @@ function renderStudy() {
   let showErrorsOnly = false;
   let shuffledPool = [];
   let poolVersion = 0;
+  let studyTimer = null;
+  let studyTimeRemaining = 0;
+  let studyTimerActive = false;
 
   function shuffle(arr) {
     const a = [...arr];
@@ -42,6 +45,33 @@ function renderStudy() {
     return [...shuffle(unanswered), ...shuffle(wrong), ...shuffle(correct)];
   }
 
+  function startStudyTimer(minutes) {
+    if (studyTimer) clearInterval(studyTimer);
+    studyTimeRemaining = minutes * 60;
+    studyTimerActive = true;
+    studyTimer = setInterval(() => {
+      studyTimeRemaining--;
+      const el = document.getElementById('study-timer-display');
+      if (el) {
+        const m = Math.floor(studyTimeRemaining / 60);
+        const s = studyTimeRemaining % 60;
+        el.textContent = `${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
+        el.className = studyTimeRemaining <= 60 ? 'danger' : studyTimeRemaining <= 300 ? 'warning' : '';
+      }
+      if (studyTimeRemaining <= 0) {
+        clearInterval(studyTimer);
+        studyTimerActive = false;
+        alert('\u23f0 Tiempo de estudio terminado. \u00a1Buen trabajo!');
+      }
+    }, 1000);
+  }
+
+  function stopStudyTimerFunc() {
+    if (studyTimer) clearInterval(studyTimer);
+    studyTimerActive = false;
+    studyTimeRemaining = 0;
+  }
+
   function renderQuestionView() {
     const filtered = getFiltered();
     if (!filtered.length) {
@@ -67,11 +97,17 @@ function renderStudy() {
 
     const statusIcon = answered ? (isCorrect ? '<span style="color:var(--success)">\u2705</span>' : '<span style="color:var(--error)">\u274c</span>') : '<span style="color:var(--text-secondary)">\u25cb</span>';
 
+    const timerMins = Math.floor(studyTimeRemaining / 60);
+    const timerSecs = studyTimeRemaining % 60;
+
     main.innerHTML = `
       <div class="container">
         <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;margin-bottom:8px">
           <h2 class="section-title" style="margin-bottom:0">\u{1f4d6} Modo Estudio</h2>
-          <button class="btn btn-outline btn-sm" onclick="showStudyGuide()">\u{1f4cb} Gu\u00eda r\u00e1pida</button>
+          <div style="display:flex;gap:8px;align-items:center">
+            ${studyTimerActive ? `<span id="study-timer-display" class="${studyTimeRemaining <= 60 ? 'danger' : studyTimeRemaining <= 300 ? 'warning' : ''}" style="font-family:monospace;font-size:18px;font-weight:700;color:var(--primary);background:var(--bg);padding:4px 12px;border-radius:8px;border:2px solid var(--border)">${String(timerMins).padStart(2, '0')}:${String(timerSecs).padStart(2, '0')}</span><button class="btn btn-sm btn-outline" onclick="stopStudyTimer()">\u23f9 Detener</button>` : `<button class="btn btn-sm btn-outline" onclick="showStudyTimerDialog()">\u23f0 Temporizador</button>`}
+            <button class="btn btn-outline btn-sm" onclick="showStudyGuide()">\u{1f4cb} Gu\u00eda r\u00e1pida</button>
+          </div>
         </div>
 
         <div class="area-filter">
@@ -179,7 +215,43 @@ function renderStudy() {
   };
   window.prevStudyQuestion = () => { if (APP.currentQuestionIndex > 0) { APP.currentQuestionIndex--; renderQuestionView(); } };
 
+  window.showStudyTimerDialog = () => {
+    const overlay = document.createElement('div');
+    overlay.className = 'modal-overlay';
+    overlay.id = 'study-timer-overlay';
+    overlay.innerHTML = `
+      <div class="modal-box">
+        <h2>\u23f0 Temporizador de estudio</h2>
+        <p style="color:var(--text-secondary);margin-bottom:16px">Establece un l\u00edmite de tiempo para tu sesi\u00f3n de estudio.</p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;justify-content:center">
+          <button class="btn btn-outline" onclick="setStudyTimer(15)">15 min</button>
+          <button class="btn btn-outline" onclick="setStudyTimer(30)">30 min</button>
+          <button class="btn btn-primary" onclick="setStudyTimer(45)">45 min</button>
+          <button class="btn btn-outline" onclick="setStudyTimer(60)">1 hora</button>
+          <button class="btn btn-outline" onclick="setStudyTimer(90)">1.5 horas</button>
+        </div>
+        <div class="modal-actions" style="margin-top:12px">
+          <button class="btn btn-secondary" onclick="document.getElementById('study-timer-overlay').remove()">Cancelar</button>
+        </div>
+      </div>
+    `;
+    document.body.appendChild(overlay);
+  };
+
+  window.setStudyTimer = (minutes) => {
+    const overlay = document.getElementById('study-timer-overlay');
+    if (overlay) overlay.remove();
+    startStudyTimer(minutes);
+    renderQuestionView();
+  };
+
+  window.stopStudyTimer = () => {
+    stopStudyTimerFunc();
+    renderQuestionView();
+  };
+
   window.showStudyGuide = () => {
+    if (studyTimer) clearInterval(studyTimer);
     const answered = Object.keys(APP.studyAnswers).filter(k => !k.endsWith('_selected'));
     const corrects = answered.filter(k => APP.studyAnswers[k] === true);
     const wrongs = answered.filter(k => APP.studyAnswers[k] === false);

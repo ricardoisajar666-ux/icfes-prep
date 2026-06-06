@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Preguntas de Textos Mixtos / Discontinuos (ICFES)
  * 40 preguntas: infograf\u00edas, tablas, cartas, instrucciones, mapas
  * IDs: TM01 - TM40
@@ -19,7 +19,7 @@ QUESTIONS.push({
   question: "\u00bfQu\u00e9 interpretaci\u00f3n es M\u00c1S precisa sobre el patr\u00f3n demogr\u00e1fico mostrado?",
   options: [
     "La poblaci\u00f3n se duplic\u00f3 en el per\u00edodo analizado, evidenciando una expansi\u00f3n urbana acelerada",
-    "El grupo et\u00e1reo de 0-14 a\u00f1os representa la mayor proporción, indicando una pir\u00e1mide poblacional jovencol",
+    "El grupo et\u00e1reo de 0-14 a\u00f1os representa la mayor proporci\u00f3n, indicando una pir\u00e1mide poblacional jovencol",
     "El crecimiento fue constante y sin fluctuaciones significativas entre los periodos reportados",
     "La tasa de crecimiento disminuy\u00f3 progresivamente entre 2010 y 2023"
   ],
@@ -211,12 +211,12 @@ QUESTIONS.push({
   area: "matematicas",
   areaName: "Matem\u00e1ticas",
   difficulty: 2,
-  context: "Una profesora registr\u00f3 las notas de sus estudiantes en el siguiente tabla:\n\nEstudiante | Nota 1 | Nota 2 | Nota 3 | Promedio\nCarlos     | 4.5    | 3.8    | 4.2    | ?\nMar\u00eda     | 3.2    | 4.5    | 4.8    | ?\nAndrés     | 4.0    | 4.0    | 4.0    | ?\nLuciana    | 2.8    | 3.5    | 4.5    | ?\nPedro      | 5.0    | 3.0    | 3.5    | ?",
+  context: "Una profesora registr\u00f3 las notas de sus estudiantes en el siguiente tabla:\n\nEstudiante | Nota 1 | Nota 2 | Nota 3 | Promedio\nCarlos     | 4.5    | 3.8    | 4.2    | ?\nMar\u00eda     | 3.2    | 4.5    | 4.8    | ?\nAndr\u00e9s     | 4.0    | 4.0    | 4.0    | ?\nLuciana    | 2.8    | 3.5    | 4.5    | ?\nPedro      | 5.0    | 3.0    | 3.5    | ?",
   table: [
     ["Estudiante", "Nota 1", "Nota 2", "Nota 3", "Promedio"],
     ["Carlos", "4.5", "3.8", "4.2", "?"],
     ["Mar\u00eda", "3.2", "4.5", "4.8", "?"],
-    ["Andrés", "4.0", "4.0", "4.0", "?"],
+    ["Andr\u00e9s", "4.0", "4.0", "4.0", "?"],
     ["Luciana", "2.8", "3.5", "4.5", "?"],
     ["Pedro", "5.0", "3.0", "3.5", "?"]
   ],
@@ -225,7 +225,7 @@ QUESTIONS.push({
     "Mar\u00eda con un promedio de 4.17",
     "Carlos con un promedio de 4.17",
     "Pedro con un promedio de 3.83",
-    "Andrés con un promedio exacto de 4.0"
+    "Andr\u00e9s con un promedio exacto de 4.0"
   ],
   correct: 0,
   explanation: {
@@ -233,7 +233,7 @@ QUESTIONS.push({
     wrongs: [
       "Carlos tambi\u00e9n tiene 4.17, pero la opci\u00f3n indica solo a Carlos como \u00fanico ganador.",
       "Pedro: (5.0+3.0+3.5)/3 = 11.5/3 = 3.83, que es menor.",
-      "Andrés tiene 4.0 exacto, que es menor que 4.17."
+      "Andr\u00e9s tiene 4.0 exacto, que es menor que 4.17."
     ]
   }
 });
@@ -529,7 +529,7 @@ QUESTIONS.push({
   area: "ingles",
   areaName: "Ingl\u00e9s",
   difficulty: 2,
-  context: "Read the following invitation:\n\n=========================================\nYou are cordially invited to the\nANNUAL SCIENCE FAIR\n=========================================\n\nDate: Saturday, March 22, 2025\nTime: 9:00 AM - 4:00 PM\nVenue: Lincoln High School Gymnasium\n1234 Oak Street, Springfield\n\nJoin us for a day of discovery and innovation!\n\nFeatured Activities:\n- Student project exhibitions (grades 6-12)\n- Live science experiments by Prof. María González\n- Robotics competition (registration required)\n- STEM career workshop for parents\n- Free refreshments and food trucks\n\nAdmission: FREE for all attendees\nParking: Available in Lot B (enter from Elm Street)\n\nRSVP by March 15 to sciencefair@lincoln.edu\n\nOrganized by the Lincoln Science Department\n=========================================",
+  context: "Read the following invitation:\n\n=========================================\nYou are cordially invited to the\nANNUAL SCIENCE FAIR\n=========================================\n\nDate: Saturday, March 22, 2025\nTime: 9:00 AM - 4:00 PM\nVenue: Lincoln High School Gymnasium\n1234 Oak Street, Springfield\n\nJoin us for a day of discovery and innovation!\n\nFeatured Activities:\n- Student project exhibitions (grades 6-12)\n- Live science experiments by Prof. Mar\u00eda Gonz\u00e1lez\n- Robotics competition (registration required)\n- STEM career workshop for parents\n- Free refreshments and food trucks\n\nAdmission: FREE for all attendees\nParking: Available in Lot B (enter from Elm Street)\n\nRSVP by March 15 to sciencefair@lincoln.edu\n\nOrganized by the Lincoln Science Department\n=========================================",
   question: "Which detail is essential for someone who wants to participate in the robotics competition?",
   options: [
     "They must register beforehand, as indicated by the note next to the robotics competition entry",
@@ -553,7 +553,7 @@ QUESTIONS.push({
   area: "ingles",
   areaName: "Ingl\u00e9s",
   difficulty: 3,
-  context: "Read the following thank-you letter:\n\nDear Professor Williams,\n\nI hope this letter finds you well. I am writing to express my sincere gratitude for the recommendation letter you wrote on my behalf for the graduate program at Stanford University.\n\nI am thrilled to inform you that I have been accepted into the program with a full scholarship. Your mentorship during my undergraduate research project on renewable energy systems was instrumental in shaping my academic trajectory.\n\nThe skills I developed under your guidance — particularly in data analysis and scientific writing — were highlighted in my application and clearly made a strong impression on the admissions committee.\n\nI would love to stay in touch and keep you updated on my progress. Would you be available for a brief meeting before I leave for California?\n\nWith deepest appreciation,\nEmily Rodriguez",
+  context: "Read the following thank-you letter:\n\nDear Professor Williams,\n\nI hope this letter finds you well. I am writing to express my sincere gratitude for the recommendation letter you wrote on my behalf for the graduate program at Stanford University.\n\nI am thrilled to inform you that I have been accepted into the program with a full scholarship. Your mentorship during my undergraduate research project on renewable energy systems was instrumental in shaping my academic trajectory.\n\nThe skills I developed under your guidance \u2014 particularly in data analysis and scientific writing \u2014 were highlighted in my application and clearly made a strong impression on the admissions committee.\n\nI would love to stay in touch and keep you updated on my progress. Would you be available for a brief meeting before I leave for California?\n\nWith deepest appreciation,\nEmily Rodriguez",
   question: "What can be inferred about the relationship between Emily and Professor Williams?",
   options: [
     "Professor Williams was Emily's academic mentor who guided her research and helped her advance academically",
@@ -577,7 +577,7 @@ QUESTIONS.push({
   area: "ingles",
   areaName: "Ingl\u00e9s",
   difficulty: 3,
-  context: "Read the following formal request:\n\nTO: Municipal Planning Department\nFROM: Residents Association of Sunnyvale Neighborhood\nDATE: October 3, 2024\nRE: Request for Traffic Light Installation at Maple and 5th Intersection\n\nDear Planning Director,\n\nOn behalf of the 200 households in the Sunnyvale neighborhood, we formally request the installation of a traffic light at the intersection of Maple Street and 5th Avenue.\n\nThis intersection has witnessed 14 traffic accidents in the past year, including two involving pedestrians. During school hours (7:30-8:30 AM and 2:30-3:30 PM), over 300 students cross this intersection daily.\n\nWe have attached supporting documentation including:\n- Police accident reports from the past 12 months\n- A petition signed by 487 residents\n- A letter of support from Sunnyvale Elementary School\n\nWe kindly request a response within 30 days and are available to attend a public hearing if needed.\n\nSincerely,\nMaria Fernández, President\nSunnyvale Residents Association",
+  context: "Read the following formal request:\n\nTO: Municipal Planning Department\nFROM: Residents Association of Sunnyvale Neighborhood\nDATE: October 3, 2024\nRE: Request for Traffic Light Installation at Maple and 5th Intersection\n\nDear Planning Director,\n\nOn behalf of the 200 households in the Sunnyvale neighborhood, we formally request the installation of a traffic light at the intersection of Maple Street and 5th Avenue.\n\nThis intersection has witnessed 14 traffic accidents in the past year, including two involving pedestrians. During school hours (7:30-8:30 AM and 2:30-3:30 PM), over 300 students cross this intersection daily.\n\nWe have attached supporting documentation including:\n- Police accident reports from the past 12 months\n- A petition signed by 487 residents\n- A letter of support from Sunnyvale Elementary School\n\nWe kindly request a response within 30 days and are available to attend a public hearing if needed.\n\nSincerely,\nMaria Fern\u00e1ndez, President\nSunnyvale Residents Association",
   question: "What strategy does this letter use to strengthen its request?",
   options: [
     "It combines statistical evidence, community support documentation, and a specific timeline for response",

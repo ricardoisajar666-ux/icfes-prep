@@ -626,7 +626,7 @@ QUESTIONS.push(
   {
     id: 'GV38', area: 'sociales', areaName: 'Ciencias Sociales', difficulty: 'dificil',
     question: '\u00bfCu\u00e1l de los siguientes diagramas representa correctamente un ciclo economico?',
-    options: ['Expansion, pico, contraction, recesión', 'Solo expansion', 'Sin fases', 'Circulo'],
+    options: ['Expansion, pico, contraction, recesi\u00f3n', 'Solo expansion', 'Sin fases', 'Circulo'],
     optionsSvg: [
       '<svg viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg"><line x1="20" y1="50" x2="180" y2="50" stroke="#333" stroke-width="1" stroke-dasharray="3"/><path d="M 20 70 Q 50 60 80 30 Q 110 10 140 30 Q 170 50 180 70" fill="none" stroke="#1565c0" stroke-width="2"/><text x="30" y="80" font-size="6" fill="#c62828">Expansion</text><text x="85" y="20" font-size="6" fill="#2e7d32">Pico</text><text x="140" y="80" font-size="6" fill="#f57f17">Contraccion</text><text x="170" y="70" font-size="6" fill="#6a1b9a">Recesion</text><text x="5" y="15" font-size="7" fill="#333">Ciclo economico</text></svg>',
       '<svg viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg"><path d="M 20 70 Q 50 60 80 30 Q 110 10 140 30" fill="none" stroke="#1565c0" stroke-width="2"/><text x="50" y="80" font-size="7" fill="#c62828">\u2717 Solo expansion</text></svg>',
