@@ -6,6 +6,7 @@ function renderStudy() {
   let activeArea = 'todas';
   let showErrorsOnly = false;
   let shuffledPool = [];
+  let poolVersion = 0;
 
   function shuffle(arr) {
     const a = [...arr];
@@ -22,15 +23,29 @@ function renderStudy() {
     const baseIds = new Set(base.map(q => q.id));
     const poolIds = new Set(shuffledPool.map(q => q.id));
     if (baseIds.size !== poolIds.size || [...baseIds].some(id => !poolIds.has(id))) {
-      shuffledPool = shuffle(base);
+      poolVersion++;
+      shuffledPool = smartShuffle(base);
     }
     return shuffledPool;
+  }
+
+  function smartShuffle(questions) {
+    const unanswered = [];
+    const wrong = [];
+    const correct = [];
+    questions.forEach(q => {
+      const val = APP.studyAnswers[q.id];
+      if (val === undefined) unanswered.push(q);
+      else if (val === false) wrong.push(q);
+      else correct.push(q);
+    });
+    return [...shuffle(unanswered), ...shuffle(wrong), ...shuffle(correct)];
   }
 
   function renderQuestionView() {
     const filtered = getFiltered();
     if (!filtered.length) {
-      main.innerHTML = `<div class="container"><h2 class="section-title">📖 Modo Estudio</h2><div class="empty-state"><div class="icon">📭</div><h3>No hay preguntas en esta área</h3><p>Selecciona otra área o agrega más preguntas.</p></div></div>`;
+      main.innerHTML = `<div class="container"><h2 class="section-title">\u{1f4d6} Modo Estudio</h2><div class="empty-state"><div class="icon">\u{1f4ed}</div><h3>No hay preguntas en esta \u00e1rea</h3><p>Selecciona otra \u00e1rea o agrega m\u00e1s preguntas.</p></div></div>`;
       return;
     }
     if (APP.currentQuestionIndex >= filtered.length) APP.currentQuestionIndex = 0;
@@ -43,16 +58,20 @@ function renderStudy() {
     const areaInfo = getAreaInfo(q.area);
     const progress = Object.keys(APP.studyAnswers).filter(k => !k.endsWith('_selected')).length;
     const totalQ = QUESTIONS.length;
+    const totalCorrect = Object.keys(APP.studyAnswers).filter(k => !k.endsWith('_selected') && APP.studyAnswers[k] === true).length;
+    const totalWrong = Object.keys(APP.studyAnswers).filter(k => !k.endsWith('_selected') && APP.studyAnswers[k] === false).length;
 
-    const diffLabel = q.difficulty === 'dificil' ? '<span class="difficulty-badge dif dificil">Difícil</span>'
-      : q.difficulty === 'media' ? '<span class="difficulty-badge dif media">Media</span>'
-      : '<span class="difficulty-badge dif facil">Fácil</span>';
+    const diffLabel = q.difficulty === 'dificil' ? `<span class="difficulty-badge dif dificil">Dif\u00edcil</span>`
+      : q.difficulty === 'media' ? `<span class="difficulty-badge dif media">Media</span>`
+      : `<span class="difficulty-badge dif facil">F\u00e1cil</span>`;
+
+    const statusIcon = answered ? (isCorrect ? '<span style="color:var(--success)">\u2705</span>' : '<span style="color:var(--error)">\u274c</span>') : '<span style="color:var(--text-secondary)">\u25cb</span>';
 
     main.innerHTML = `
       <div class="container">
         <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;margin-bottom:8px">
-          <h2 class="section-title" style="margin-bottom:0">📖 Modo Estudio</h2>
-          <button class="btn btn-outline btn-sm" onclick="showStudyGuide()">📋 Guía rápida</button>
+          <h2 class="section-title" style="margin-bottom:0">\u{1f4d6} Modo Estudio</h2>
+          <button class="btn btn-outline btn-sm" onclick="showStudyGuide()">\u{1f4cb} Gu\u00eda r\u00e1pida</button>
         </div>
 
         <div class="area-filter">
@@ -61,7 +80,7 @@ function renderStudy() {
             const count = QUESTIONS.filter(q => q.area === a.id).length;
             return `<button class="area-btn ${activeArea === a.id ? 'active' : ''}" onclick="filterStudy('${a.id}')">${a.icon} ${a.name} (${count})</button>`;
           }).join('')}
-          <button class="area-btn ${showErrorsOnly ? 'active' : ''}" onclick="toggleErrorsOnly()" style="${showErrorsOnly ? 'background:var(--error);border-color:var(--error);color:#fff' : ''}">❌ Solo errores</button>
+          <button class="area-btn ${showErrorsOnly ? 'active' : ''}" onclick="toggleErrorsOnly()" style="${showErrorsOnly ? 'background:var(--error);border-color:var(--error);color:#fff' : ''}">\u274c Solo errores</button>
         </div>
 
         <div class="question-progress">
@@ -75,6 +94,7 @@ function renderStudy() {
             <div class="question-area-tag ${areaInfo ? areaInfo.tag : 'tag-lectura'}">${q.areaName}</div>
             ${diffLabel}
             <span class="question-count-badge">#${q.id}</span>
+            ${statusIcon}
           </div>
 
           ${renderVisualContent(q)}
@@ -91,18 +111,23 @@ function renderStudy() {
               } else {
                 if (selectedIdx === i) cls += ' selected';
               }
-              return `<div class="${cls}" onclick="${answered ? '' : `selectStudyOption(${i})`}"><span class="option-letter">${'ABCD'[i]}</span><span>${opt}</span></div>`;
+              const optContent = (q.optionsSvg && q.optionsSvg[i]) ? `<div class="option-svg">${q.optionsSvg[i]}</div><span>${opt}</span>` : `<span>${opt}</span>`;
+              return `<div class="${cls}" onclick="${answered ? '' : `selectStudyOption(${i})`}"><span class="option-letter">${'ABCD'[i]}</span>${optContent}</div>`;
             }).join('')}
           </div>
 
           ${answered ? `
+            <div style="display:flex;gap:8px;margin:12px 0;flex-wrap:wrap">
+              <button class="btn btn-sm btn-outline" onclick="unmarkQuestion('${q.id}')">\u{1f504} Desmarcar esta pregunta</button>
+              <button class="btn btn-sm btn-outline" onclick="markWrong('${q.id}')">\u{1f534} Marcar como incorrecta</button>
+            </div>
             <div class="explanation-box ${isCorrect ? 'correct-box' : 'wrong-box'}">
-              <div class="explanation-title">${isCorrect ? '<span class="check">✅ ¡Correcto!</span>' : '<span class="cross">❌ Incorrecto</span>'}</div>
-              <div class="explanation-correct"><strong>✔️ Respuesta correcta (${'ABCD'[q.correct]}):</strong><br>${q.explanation.correct}</div>
+              <div class="explanation-title">${isCorrect ? '<span class="check">\u2705 \u00a1Correcto!</span>' : '<span class="cross">\u274c Incorrecto</span>'}</div>
+              <div class="explanation-correct"><strong>\u2714\ufe0f Respuesta correcta (${'ABCD'[q.correct]}):</strong><br>${q.explanation.correct}</div>
               <div class="explanation-wrongs">
                 ${q.options.map((opt, i) => {
                   if (i === q.correct) return '';
-                  return `<div class="explanation-wrong-item"><strong>❌ ${'ABCD'[i]}:</strong> ${q.explanation.wrongs[i]}</div>`;
+                  return `<div class="explanation-wrong-item"><strong>\u274c ${'ABCD'[i]}:</strong> ${q.explanation.wrongs[i]}</div>`;
                 }).join('')}
               </div>
             </div>
@@ -110,9 +135,13 @@ function renderStudy() {
         </div>
 
         <div class="question-nav">
-          <button class="btn btn-secondary" onclick="prevStudyQuestion()" ${current <= 1 ? 'disabled' : ''}>← Anterior</button>
-          <span style="font-size:13px;color:var(--text-secondary);align-self:center">Progreso: ${progress}/${totalQ}</span>
-          <button class="btn btn-primary" onclick="nextStudyQuestion()" ${current >= total ? 'disabled' : ''}>Siguiente →</button>
+          <button class="btn btn-secondary" onclick="prevStudyQuestion()" ${current <= 1 ? 'disabled' : ''}>\u2190 Anterior</button>
+          <div style="display:flex;gap:12px;align-self:center;font-size:13px;color:var(--text-secondary)">
+            <span>\u2705 ${totalCorrect}</span>
+            <span>\u274c ${totalWrong}</span>
+            <span>\u25cb ${totalQ - progress}</span>
+          </div>
+          <button class="btn btn-primary" onclick="nextStudyQuestion()" ${current >= total ? 'disabled' : ''}>Siguiente \u2192</button>
         </div>
       </div>
     `;
@@ -129,6 +158,21 @@ function renderStudy() {
     saveState();
     renderQuestionView();
   };
+  window.unmarkQuestion = (id) => {
+    delete APP.studyAnswers[id];
+    delete APP.studyAnswers[id + '_selected'];
+    saveState();
+    poolVersion++;
+    shuffledPool = smartShuffle(activeArea === 'todas' ? QUESTIONS : QUESTIONS.filter(q => q.area === activeArea));
+    renderQuestionView();
+  };
+  window.markWrong = (id) => {
+    APP.studyAnswers[id] = false;
+    saveState();
+    poolVersion++;
+    shuffledPool = smartShuffle(activeArea === 'todas' ? QUESTIONS : QUESTIONS.filter(q => q.area === activeArea));
+    renderQuestionView();
+  };
   window.nextStudyQuestion = () => {
     const filtered = getFiltered();
     if (APP.currentQuestionIndex < filtered.length - 1) { APP.currentQuestionIndex++; renderQuestionView(); }
@@ -141,14 +185,14 @@ function renderStudy() {
     const wrongs = answered.filter(k => APP.studyAnswers[k] === false);
     main.innerHTML = `
       <div class="container">
-        <button class="btn btn-secondary mb-4" onclick="renderStudy()">← Volver al estudio</button>
+        <button class="btn btn-secondary mb-4" onclick="renderStudy()">\u2190 Volver al estudio</button>
         <div class="stats-grid mb-4">
           <div class="stat-card"><div class="stat-value green">${corrects.length}</div><div class="stat-label">Correctas</div></div>
           <div class="stat-card"><div class="stat-value red">${wrongs.length}</div><div class="stat-label">Incorrectas</div></div>
           <div class="stat-card"><div class="stat-value">${answered.length}</div><div class="stat-label">Respondidas</div></div>
           <div class="stat-card"><div class="stat-value">${QUESTIONS.length - answered.length}</div><div class="stat-label">Pendientes</div></div>
         </div>
-        <h3 class="section-title">📋 Progreso por área</h3>
+        <h3 class="section-title">\u{1f4cb} Progreso por \u00e1rea</h3>
         <div class="question-card">
           ${EXAM_CONFIG.areas.map(a => {
             const qs = QUESTIONS.filter(q => q.area === a.id);
@@ -158,13 +202,13 @@ function renderStudy() {
             return `<div class="area-row"><span class="area-name" style="color:${a.color}">${a.icon} ${a.name}</span><div class="area-bar"><div class="area-bar-fill" style="width:${pct}%;background:${a.color}"></div></div><span class="area-score">${corr}/${ans.length} (${pct}%)</span></div>`;
           }).join('')}
         </div>
-        <button class="btn btn-danger" onclick="resetStudy()">🔄 Reiniciar progreso</button>
+        <button class="btn btn-danger" onclick="resetStudy()">\u{1f504} Reiniciar progreso</button>
       </div>
     `;
   };
 
   window.resetStudy = () => {
-    if (confirm('¿Estás seguro de reiniciar todo tu progreso de estudio?')) { APP.studyAnswers = {}; saveState(); renderStudy(); }
+    if (confirm('\u00bfEst\u00e1s seguro de reiniciar todo tu progreso de estudio?')) { APP.studyAnswers = {}; saveState(); renderStudy(); }
   };
 
   renderQuestionView();
