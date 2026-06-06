@@ -117,7 +117,7 @@ QUESTIONS.push({
     "La producci\u00f3n decrece sostenidamente, lo que afecta directamente a m\u00e1s de 500 mil familias productoras",
     "La producci\u00f3n es estable y no representa riesgo para el sector cafetero",
     "Estados Unidos es el \u00fanico destino importante de la exportaci\u00f3n colombiana",
-    "El n\u00fmero de productores aumenta cada a\u00f1o compensando la baja producci\u00f3n"
+    "El n\u00f3mero de productores aumenta cada a\u00f1o compensando la baja producci\u00f3n"
   ],
   correct: 0,
   explanation: {
