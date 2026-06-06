@@ -712,15 +712,7 @@ QUESTIONS.push({
 
 QUESTIONS.push({
   id: 'MT119', area: 'matematicas', areaName: 'Matem\u00e1ticas', difficulty: 'media',
-  svg: <svg viewBox="0 0 300 220" xmlns="http://www.w3.org/2000/svg" style="max-width:300px">
-    <text x="150" y="18" text-anchor="middle" font-size="12" font-weight="bold" fill="#333">Cilindro</text>
-    <ellipse cx="130" cy="55" rx="50" ry="15" fill="none" stroke="#1565C0" stroke-width="2"/>
-    <line x1="80" y1="55" x2="80" y2="155" stroke="#1565C0" stroke-width="2"/>
-    <line x1="180" y1="55" x2="180" y2="155" stroke="#1565C0" stroke-width="2"/>
-    <ellipse cx="130" cy="155" rx="50" ry="15" fill="#E3F2FD" stroke="#1565C0" stroke-width="2"/>
-    <text x="130" y="185" text-anchor="middle" font-size="10" fill="#333">r = 7 cm</text>
-    <text x="210" y="110" font-size="10" fill="#333">h = 15 cm</text>
-  </svg>,
+  svg: '<svg viewBox="0 0 300 220" xmlns="http://www.w3.org/2000/svg" style="max-width:300px"><text x="150" y="18" text-anchor="middle" font-size="12" font-weight="bold" fill="#333">Cilindro</text><ellipse cx="130" cy="55" rx="50" ry="15" fill="none" stroke="#1565C0" stroke-width="2"/><line x1="80" y1="55" x2="80" y2="155" stroke="#1565C0" stroke-width="2"/><line x1="180" y1="55" x2="180" y2="155" stroke="#1565C0" stroke-width="2"/><ellipse cx="130" cy="155" rx="50" ry="15" fill="#E3F2FD" stroke="#1565C0" stroke-width="2"/><text x="130" y="185" text-anchor="middle" font-size="10" fill="#333">r = 7 cm</text><text x="210" y="110" font-size="10" fill="#333">h = 15 cm</text></svg>',
   context: 'Un cilindro circular recto tiene radio de 7 cm y altura de 15 cm.',
   question: '\u00bfCu\u00e1l es el volumen del cilindro? (Use \u03c0 \u2248 3,14)',
   options: ['2.307,9 cm\u00b3', '1.050 cm\u00b3', '210 cm\u00b3', '659,4 cm\u00b3'],
@@ -821,13 +813,7 @@ QUESTIONS.push({
 
 QUESTIONS.push({
   id: 'MT124', area: 'matematicas', areaName: 'Matem\u00e1ticas', difficulty: 'media',
-  svg: <svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg" style="max-width:300px">
-    <text x="150" y="18" text-anchor="middle" font-size="12" font-weight="bold" fill="#333">Hex\u00e1 regular</text>
-    <polygon points="150,40 210,65 210,135 150,160 90,135 90,65" fill="#FFF3E0" stroke="#E65100" stroke-width="2"/>
-    <line x1="150" y1="40" x2="150" y2="160" stroke="#E91E63" stroke-width="1.5" stroke-dasharray="4"/>
-    <text x="150" y="180" text-anchor="middle" font-size="10" fill="#333">lado = 6 cm</text>
-    <text x="165" y="105" font-size="9" fill="#E91E63">d = 12 cm</text>
-  </svg>,
+  svg: '<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg" style="max-width:300px"><text x="150" y="18" text-anchor="middle" font-size="12" font-weight="bold" fill="#333">Hex\u00e1 regular</text><polygon points="150,40 210,65 210,135 150,160 90,135 90,65" fill="#FFF3E0" stroke="#E65100" stroke-width="2"/><line x1="150" y1="40" x2="150" y2="160" stroke="#E91E63" stroke-width="1.5" stroke-dasharray="4"/><text x="150" y="180" text-anchor="middle" font-size="10" fill="#333">lado = 6 cm</text><text x="165" y="105" font-size="9" fill="#E91E63">d = 12 cm</text></svg>',
   context: 'Un hex\u00e1 regular tiene un lado de 6 cm.',
   question: '\u00bfCu\u00e1l es el \u00e1rea del hex\u00e1 regular?',
   options: ['93,53 cm\u00b2', '36 cm\u00b2', '108 cm\u00b2', '72 cm\u00b2'],
@@ -1002,22 +988,7 @@ QUESTIONS.push({
 
 QUESTIONS.push({
   id: 'MT133', area: 'matematicas', areaName: 'Matem\u00e1ticas', difficulty: 'media',
-  svg: <svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg" style="max-width:320px">
-    <text x="160" y="18" text-anchor="middle" font-size="12" font-weight="bold" fill="#333">Histograma de notas</text>
-    <line x1="40" y1="170" x2="300" y2="170" stroke="#333" stroke-width="1.5"/>
-    <line x1="40" y1="170" x2="40" y2="20" stroke="#333" stroke-width="1.5"/>
-    <rect x="55" y="120" width="40" height="50" fill="#4CAF50" opacity="0.8"/>
-    <rect x="105" y="80" width="40" height="90" fill="#2196F3" opacity="0.8"/>
-    <rect x="155" y="50" width="40" height="120" fill="#FF9800" opacity="0.8"/>
-    <rect x="205" y="100" width="40" height="70" fill="#E91E63" opacity="0.8"/>
-    <rect x="255" y="140" width="40" height="30" fill="#9C27B0" opacity="0.8"/>
-    <text x="75" y="185" text-anchor="middle" font-size="9" fill="#333">1-2</text>
-    <text x="125" y="185" text-anchor="middle" font-size="9" fill="#333">2-3</text>
-    <text x="175" y="185" text-anchor="middle" font-size="9" fill="#333">3-4</text>
-    <text x="225" y="185" text-anchor="middle" font-size="9" fill="#333">4-5</text>
-    <text x="275" y="185" text-anchor="middle" font-size="9" fill="#333">5</text>
-    <text x="15" y="95" text-anchor="middle" font-size="9" fill="#333" transform="rotate(-90,15,95)">Frecuencia</text>
-  </svg>,
+  svg: '<svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg" style="max-width:320px"><text x="160" y="18" text-anchor="middle" font-size="12" font-weight="bold" fill="#333">Histograma de notas</text><line x1="40" y1="170" x2="300" y2="170" stroke="#333" stroke-width="1.5"/><line x1="40" y1="170" x2="40" y2="20" stroke="#333" stroke-width="1.5"/><rect x="55" y="120" width="40" height="50" fill="#4CAF50" opacity="0.8"/><rect x="105" y="80" width="40" height="90" fill="#2196F3" opacity="0.8"/><rect x="155" y="50" width="40" height="120" fill="#FF9800" opacity="0.8"/><rect x="205" y="100" width="40" height="70" fill="#E91E63" opacity="0.8"/><rect x="255" y="140" width="40" height="30" fill="#9C27B0" opacity="0.8"/><text x="75" y="185" text-anchor="middle" font-size="9" fill="#333">1-2</text><text x="125" y="185" text-anchor="middle" font-size="9" fill="#333">2-3</text><text x="175" y="185" text-anchor="middle" font-size="9" fill="#333">3-4</text><text x="225" y="185" text-anchor="middle" font-size="9" fill="#333">4-5</text><text x="275" y="185" text-anchor="middle" font-size="9" fill="#333">5</text><text x="15" y="95" text-anchor="middle" font-size="9" fill="#333" transform="rotate(-90,15,95)">Frecuencia</text></svg>',
   context: 'El histograma muestra la distribuci\u00f3n de notas de 50 estudiantes.',
   question: '\u00bfEn qu\u00e9 rango de notas hubo M\u00c1S estudiantes?',
   options: ['3-4', '2-3', '4-5', '1-2'],
@@ -1124,22 +1095,7 @@ QUESTIONS.push({
 
 QUESTIONS.push({
   id: 'MT139', area: 'matematicas', areaName: 'Matem\u00e1ticas', difficulty: 'media',
-  svg: <svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg" style="max-width:300px">
-    <text x="150" y="18" text-anchor="middle" font-size="12" font-weight="bold" fill="#333">Gr\u00e1fico circular</text>
-    <circle cx="140" cy="110" r="80" fill="none" stroke="#333" stroke-width="1.5"/>
-    <path d="M140,110 L140,30 A80,80 0 0,1 216,60 Z" fill="#E91E63" opacity="0.7"/>
-    <path d="M140,110 L216,60 A80,80 0 0,1 220,160 Z" fill="#2196F3" opacity="0.7"/>
-    <path d="M140,110 L220,160 A80,80 0 0,1 60,160 Z" fill="#4CAF50" opacity="0.7"/>
-    <path d="M140,110 L60,160 A80,80 0 0,1 140,30 Z" fill="#FF9800" opacity="0.7"/>
-    <text x="170" y="75" font-size="10" fill="#fff" font-weight="bold">35%</text>
-    <text x="200" y="130" font-size="10" fill="#fff" font-weight="bold">25%</text>
-    <text x="120" y="165" font-size="10" fill="#fff" font-weight="bold">20%</text>
-    <text x="90" y="75" font-size="10" fill="#fff" font-weight="bold">20%</text>
-    <text x="240" y="45" font-size="9" fill="#333">Comida</text>
-    <text x="240" y="60" font-size="9" fill="#333">Transporte</text>
-    <text x="240" y="75" font-size="9" fill="#333">Educaci\u00f3n</text>
-    <text x="240" y="90" font-size="9" fill="#333">Otros</text>
-  </svg>,
+  svg: '<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg" style="max-width:300px"><text x="150" y="18" text-anchor="middle" font-size="12" font-weight="bold" fill="#333">Gr\u00e1fico circular</text><circle cx="140" cy="110" r="80" fill="none" stroke="#333" stroke-width="1.5"/><path d="M140,110 L140,30 A80,80 0 0,1 216,60 Z" fill="#E91E63" opacity="0.7"/><path d="M140,110 L216,60 A80,80 0 0,1 220,160 Z" fill="#2196F3" opacity="0.7"/><path d="M140,110 L220,160 A80,80 0 0,1 60,160 Z" fill="#4CAF50" opacity="0.7"/><path d="M140,110 L60,160 A80,80 0 0,1 140,30 Z" fill="#FF9800" opacity="0.7"/><text x="170" y="75" font-size="10" fill="#fff" font-weight="bold">35%</text><text x="200" y="130" font-size="10" fill="#fff" font-weight="bold">25%</text><text x="120" y="165" font-size="10" fill="#fff" font-weight="bold">20%</text><text x="90" y="75" font-size="10" fill="#fff" font-weight="bold">20%</text><text x="240" y="45" font-size="9" fill="#333">Comida</text><text x="240" y="60" font-size="9" fill="#333">Transporte</text><text x="240" y="75" font-size="9" fill="#333">Educaci\u00f3n</text><text x="240" y="90" font-size="9" fill="#333">Otros</text></svg>',
   context: 'El gr\u00e1fico muestra la distribuci\u00f3n del gasto mensual de una familia.',
   question: 'Si el gasto total mensual es .000.000, \u00bfcu\u00e1nto gastan en comida?',
   options: ['.050.000', '.000', '.000', '.000'],
@@ -1229,24 +1185,7 @@ QUESTIONS.push({
 
 QUESTIONS.push({
   id: 'MT144', area: 'matematicas', areaName: 'Matem\u00e1ticas', difficulty: 'media',
-  svg: <svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg" style="max-width:320px">
-    <text x="160" y="18" text-anchor="middle" font-size="12" font-weight="bold" fill="#333">Barras comparativas</text>
-    <line x1="40" y1="170" x2="300" y2="170" stroke="#333" stroke-width="1.5"/>
-    <line x1="40" y1="170" x2="40" y2="20" stroke="#333" stroke-width="1.5"/>
-    <rect x="60" y="50" width="35" height="120" fill="#E91E63" opacity="0.8"/>
-    <rect x="105" y="90" width="35" height="80" fill="#E91E63" opacity="0.5"/>
-    <rect x="160" y="40" width="35" height="130" fill="#2196F3" opacity="0.8"/>
-    <rect x="205" y="70" width="35" height="100" fill="#2196F3" opacity="0.5"/>
-    <rect x="260" y="100" width="35" height="70" fill="#4CAF50" opacity="0.8"/>
-    <text x="77" y="185" text-anchor="middle" font-size="8" fill="#333">Lunes</text>
-    <text x="122" y="185" text-anchor="middle" font-size="8" fill="#333">Martes</text>
-    <text x="177" y="185" text-anchor="middle" font-size="8" fill="#333">Mi\u00e9rcoles</text>
-    <text x="222" y="185" text-anchor="middle" font-size="8" fill="#333">Jueves</text>
-    <text x="277" y="185" text-anchor="middle" font-size="8" fill="#333">Viernes</text>
-    <rect x="60" y="50" width="35" height="0" fill="#E91E63" opacity="0.8"/>
-    <text x="135" y="35" font-size="9" fill="#E91E63">\u2588\u2588 Ma\u00f1ana</text>
-    <text x="235" y="35" font-size="9" fill="#E91E63">\u2588\u2588 Tarde</text>
-  </svg>,
+  svg: '<svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg" style="max-width:320px"><text x="160" y="18" text-anchor="middle" font-size="12" font-weight="bold" fill="#333">Barras comparativas</text><line x1="40" y1="170" x2="300" y2="170" stroke="#333" stroke-width="1.5"/><line x1="40" y1="170" x2="40" y2="20" stroke="#333" stroke-width="1.5"/><rect x="60" y="50" width="35" height="120" fill="#E91E63" opacity="0.8"/><rect x="105" y="90" width="35" height="80" fill="#E91E63" opacity="0.5"/><rect x="160" y="40" width="35" height="130" fill="#2196F3" opacity="0.8"/><rect x="205" y="70" width="35" height="100" fill="#2196F3" opacity="0.5"/><rect x="260" y="100" width="35" height="70" fill="#4CAF50" opacity="0.8"/><text x="77" y="185" text-anchor="middle" font-size="8" fill="#333">Lunes</text><text x="122" y="185" text-anchor="middle" font-size="8" fill="#333">Martes</text><text x="177" y="185" text-anchor="middle" font-size="8" fill="#333">Mi\u00e9rcoles</text><text x="222" y="185" text-anchor="middle" font-size="8" fill="#333">Jueves</text><text x="277" y="185" text-anchor="middle" font-size="8" fill="#333">Viernes</text><rect x="60" y="50" width="35" height="0" fill="#E91E63" opacity="0.8"/><text x="135" y="35" font-size="9" fill="#E91E63">\u2588\u2588 Ma\u00f1ana</text><text x="235" y="35" font-size="9" fill="#E91E63">\u2588\u2588 Tarde</text></svg>',
   context: 'El gr\u00e1fico muestra ventas diarias de dos turnos.',
   question: '\u00bfQu\u00e9 d\u00eda la diferencia entre turnos fue MAYOR?',
   options: ['Mi\u00e9rcoles', 'Lunes', 'Viernes', 'Martes'],
