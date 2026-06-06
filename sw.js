@@ -1,8 +1,10 @@
-const CACHE = 'icfes-v1';
+const CACHE = 'icfes-v2';
 const ASSETS = [
   '/', '/index.html', '/css/style.css',
   '/js/data.js', '/js/data2.js', '/js/app.js',
-  '/js/auth.js', '/js/study.js', '/js/simulacro.js', '/js/stats.js'
+  '/js/auth.js', '/js/study.js', '/js/simulacro.js', '/js/stats.js',
+  '/js/preguntas_lectura.js', '/js/preguntas_ciencias.js',
+  '/js/preguntas_sociales.js', '/js/preguntas_ingles.js'
 ];
 
 self.addEventListener('install', e => {
