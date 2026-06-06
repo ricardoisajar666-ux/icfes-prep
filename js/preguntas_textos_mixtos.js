@@ -4,7 +4,7 @@
  * IDs: TM01 - TM40
  */
 
-const QUESTIONS = [];
+// Uses QUESTIONS array from data.js
 
 // ============================================================================
 // INFOGRAPHICS (TM01 - TM08)
