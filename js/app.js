@@ -377,3 +377,12 @@ window.APP = APP;
 window.EXAM_CONFIG = EXAM_CONFIG;
 window.QUESTIONS = QUESTIONS;
 window.getAreaInfo = getAreaInfo;
+
+// ===== INIT =====
+document.addEventListener('DOMContentLoaded', () => {
+  loadState();
+  initTheme();
+  updateNav();
+  if (AUTH.isLoggedIn()) navigate('home');
+  else navigate('login');
+});
