@@ -503,7 +503,7 @@ Tomado de: Orwell, George. 1984. Barcelona: Ediciones Destino. 2008.`,
         'El propÃ³sito del sistema es el poder mismo; la metÃ¡fora describe el efecto sobre los ciudadanos, no el propÃ³sito.'
       ]
     }
-  }
+  },
   {
     id: 'LC117',
     area: 'lectura',
@@ -676,7 +676,7 @@ Tomado y adaptado de: http://thoreau.eserver.org/spanishcivil.html. Consultado e
         'No menciona la debilidad de las minorÃ­as como ejemplo.'
       ]
     }
-  }
+  },
   {
     id: 'LC123',
     area: 'lectura',
@@ -843,7 +843,7 @@ Tomado de: Gombrich, E. H. (2003). La historia del arte. Madrid: Random House Mo
         'Los artistas mencionados son ejemplos, no el tema central del texto.'
       ]
     }
-  }
+  },
   {
     id: 'LC129',
     area: 'lectura',
@@ -988,7 +988,7 @@ Tomado de: PlatÃ³n IV, D. (1986). RepÃºblica, TraducciÃ³n y notas de C. Eg
         'El texto no habla de fuerza de voluntad, sino de falta de oportunidad como razÃ³n para actuar justamente.'
       ]
     }
-  }
+  },
   {
     id: 'LC134',
     area: 'lectura',
@@ -1174,7 +1174,7 @@ Adaptado de: Sabadell, Miguel Ãngel (2013). "LÃ­os de familias". En: Muy In
         'Esto ejemplifica la ausencia del amor en el matrimonio, no su dimensiÃ³n econÃ³mica.'
       ]
     }
-  }
+  },
   {
     id: 'LC140',
     area: 'lectura',
@@ -1259,7 +1259,7 @@ Adaptado de: Sabadell, Miguel Ãngel (2013). "LÃ­os de familias". En: Muy In
         'No se sugiere que las cifras puedan ser mÃ¡s altas.'
       ]
     }
-  }
+  },
   {
     id: 'LC143',
     area: 'lectura',
