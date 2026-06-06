@@ -1,30 +1,13 @@
-const CACHE = 'icfes-v3';
-const ASSETS = [
-  '/', '/index.html', '/css/style.css',
-  '/js/data.js', '/js/data2.js', '/js/app.js',
-  '/js/auth.js', '/js/study.js', '/js/simulacro.js', '/js/stats.js',
-  '/js/preguntas_lectura.js', '/js/preguntas_ciencias.js',
-  '/js/preguntas_sociales.js', '/js/preguntas_ingles.js'
-];
-
-self.addEventListener('install', e => {
-  e.waitUntil(caches.open(CACHE).then(c => c.addAll(ASSETS)));
-  self.skipWaiting();
-});
-
+// Self-uninstalling service worker
+// This SW clears all caches and unregisters itself to fix stale cache issues.
+// A proper offline-capable SW will be added later once all bugs are resolved.
+self.addEventListener('install', () => self.skipWaiting());
 self.addEventListener('activate', e => {
   e.waitUntil(
-    caches.keys().then(ks => Promise.all(ks.filter(k => k !== CACHE).map(k => caches.delete(k))))
-  );
-  self.clients.claim();
-});
-
-self.addEventListener('fetch', e => {
-  e.respondWith(
-    fetch(e.request).then(r => {
-      const clone = r.clone();
-      caches.open(CACHE).then(c => c.put(e.request, clone));
-      return r;
-    }).catch(() => caches.match(e.request))
+    caches.keys()
+      .then(ks => Promise.all(ks.map(k => caches.delete(k))))
+      .then(() => self.registration.unregister())
+      .then(() => self.clients.matchAll())
+      .then(clients => clients.forEach(c => c.navigate(c.url)))
   );
 });
