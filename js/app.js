@@ -66,10 +66,15 @@ function renderVisualContent(q) {
   }
   // Images gallery
   if (q.images && q.images.length) {
-    html += `<div class="question-image-gallery ${q.images.length > 2 ? 'comic-gallery' : ''}">${q.images.map(img => {
-      const badge = img.type ? `<span class="visual-badge visual-badge-${img.type}">${img.type}</span>` : '';
-      return `<div class="gallery-item">${badge}<img src="${img.src}" alt="${img.alt || ''}" loading="lazy">${img.caption ? `<div class="gallery-caption">${img.caption}</div>` : ''}</div>`;
-    }).join('')}</div>`;
+    const validImages = q.images.filter(img => img.src && img.src !== 'PENDING');
+    if (validImages.length > 0) {
+      html += `<div class="question-image-gallery ${validImages.length > 2 ? 'comic-gallery' : ''}">${validImages.map(img => {
+        const badge = img.type ? `<span class="visual-badge visual-badge-${img.type}">${img.type}</span>` : '';
+        return `<div class="gallery-item">${badge}<img src="${img.src}" alt="${img.alt || ''}" loading="lazy">${img.caption ? `<div class="gallery-caption">${img.caption}</div>` : ''}</div>`;
+      }).join('')}</div>`;
+    } else if (q.images[0] && q.images[0].caption) {
+      html += `<div class="question-image"><div class="gallery-caption">${q.images[0].caption}</div></div>`;
+    }
   }
   // Single image
   if (q.image && !q.images) {
