@@ -28,7 +28,7 @@ QUESTIONS.push(
   },
   {
     id:'LC64',area:'lectura',areaName:'Lectura Critica',difficulty:'dificil',
-    context:`"Michel Foucault, en Vigilar y castigar, analiza la transformacion de los sistemas punitivos occidentales. Describe como el suplicio publico, caracteristico del Antiguo Regimen, fue reemplazado por la prision y la disciplina en el siglo XIX. Pero Foucault va mas alla de la historia del castigo: sostiene que las tecnicas disciplinarias desarrolladas en las prisiones (vigilancia jerarquica, sancion normalizadora, examen) se extendieron a otras instituciones como escuelas, hospitales, cuarteles y fabricas. El panoptico de Bentham —un diseno carcelario donde un vigilante puede observar a todos los presos sin que estos sepan si estan siendo observados— se convierte para Foucault en el simbolo de una sociedad disciplinaria donde el poder se ejerce a traves de la visibilidad y la normalizacion."`,
+    context:`"Michel Foucault, en Vigilar y castigar, analiza la transformacion de los sistemas punitivos occidentales. Describe como el suplicio publico, caracteristico del Antiguo Regimen, fue reemplazado por la prision y la disciplina en el siglo XIX. Pero Foucault va mas alla de la historia del castigo: sostiene que las tecnicas disciplinarias desarrolladas en las prisiones (vigilancia jerarquica, sancion normalizadora, examen) se extendieron a otras instituciones como escuelas, hospitales, cuarteles y fabricas. El panoptico de Bentham \u2014un diseno carcelario donde un vigilante puede observar a todos los presos sin que estos sepan si estan siendo observados\u2014 se convierte para Foucault en el simbolo de una sociedad disciplinaria donde el poder se ejerce a traves de la visibilidad y la normalizacion."`,
     question:`El panoptico representa para Foucault:`,
     options:['Un diseno arquitectonico obsoleto que nunca se construyo','El simbolo de una sociedad donde el poder opera mediante la vigilancia y la normalizacion','Una utopia carcelaria que humanizo el sistema penal','Un metodo exclusivamente penitenciario sin aplicacion a otras instituciones'],
     correct:1,
@@ -44,7 +44,7 @@ QUESTIONS.push(
   },
   {
     id:'LC66',area:'lectura',areaName:'Lectura Critica',difficulty:'dificil',
-    context:`"En El malestar en la cultura (1930), Sigmund Freud plantea una tesis provocadora: la civilizacion, que deberia proporcionar felicidad al ser humano, es en realidad la fuente principal de su infelicidad. La cultura, argumenta Freud, exige la renuncia a los instintos basicos —especialmente la agresividad y la sexualidad— para hacer posible la vida en sociedad. El precio de la civilizacion es, entonces, la neurosis. Cuanto mas desarrollada es una cultura, mayores son las restricciones que impone y, por tanto, mayor el malestar psicologico de sus miembros. Freud contrapone el 'principio de placer' —la tendencia innata a buscar la satisfaccion inmediata— al 'principio de realidad' —la necesidad de postergar la gratificacion para adaptarse a las exigencias sociales. El conflicto entre ambos principios es, para Freud, irreconciliable."`,
+    context:`"En El malestar en la cultura (1930), Sigmund Freud plantea una tesis provocadora: la civilizacion, que deberia proporcionar felicidad al ser humano, es en realidad la fuente principal de su infelicidad. La cultura, argumenta Freud, exige la renuncia a los instintos basicos \u2014especialmente la agresividad y la sexualidad\u2014 para hacer posible la vida en sociedad. El precio de la civilizacion es, entonces, la neurosis. Cuanto mas desarrollada es una cultura, mayores son las restricciones que impone y, por tanto, mayor el malestar psicologico de sus miembros. Freud contrapone el 'principio de placer' \u2014la tendencia innata a buscar la satisfaccion inmediata\u2014 al 'principio de realidad' \u2014la necesidad de postergar la gratificacion para adaptarse a las exigencias sociales. El conflicto entre ambos principios es, para Freud, irreconciliable."`,
     question:`Para Freud, la relacion entre civilizacion y felicidad es:`,
     options:['Directamente proporcional: a mayor civilizacion, mayor felicidad','Inversa: la civilizacion genera restricciones que producen malestar','Independiente: la cultura no afecta la felicidad individual','Circular: la civilizacion es el resultado de la felicidad colectiva'],
     correct:1,
@@ -60,7 +60,7 @@ QUESTIONS.push(
   },
   {
     id:'LC68',area:'lectura',areaName:'Lectura Critica',difficulty:'media',
-    context:`"Max Weber, en La etica protestante y el espiritu del capitalismo (1905), propuso una tesis audaz: el capitalismo moderno no surgio solo por factores economicos, sino que tuvo una base cultural y religiosa. Weber observo que en los paises protestantes —especialmente entre los calvinistas— se habia desarrollado una etica del trabajo que favorecia la acumulacion de capital. Para el calvinista, el exito economico era un signo de salvacion divina, y el trabajo arduo y sistematico un deber moral. Pero esta acumulacion no debia gastarse en lujos: debia reinvertirse. Esta combinacion de trabajo disciplinado, ahorro y reinversion creo, segun Weber, el 'espiritu del capitalismo'. La tesis de Weber ha sido muy debatida: algunos historiadores senalan que el capitalismo ya existia en regiones catolicas como Italia y Flandes antes de la Reforma."`,
+    context:`"Max Weber, en La etica protestante y el espiritu del capitalismo (1905), propuso una tesis audaz: el capitalismo moderno no surgio solo por factores economicos, sino que tuvo una base cultural y religiosa. Weber observo que en los paises protestantes \u2014especialmente entre los calvinistas\u2014 se habia desarrollado una etica del trabajo que favorecia la acumulacion de capital. Para el calvinista, el exito economico era un signo de salvacion divina, y el trabajo arduo y sistematico un deber moral. Pero esta acumulacion no debia gastarse en lujos: debia reinvertirse. Esta combinacion de trabajo disciplinado, ahorro y reinversion creo, segun Weber, el 'espiritu del capitalismo'. La tesis de Weber ha sido muy debatida: algunos historiadores senalan que el capitalismo ya existia en regiones catolicas como Italia y Flandes antes de la Reforma."`,
     question:`Segun Weber, el espiritu del capitalismo se caracteriza por:`,
     options:['La busqueda del lucro sin restricciones morales','El trabajo disciplinado, el ahorro y la reinversion como deberes morales','La prioridad del ocio sobre el trabajo productivo','La separacion total entre religion y economia'],
     correct:1,
@@ -150,18 +150,18 @@ QUESTIONS.push(
     table:{
       headers:['Ciudad','Temperatura max','Temperatura min','Precipitacion (mm)'],
       rows:[
-        ['Leticia','32°C','24°C','320'],
-        ['Bogota','20°C','8°C','45'],
-        ['San Andres','30°C','26°C','180'],
-        ['Pasto','18°C','6°C','78']
+        ['Leticia','32\u00b0C','24\u00b0C','320'],
+        ['Bogota','20\u00b0C','8\u00b0C','45'],
+        ['San Andres','30\u00b0C','26\u00b0C','180'],
+        ['Pasto','18\u00b0C','6\u00b0C','78']
       ],
       caption:'Datos climaticos de ciudades colombianas en un mes'
     },
     context:'La tabla muestra datos climaticos de cuatro ciudades colombianas.',
     question:'Cual es la amplitud termica (diferencia entre temperatura maxima y minima) de la ciudad con mayor precipitacion?',
-    options:['6°C','8°C','12°C','14°C'],
+    options:['6\u00b0C','8\u00b0C','12\u00b0C','14\u00b0C'],
     correct:1,
-    explanation:{correct:'Mayor precipitacion: Leticia (320 mm). Amplitud = 32°C - 24°C = 8°C.',wrongs:['Calculaste San Andres: 30-26=4°C, pero no es la mayor precipitacion','Opcion correcta','Calculaste el promedio de las temperaturas','Calculaste Pasto: 18-6=12°C']}
+    explanation:{correct:'Mayor precipitacion: Leticia (320 mm). Amplitud = 32\u00b0C - 24\u00b0C = 8\u00b0C.',wrongs:['Calculaste San Andres: 30-26=4\u00b0C, pero no es la mayor precipitacion','Opcion correcta','Calculaste el promedio de las temperaturas','Calculaste Pasto: 18-6=12\u00b0C']}
   },
 
   // ===== SOCIALES (SC60-SC67) =====
@@ -241,11 +241,11 @@ QUESTIONS.push(
   // ===== CIENCIAS NATURALES (CN62-CN69) =====
   {
     id:'CN62',area:'ciencias',areaName:'Ciencias Naturales',difficulty:'dificil',
-    context:`"Un estudiante de biologia realiza un experimento para investigar el efecto de la temperatura en la actividad enzimatica. Coloca cinco tubos de ensayo con igual concentracion de la enzima catalasa y peroxido de hidrogeno (H2O2). Cada tubo se mantiene a una temperatura diferente: 0°C, 20°C, 37°C, 60°C y 90°C. Mide la velocidad de reaccion observando la formacion de burbujas de oxigeno. Los resultados muestran que la velocidad maxima de reaccion ocurre a 37°C, mientras que a 0°C y 90°C la reaccion es casi imperceptible."`,
-    question:`La disminucion de la actividad enzimatica a 90°C se debe probablemente a:`,
+    context:`"Un estudiante de biologia realiza un experimento para investigar el efecto de la temperatura en la actividad enzimatica. Coloca cinco tubos de ensayo con igual concentracion de la enzima catalasa y peroxido de hidrogeno (H2O2). Cada tubo se mantiene a una temperatura diferente: 0\u00b0C, 20\u00b0C, 37\u00b0C, 60\u00b0C y 90\u00b0C. Mide la velocidad de reaccion observando la formacion de burbujas de oxigeno. Los resultados muestran que la velocidad maxima de reaccion ocurre a 37\u00b0C, mientras que a 0\u00b0C y 90\u00b0C la reaccion es casi imperceptible."`,
+    question:`La disminucion de la actividad enzimatica a 90\u00b0C se debe probablemente a:`,
     options:['La congelacion de la enzima','La desnaturalizacion de la enzima por el calor','La evaporacion del peroxido de hidrogeno','El aumento de la concentracion del sustrato'],
     correct:1,
-    explanation:{correct:'Las enzimas son proteinas que se desnaturalizan (pierden su estructura tridimensional) a altas temperaturas, lo que elimina su actividad catalitica. A 90°C la enzima se desnaturaliza.',wrongs:['A 90°C no hay congelacion','Opcion correcta','El peroxido se descompone, pero la causa principal es la desnaturalizacion enzimatica','La concentracion no aumenta significativamente']}
+    explanation:{correct:'Las enzimas son proteinas que se desnaturalizan (pierden su estructura tridimensional) a altas temperaturas, lo que elimina su actividad catalitica. A 90\u00b0C la enzima se desnaturaliza.',wrongs:['A 90\u00b0C no hay congelacion','Opcion correcta','El peroxido se descompone, pero la causa principal es la desnaturalizacion enzimatica','La concentracion no aumenta significativamente']}
   },
   {
     id:'CN63',area:'ciencias',areaName:'Ciencias Naturales',difficulty:'media',
@@ -269,7 +269,7 @@ QUESTIONS.push(
   },
   {
     id:'CN64',area:'ciencias',areaName:'Ciencias Naturales',difficulty:'facil',
-    context:`"El cuerpo humano mantiene una temperatura interna constante de aproximadamente 37°C, independientemente de la temperatura del ambiente. Cuando la temperatura ambiental es alta, el cuerpo activa mecanismos de enfriamiento como la sudoracion y la vasodilatacion (aumento del diametro de los vasos sanguineos en la piel). Cuando la temperatura ambiental es baja, activa mecanismos de conservacion de calor como el tirito (contracciones musculares involuntarias que generan calor) y la vasoconstriccion."`,
+    context:`"El cuerpo humano mantiene una temperatura interna constante de aproximadamente 37\u00b0C, independientemente de la temperatura del ambiente. Cuando la temperatura ambiental es alta, el cuerpo activa mecanismos de enfriamiento como la sudoracion y la vasodilatacion (aumento del diametro de los vasos sanguineos en la piel). Cuando la temperatura ambiental es baja, activa mecanismos de conservacion de calor como el tirito (contracciones musculares involuntarias que generan calor) y la vasoconstriccion."`,
     question:`La capacidad del cuerpo humano de mantener su temperatura interna constante se llama:`,
     options:['Metabolismo','Homeostasis','Fotosintesis','Digestion'],
     correct:1,
@@ -436,7 +436,7 @@ QUESTIONS.push(
   },
   {
     id:'LC73',area:'lectura',areaName:'Lectura Critica',difficulty:'facil',
-    context:`"La energia solar es una fuente renovable e inagotable. Colombia recibe un promedio de 4,5 kWh/m² al dia de radiacion solar, un nivel comparable al de Alemania, pais lider en energia solar. Sin embargo, la capacidad instalada de paneles solares en Colombia es 50 veces menor que la de Alemania. Esto se debe a factores como la falta de incentivos economicos, la poca divulgacion de la tecnologia y la competencia con la energia hidroelectrica, que tradicionalmente ha sido barata en el pais."`,
+    context:`"La energia solar es una fuente renovable e inagotable. Colombia recibe un promedio de 4,5 kWh/m\u00b2 al dia de radiacion solar, un nivel comparable al de Alemania, pais lider en energia solar. Sin embargo, la capacidad instalada de paneles solares en Colombia es 50 veces menor que la de Alemania. Esto se debe a factores como la falta de incentivos economicos, la poca divulgacion de la tecnologia y la competencia con la energia hidroelectrica, que tradicionalmente ha sido barata en el pais."`,
     question:`A pesar de tener niveles de radiacion similares a Alemania, Colombia genera menos energia solar porque:`,
     options:['El sol no brilla lo suficiente en Colombia','Faltan incentivos economicos y hay poca divulgacion tecnologica','La energia solar es mas cara que en Alemania','No existe la tecnologia necesaria'],
     correct:1,
@@ -755,11 +755,11 @@ QUESTIONS.push(
   },
   {
     id:'CN76',area:'ciencias',areaName:'Ciencias Naturales',difficulty:'dificil',
-    context:`"Se tienen dos recipientes con la misma cantidad de agua. El recipiente A esta a 80°C y el recipiente B a 20°C. Se vierten ambos en un tercer recipiente de capacidad suficiente, termicamente aislado. La temperatura de equilibrio de la mezcla es de 50°C."`,
+    context:`"Se tienen dos recipientes con la misma cantidad de agua. El recipiente A esta a 80\u00b0C y el recipiente B a 20\u00b0C. Se vierten ambos en un tercer recipiente de capacidad suficiente, termicamente aislado. La temperatura de equilibrio de la mezcla es de 50\u00b0C."`,
     question:'El proceso descrito alcanza el equilibrio termico porque:',
     options:['El calor fluye del cuerpo mas caliente al mas frio hasta que las temperaturas se igualan','El recipiente B pierde calor y el A gana calor','La temperatura final es el promedio de las temperaturas iniciales','El sistema aislado no permite la transferencia de calor'],
     correct:0,
-    explanation:{correct:'El calor fluye espontaneamente del cuerpo de mayor temperatura (80°C) al de menor (20°C) hasta que ambos alcanzan la misma temperatura (50°C), que es el equilibrio termico.',wrongs:['Opcion correcta','Es al reves: A (caliente) pierde calor, B (frio) gana calor','Es el promedio solo porque las masas son iguales, no es una ley general','El sistema esta aislado del exterior, pero permite la transferencia interna de calor']}
+    explanation:{correct:'El calor fluye espontaneamente del cuerpo de mayor temperatura (80\u00b0C) al de menor (20\u00b0C) hasta que ambos alcanzan la misma temperatura (50\u00b0C), que es el equilibrio termico.',wrongs:['Opcion correcta','Es al reves: A (caliente) pierde calor, B (frio) gana calor','Es el promedio solo porque las masas son iguales, no es una ley general','El sistema esta aislado del exterior, pero permite la transferencia interna de calor']}
   },
   {
     id:'CN77',area:'ciencias',areaName:'Ciencias Naturales',difficulty:'media',
@@ -801,11 +801,11 @@ QUESTIONS.push(
   {
     id:'EN70',area:'ingles',areaName:'Ingles',difficulty:'facil',
     context:`Read the weather report:
-"Today in Cartagena: hot and humid. High: 33°C, Low: 26°C. UV index: extreme. Chance of rain: 10%. Tomorrow: partly cloudy with a high of 32°C and a 40% chance of afternoon thunderstorms."`,
+"Today in Cartagena: hot and humid. High: 33\u00b0C, Low: 26\u00b0C. UV index: extreme. Chance of rain: 10%. Tomorrow: partly cloudy with a high of 32\u00b0C and a 40% chance of afternoon thunderstorms."`,
     question:`What should residents of Cartagena be careful about today?`,
     options:['Heavy rain all day','The extreme UV index','Very cold temperatures','Strong winds'],
     correct:1,
-    explanation:{correct:'The report says "UV index: extreme," which means people should protect themselves from the sun.',wrongs:['Only 10% chance of rain','Opcion correcta','33°C is hot, not cold','Wind is not mentioned']}
+    explanation:{correct:'The report says "UV index: extreme," which means people should protect themselves from the sun.',wrongs:['Only 10% chance of rain','Opcion correcta','33\u00b0C is hot, not cold','Wind is not mentioned']}
   },
   {
     id:'EN71',area:'ingles',areaName:'Ingles',difficulty:'dificil',
@@ -819,7 +819,7 @@ QUESTIONS.push(
   {
     id:'EN72',area:'ingles',areaName:'Ingles',difficulty:'media',
     context:`Read the product review:
-"★★★★☆ I bought these wireless headphones two months ago and I am very satisfied. The sound quality is excellent and the battery lasts about 12 hours. They are comfortable to wear for long periods. The only downside is that the Bluetooth connection sometimes drops when I am in a different room from my phone. For the price, I think they are a great buy."`,
+"\u2605\u2605\u2605\u2605\u2606 I bought these wireless headphones two months ago and I am very satisfied. The sound quality is excellent and the battery lasts about 12 hours. They are comfortable to wear for long periods. The only downside is that the Bluetooth connection sometimes drops when I am in a different room from my phone. For the price, I think they are a great buy."`,
     question:`What is the main complaint about the headphones?`,
     options:['The sound quality is poor','The battery does not last long','The Bluetooth connection occasionally drops','They are uncomfortable'],
     correct:2,
@@ -837,7 +837,7 @@ QUESTIONS.push(
   {
     id:'EN74',area:'ingles',areaName:'Ingles',difficulty:'dificil',
     context:`Read the text:
-"According to a study published in The Lancet, air pollution in major Colombian cities causes approximately 8,000 premature deaths per year. The main sources are vehicle emissions, industrial activities, and construction sites. The study found that Bogota and Medellin have the highest levels of PM2.5 —tiny particles that can enter the lungs and bloodstream. The researchers recommend expanding clean transportation, implementing low-emission zones, and tightening industrial emission standards."`,
+"According to a study published in The Lancet, air pollution in major Colombian cities causes approximately 8,000 premature deaths per year. The main sources are vehicle emissions, industrial activities, and construction sites. The study found that Bogota and Medellin have the highest levels of PM2.5 \u2014tiny particles that can enter the lungs and bloodstream. The researchers recommend expanding clean transportation, implementing low-emission zones, and tightening industrial emission standards."`,
     question:`What does the study recommend to address the problem?`,
     options:['Building more roads for cars','Expanding clean transport, low-emission zones, and stricter industrial standards','Moving industries to rural areas','Banning all vehicles from city centers'],
     correct:1,
@@ -964,7 +964,7 @@ QUESTIONS.push(
       </svg></div>`
     ],
     correct:0,
-    explanation:{correct:'La grafica debe mostrar: (1) pendiente positiva de 0 a 2h (60 km/h → 120 km), (2) segmento horizontal de 2h a 3h (detenido), (3) pendiente menor de 3h a 4h (40 km/h). La opcion A muestra exactamente este patron.',wrongs:['Opcion correcta','Linea recta continua sin pausa: no representa la parada','Comienza con pausa, luego avanza, luego otra pausa: el orden es incorrecto','Comienza con pausa, luego salta verticalmente: la distancia no cambia instantaneamente']}
+    explanation:{correct:'La grafica debe mostrar: (1) pendiente positiva de 0 a 2h (60 km/h \u2192 120 km), (2) segmento horizontal de 2h a 3h (detenido), (3) pendiente menor de 3h a 4h (40 km/h). La opcion A muestra exactamente este patron.',wrongs:['Opcion correcta','Linea recta continua sin pausa: no representa la parada','Comienza con pausa, luego avanza, luego otra pausa: el orden es incorrecto','Comienza con pausa, luego salta verticalmente: la distancia no cambia instantaneamente']}
   },
   {
     id:'CN79',area:'ciencias',areaName:'Ciencias Naturales',difficulty:'media',
@@ -1014,11 +1014,11 @@ QUESTIONS.push(
       </svg></div>`
     ],
     correct:0,
-    explanation:{correct:'En caida libre sin resistencia del aire, la velocidad aumenta linealmente con el tiempo (v = g·t, donde g = 10 m/s2). La grafica es una linea recta que parte del origen con pendiente positiva constante. Esto corresponde a la opcion A.',wrongs:['Opcion correcta','Velocidad constante significaria velocidad terminal instantanea, lo que no ocurre en caida libre ideal','La velocidad aumenta linealmente, no de forma curvilinea (parabolica)','Esta grafica muestra velocidad cero seguida de un salto vertical, lo cual es fisicamente imposible']}
+    explanation:{correct:'En caida libre sin resistencia del aire, la velocidad aumenta linealmente con el tiempo (v = g\u00b7t, donde g = 10 m/s2). La grafica es una linea recta que parte del origen con pendiente positiva constante. Esto corresponde a la opcion A.',wrongs:['Opcion correcta','Velocidad constante significaria velocidad terminal instantanea, lo que no ocurre en caida libre ideal','La velocidad aumenta linealmente, no de forma curvilinea (parabolica)','Esta grafica muestra velocidad cero seguida de un salto vertical, lo cual es fisicamente imposible']}
   },
   {
     id:'CN80',area:'ciencias',areaName:'Ciencias Naturales',difficulty:'media',
-    context:'Se estudio la actividad de una enzima digestiva humana a diferentes temperaturas. La enzima mostro baja actividad a 10°C, actividad maxima a 37°C, y perdio casi toda su actividad a 60°C.',
+    context:'Se estudio la actividad de una enzima digestiva humana a diferentes temperaturas. La enzima mostro baja actividad a 10\u00b0C, actividad maxima a 37\u00b0C, y perdio casi toda su actividad a 60\u00b0C.',
     question:'?Cual de las siguientes graficas representa correctamente la relacion entre la temperatura y la actividad enzimatica descrita?',
     options:[
       `<div class="option-graph"><svg viewBox="0 0 180 160" xmlns="http://www.w3.org/2000/svg">
@@ -1064,7 +1064,7 @@ QUESTIONS.push(
       </svg></div>`
     ],
     correct:0,
-    explanation:{correct:'La actividad enzimatica aumenta con la temperatura hasta alcanzar un optimo (37°C para enzimas humanas), luego disminuye bruscamente por desnaturalizacion. La grafica correcta es una curva en forma de campana (opcion A).',wrongs:['Opcion correcta','Linea recta creciente: la actividad no sigue aumentando, disminuye despues del optimo','Linea horizontal: la actividad no es constante, depende de la temperatura','Escalonada: el cambio es gradual, no da pasos discretos']}
+    explanation:{correct:'La actividad enzimatica aumenta con la temperatura hasta alcanzar un optimo (37\u00b0C para enzimas humanas), luego disminuye bruscamente por desnaturalizacion. La grafica correcta es una curva en forma de campana (opcion A).',wrongs:['Opcion correcta','Linea recta creciente: la actividad no sigue aumentando, disminuye despues del optimo','Linea horizontal: la actividad no es constante, depende de la temperatura','Escalonada: el cambio es gradual, no da pasos discretos']}
   },
 
   // ===== VISUAL QUESTIONS (mapas, diagramas, estructuras en SVG) =====
@@ -1346,7 +1346,7 @@ QUESTIONS.push(
   {
     id:'CN81',area:'ciencias',areaName:'Ciencias Naturales',difficulty:'dificil',
     table:{
-      headers:['Nivel trofico','Organismos','Energia disponible (kcal/m²/año)'],
+      headers:['Nivel trofico','Organismos','Energia disponible (kcal/m\u00b2/a\u00f1o)'],
       rows:[
         ['Productores (plantas)','Gramineas, arbustos','20.000'],
         ['Primer consumidor (herbivoros)','Conejos, insectos','2.000'],
@@ -1437,7 +1437,7 @@ QUESTIONS.push(
     question:'Cual de los siguientes comportamientos se observa en todos los periodos de la tabla?',
     options:['La tasa de pobreza disminuyo continuamente','La urbanizacion y el acceso a internet aumentaron en todos los periodos','La poblacion se mantuvo constante','El acceso a internet siempre supero el 50%'],
     correct:1,
-    explanation:{correct:'La urbanizacion aumento en cada periodo (75→77→80→82) y el acceso a internet tambien aumento en cada periodo (32→52→68→75). Ambos indicadores muestran crecimiento continuo.',wrongs:['La pobreza aumento en 2020 (35,5%) respecto a 2015 (27,8%)','Opcion correcta','La poblacion crecio de 44,9 a 52 millones','En 2010 el acceso a internet era solo 32%, menor al 50%']}
+    explanation:{correct:'La urbanizacion aumento en cada periodo (75\u219277\u219280\u219282) y el acceso a internet tambien aumento en cada periodo (32\u219252\u219268\u219275). Ambos indicadores muestran crecimiento continuo.',wrongs:['La pobreza aumento en 2020 (35,5%) respecto a 2015 (27,8%)','Opcion correcta','La poblacion crecio de 44,9 a 52 millones','En 2010 el acceso a internet era solo 32%, menor al 50%']}
   },
 
   // --- LECTURA CRITICA CON TABLAS ---
@@ -1516,7 +1516,7 @@ QUESTIONS.push(
   {
     id:'EN81',area:'ingles',areaName:'Ingles',difficulty:'dificil',
     table:{
-      headers:['City','Average temperature (°C)','Annual rainfall (mm)','Humidity (%)','Best season to visit'],
+      headers:['City','Average temperature (\u00b0C)','Annual rainfall (mm)','Humidity (%)','Best season to visit'],
       rows:[
         ['Bogota','14','830','70','December-March'],
         ['Cartagena','27','1050','80','December-April'],
@@ -1529,7 +1529,7 @@ QUESTIONS.push(
     question:'A tourist wants to visit a city with the lowest rainfall and comfortable temperatures. Which city would be the best choice?',
     options:['Cartagena','Leticia','Bogota','Barranquilla'],
     correct:3,
-    explanation:{correct:'Barranquilla has the second lowest rainfall (840 mm) and the highest temperature (28°C). Bogota has lower rainfall (830 mm) but much cooler temperatures (14°C). For "comfortable temperatures" (warm), Barranquilla is the better choice.',wrongs:['Cartagena has high rainfall (1050 mm) and high humidity','Leticia has the highest rainfall (2500 mm)','Bogota has the lowest rainfall but very cool temperatures (14°C average)','Opcion correcta']}
+    explanation:{correct:'Barranquilla has the second lowest rainfall (840 mm) and the highest temperature (28\u00b0C). Bogota has lower rainfall (830 mm) but much cooler temperatures (14\u00b0C). For "comfortable temperatures" (warm), Barranquilla is the better choice.',wrongs:['Cartagena has high rainfall (1050 mm) and high humidity','Leticia has the highest rainfall (2500 mm)','Bogota has the lowest rainfall but very cool temperatures (14\u00b0C average)','Opcion correcta']}
   },
 
   // --- MATEMATICAS ADICIONALES ---
@@ -1583,7 +1583,7 @@ QUESTIONS.push(
     question:'Cual es la proporcion de la poblacion mayor de 45 anos respecto al total?',
     options:['15%','25%','30%','35%'],
     correct:1,
-    explanation:{correct:'Poblacion 45-59: 7,5 millones. Poblacion 60+: 5 millones. Total mayor de 45: 12,5 millones. Total poblacion: 49,5 millones. Proporcion: (12,5/49,5) x 100 = 25,25% ≈ 25%.',wrongs:['15% seria 7,4 millones','Opcion correcta','30% seria 14,85 millones','35% seria 17,3 millones']}
+    explanation:{correct:'Poblacion 45-59: 7,5 millones. Poblacion 60+: 5 millones. Total mayor de 45: 12,5 millones. Total poblacion: 49,5 millones. Proporcion: (12,5/49,5) x 100 = 25,25% \u2248 25%.',wrongs:['15% seria 7,4 millones','Opcion correcta','30% seria 14,85 millones','35% seria 17,3 millones']}
   },
 
   // --- CIENCIAS ADICIONALES ---
@@ -1592,8 +1592,8 @@ QUESTIONS.push(
     table:{
       headers:['Propiedad','Plomo','Aluminio','Oro','Cobre'],
       rows:[
-        ['Densidad (g/cm³)','11,3','2,7','19,3','8,9'],
-        ['Punto de fusion (°C)','327','660','1064','1085'],
+        ['Densidad (g/cm\u00b3)','11,3','2,7','19,3','8,9'],
+        ['Punto de fusion (\u00b0C)','327','660','1064','1085'],
         ['Conductividad electrica','Baja','Alta','Media','Alta']
       ],
       caption:'Propiedades fisicas de cuatro metales'
@@ -1602,7 +1602,7 @@ QUESTIONS.push(
     question:'Un ingeniero necesita un metal liviano (baja densidad) que conduzca bien la electricidad para fabricar cables electricos. Cual metal es la mejor opcion?',
     options:['Plomo','Aluminio','Oro','Cobre'],
     correct:3,
-    explanation:{correct:'El cobre tiene baja densidad relativa (8,9 g/cm³) y alta conductividad electrica, por lo que es ideal para cables electricos. El aluminio tambien es liviano pero su conductividad es menor que la del cobre.',wrongs:['El plomo es muy denso (11,3 g/cm³) y tiene baja conductividad','El aluminio es liviano pero su conductividad es menor','El oro tiene conductividad media y es muy costoso','Opcion correcta (cobre: densidad moderada + alta conductividad)']}
+    explanation:{correct:'El cobre tiene baja densidad relativa (8,9 g/cm\u00b3) y alta conductividad electrica, por lo que es ideal para cables electricos. El aluminio tambien es liviano pero su conductividad es menor que la del cobre.',wrongs:['El plomo es muy denso (11,3 g/cm\u00b3) y tiene baja conductividad','El aluminio es liviano pero su conductividad es menor','El oro tiene conductividad media y es muy costoso','Opcion correcta (cobre: densidad moderada + alta conductividad)']}
   },
   {
     id:'CN84',area:'ciencias',areaName:'Ciencias Naturales',difficulty:'dificil',
