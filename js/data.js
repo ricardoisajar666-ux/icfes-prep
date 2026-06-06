@@ -1902,7 +1902,7 @@ Del poema XX: "Puedo escribir los versos más tristes esta noche. / Escribir, po
     question: `La innovación narrativa que Borges atribuye a la novela de Ts'ui Pên consiste en:`,
     options: ['Eliminar todas las alternativas excepto una para simplificar la trama', 'Optar simultáneamente por todas las alternativas posibles, creando tiempos divergentes', 'Seguir un único camino narrativo lineal hasta el desenlace', 'Presentar los eventos en orden cronológico inverso al convencional'],
     correct: 1,
-    explanation: { correct: 'Borges describe una novela donde el protagonista "opta —simultáneamente— por todas" las alternativas, creando "diversos porvenires, diversos tiempos, que también proliferan y se bifurcan". Es una representación literaria del concepto de universos paralelos o múltiples posibilidades simultáneas.', wrongs: ['Esa sería la ficción convencional; la innovación de Ts'ui Pên es lo opuesto', 'Opción correcta', 'La novela de Ts'ui Pên precisamente rechaza el camino único en favor de la multiplicidad', 'El orden cronológico inverso no es la innovación descrita aquí'] }
+    explanation: { correct: 'Borges describe una novela donde el protagonista "opta —simultáneamente— por todas" las alternativas, creando "diversos porvenires, diversos tiempos, que también proliferan y se bifurcan". Es una representación literaria del concepto de universos paralelos o múltiples posibilidades simultáneas.', wrongs: ['Esa sería la ficción convencional; la innovación de Ts\'ui Pên es lo opuesto', 'Opción correcta', 'La novela de Ts\'ui Pên precisamente rechaza el camino único en favor de la multiplicidad', 'El orden cronológico inverso no es la innovación descrita aquí'] }
   },
   {
     id: 'LC27', area: 'lectura', areaName: 'Lectura Crítica', difficulty: 'facil',
@@ -3614,7 +3614,7 @@ Del poema XX: "Puedo escribir los versos más tristes esta noche. / Escribir, po
     id: 'EN45', area: 'ingles', areaName: 'Inglés', difficulty: 'dificil',
     context: `Read the text: "The concept of 'cultural lag' was introduced by sociologist William F. Ogburn in 1922. It refers to the idea that material culture (technology, tools, infrastructure) evolves faster than non-material culture (beliefs, values, norms). For example, while social media technology has advanced rapidly, our understanding of its effects on privacy and mental health has not kept pace, creating a gap or 'lag' between technological capability and cultural adaptation."`,
     question: `What does the author illustrate with the social media example?`,
-    options: ['That social media is harmful to mental health', 'That technology advances faster than society's ability to adapt to it', 'That privacy laws are already well-developed', 'That cultural values determine technological progress'],
+    options: ['That social media is harmful to mental health', 'That technology advances faster than society\'s ability to adapt to it', 'That privacy laws are already well-developed', 'That cultural values determine technological progress'],
     correct: 1,
     explanation: { correct: 'The text uses social media to show how "our understanding of its effects on privacy and mental health has not kept pace" with technology, illustrating the gap (cultural lag) between material and non-material culture.', wrongs: ['The example focuses on the gap, not on declaring harm', 'Opción correcta', 'The text says understanding has not kept pace, implying laws are also lagging', 'Cultural lag is about technology outpacing culture, not the reverse'] }
   },
