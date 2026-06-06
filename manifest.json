@@ -2,7 +2,7 @@
   "name": "PrepICFES - Saber 11°",
   "short_name": "PrepICFES",
   "description": "Prepara el examen ICFES Saber 11° con simulacros y estudio personalizado",
-  "start_url": "/",
+  "start_url": "./",
   "display": "standalone",
   "background_color": "#0d0d1a",
   "theme_color": "#1a237e",
