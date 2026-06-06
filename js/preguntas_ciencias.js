@@ -1,4 +1,4 @@
-﻿// Preguntas oficiales ICFES - Ciencias Naturales (CN102-CN150)
+// Preguntas oficiales ICFES - Ciencias Naturales (CN102-CN150)
 // Fuente: Icfes, (2021). Prueba Ciencias Naturales, Cuadernillo de preguntas. Saber 11.°
 QUESTIONS.push(  {
     id: 'CN102',

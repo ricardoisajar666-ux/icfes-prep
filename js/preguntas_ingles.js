@@ -1,4 +1,4 @@
-﻿// Preguntas oficiales ICFES - Inglés (EN101-EN225)
+// Preguntas oficiales ICFES - Inglés (EN101-EN225)
 // Fuente: Icfes, (2021). Prueba Inglés, Cuadernillo de preguntas. Saber 11.°
 QUESTIONS.push(  // ==================== EXAMEN 1 ====================
   // PARTE 1 - Clothes and accessories (Q1-Q5)

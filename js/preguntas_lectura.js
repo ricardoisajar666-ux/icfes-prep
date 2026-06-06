@@ -1,4 +1,4 @@
-﻿// Preguntas oficiales ICFES - Lectura Crítica (LC101-LC149)
+// Preguntas oficiales ICFES - Lectura Crítica (LC101-LC149)
 // Fuente: Icfes, (2021). Prueba Lectura Crítica, Cuadernillo de preguntas. Saber 11.°
 QUESTIONS.push(  {
     id: 'LC101',

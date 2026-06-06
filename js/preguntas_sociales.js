@@ -1,4 +1,4 @@
-﻿// Preguntas oficiales ICFES - Sociales y Ciudadanía (SC100-SC148)
+// Preguntas oficiales ICFES - Sociales y Ciudadanía (SC100-SC148)
 // Fuente: Icfes, (2021). Prueba Sociales y Ciudadanas, Cuadernillo de preguntas. Saber 11.°
 QUESTIONS.push(  {
     id: 'SC100',
