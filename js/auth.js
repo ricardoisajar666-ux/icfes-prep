@@ -92,7 +92,7 @@ AUTH.init();
 window.AUTH = AUTH;
 
 function updateNav() {
-  const nav = document.querySelector('nav');
+  const nav = document.getElementById('main-nav') || document.querySelector('nav');
   const cu = AUTH.getCurrentUser();
   const ia = AUTH.isAdmin();
   const sk = AUTH.getStreak();

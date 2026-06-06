@@ -1213,5 +1213,429 @@ QUESTIONS.push(
     options:['Rama Ejecutiva','Rama Legislativa','Rama Electoral','Rama Judicial'],
     correct:2,
     explanation:{correct:'Las tres ramas del poder publico en Colombia son: Ejecutiva, Legislativa y Judicial. La "Rama Electoral" no existe como rama independiente; las funciones electorales corresponden a la Registraduria y al CNE, que son organismos autonomos.',wrongs:['La Rama Ejecutiva es una de las tres ramas del poder publico','La Rama Legislativa es una de las tres ramas del poder publico','Opcion correcta (la Rama Electoral no existe como rama del poder)','La Rama Judicial es una de las tres ramas del poder publico']}
+  },
+
+  // ===== NUEVAS PREGUNTAS ICFES CON CONTENIDO VISUAL =====
+
+  // --- MATEMATICAS CON GRAFICOS ---
+  {
+    id:'MT80',area:'matematicas',areaName:'Matematicas',difficulty:'media',
+    svg:`<svg viewBox="0 0 360 240" xmlns="http://www.w3.org/2000/svg" style="max-width:360px">
+      <text x="180" y="18" text-anchor="middle" font-size="11" font-weight="bold" fill="#333">Ventas mensuales de la tienda Donde Maria (millones de pesos)</text>
+      <line x1="50" y1="30" x2="50" y2="200" stroke="#666" stroke-width="1.5"/>
+      <line x1="50" y1="200" x2="340" y2="200" stroke="#666" stroke-width="1.5"/>
+      <text x="15" y="115" font-size="8" fill="#666" transform="rotate(-90,15,115)">Ventas</text>
+      <text x="195" y="218" text-anchor="middle" font-size="8" fill="#666">Meses</text>
+      <text x="45" y="195" font-size="7" fill="#666">0</text>
+      <text x="38" y="165" font-size="7" fill="#666">5</text>
+      <text x="38" y="135" font-size="7" fill="#666">10</text>
+      <text x="32" y="105" font-size="7" fill="#666">15</text>
+      <text x="32" y="75" font-size="7" fill="#666">20</text>
+      <text x="32" y="45" font-size="7" fill="#666">25</text>
+      <rect x="70" y="170" width="30" height="30" fill="#42A5F5" rx="2"/>
+      <text x="85" y="185" text-anchor="middle" font-size="7" fill="white" font-weight="bold">E</text>
+      <rect x="115" y="110" width="30" height="90" fill="#66BB6A" rx="2"/>
+      <text x="130" y="160" text-anchor="middle" font-size="7" fill="white" font-weight="bold">F</text>
+      <rect x="160" y="140" width="30" height="60" fill="#FFA726" rx="2"/>
+      <text x="175" y="172" text-anchor="middle" font-size="7" fill="white" font-weight="bold">S</text>
+      <rect x="205" y="50" width="30" height="150" fill="#EF5350" rx="2"/>
+      <text x="220" y="128" text-anchor="middle" font-size="7" fill="white" font-weight="bold">J</text>
+      <rect x="250" y="120" width="30" height="80" fill="#AB47BC" rx="2"/>
+      <text x="265" y="162" text-anchor="middle" font-size="7" fill="white" font-weight="bold">A</text>
+      <rect x="295" y="90" width="30" height="110" fill="#26C6DA" rx="2"/>
+      <text x="310" y="148" text-anchor="middle" font-size="7" fill="white" font-weight="bold">S</text>
+      <text x="85" y="212" text-anchor="middle" font-size="7" fill="#333">Ene</text>
+      <text x="130" y="212" text-anchor="middle" font-size="7" fill="#333">Feb</text>
+      <text x="175" y="212" text-anchor="middle" font-size="7" fill="#333">Mar</text>
+      <text x="220" y="212" text-anchor="middle" font-size="7" fill="#333">Abr</text>
+      <text x="265" y="212" text-anchor="middle" font-size="7" fill="#333">May</text>
+      <text x="310" y="212" text-anchor="middle" font-size="7" fill="#333">Jun</text>
+    </svg>`,
+    context:'La grafica de barras muestra las ventas mensuales de la tienda "Donde Maria" durante el primer semestre del ano. Cada division vertical representa 5 millones de pesos.',
+    question:'Las ventas promedio del primer trimestre (enero a marzo) en millones de pesos fueron:',
+    options:['8,3 millones','9 millones','10 millones','11,7 millones'],
+    correct:3,
+    explanation:{correct:'Enero = 10M, Febrero = 18M, Marzo = 7M. Promedio primer trimestre = (10+18+7)/3 = 35/3 = 11,67 millones aprox. 11,7 millones.',wrongs:['Confundiste las barras: E=10, F=18, S=7','Promedio correcto es 35/3 = 11,67','Opcion correcta','Incluiste el segundo trimestre en el calculo']}
+  },
+  {
+    id:'MT81',area:'matematicas',areaName:'Matematicas',difficulty:'dificil',
+    table:{
+      headers:['Tiempo (min)','0','5','10','15','20','25','30'],
+      rows:[
+        ['Distancia (km)','0','3','8','15','20','22','24']
+      ],
+      caption:'Distancia recorrida por un ciclista en una ruta Bogota - Zipaquira'
+    },
+    context:'Un ciclista recorre una ruta de Bogota a Zipaquira. La tabla muestra la distancia acumulada en funcion del tiempo.',
+    question:'En que intervalo de tiempo el ciclista tuvo la mayor velocidad promedio?',
+    options:['0 a 5 minutos','5 a 10 minutos','10 a 15 minutos','25 a 30 minutos'],
+    correct:2,
+    explanation:{correct:'Velocidad promedio por intervalo: 0-5: 3/5=0,6 km/min; 5-10: 5/5=1 km/min; 10-15: 7/5=1,4 km/min (mayor); 15-20: 5/5=1 km/min; 20-25: 2/5=0,4 km/min; 25-30: 2/5=0,4 km/min. Mayor velocidad en 10-15 min.',wrongs:['0,6 km/min es la velocidad promedio del primer intervalo','1 km/min es menor que 1,4 km/min','Opcion correcta','0,4 km/min es la menor velocidad']}
+  },
+  {
+    id:'MT82',area:'matematicas',areaName:'Matematicas',difficulty:'media',
+    svg:`<svg viewBox="0 0 350 220" xmlns="http://www.w3.org/2000/svg" style="max-width:350px">
+      <text x="175" y="18" text-anchor="middle" font-size="11" font-weight="bold" fill="#333">Distribucion del presupuesto familiar mensual</text>
+      <circle cx="120" cy="120" r="85" fill="none" stroke="#ddd" stroke-width="1"/>
+      <path d="M120,35 A85,85 0 0,1 198,80 L120,120 Z" fill="#42A5F5"/>
+      <path d="M198,80 A85,85 0 0,1 205,160 L120,120 Z" fill="#66BB6A"/>
+      <path d="M205,160 A85,85 0 0,1 120,205 L120,120 Z" fill="#FFA726"/>
+      <path d="M120,205 A85,85 0 0,1 45,160 L120,120 Z" fill="#EF5350"/>
+      <path d="M45,160 A85,85 0 0,1 50,80 L120,120 Z" fill="#AB47BC"/>
+      <path d="M50,80 A85,85 0 0,1 120,35 L120,120 Z" fill="#78909C"/>
+      <text x="155" y="65" font-size="9" fill="white" font-weight="bold">35%</text>
+      <text x="200" y="115" font-size="9" fill="white" font-weight="bold">20%</text>
+      <text x="175" y="185" font-size="9" fill="white" font-weight="bold">15%</text>
+      <text x="70" y="175" font-size="9" fill="white" font-weight="bold">12%</text>
+      <text x="55" y="110" font-size="9" fill="white" font-weight="bold">10%</text>
+      <text x="85" y="60" font-size="8" fill="white" font-weight="bold">8%</text>
+      <rect x="230" y="45" width="12" height="12" fill="#42A5F5" rx="2"/>
+      <text x="248" y="55" font-size="8" fill="#333">Vivienda</text>
+      <rect x="230" y="65" width="12" height="12" fill="#66BB6A" rx="2"/>
+      <text x="248" y="75" font-size="8" fill="#333">Alimentos</text>
+      <rect x="230" y="85" width="12" height="12" fill="#FFA726" rx="2"/>
+      <text x="248" y="95" font-size="8" fill="#333">Transporte</text>
+      <rect x="230" y="105" width="12" height="12" fill="#EF5350" rx="2"/>
+      <text x="248" y="115" font-size="8" fill="#333">Educacion</text>
+      <rect x="230" y="125" width="12" height="12" fill="#AB47BC" rx="2"/>
+      <text x="248" y="135" font-size="8" fill="#333">Salud</text>
+      <rect x="230" y="145" width="12" height="12" fill="#78909C" rx="2"/>
+      <text x="248" y="155" font-size="8" fill="#333">Ahorro</text>
+    </svg>`,
+    context:'La grafica circular muestra la distribucion del presupuesto familiar mensual de los Rodriguez. El ingreso mensual familiar es de $4.200.000.',
+    question:'Cual es el valor destinado a educacion?',
+    options:['$504.000','$630.000','$840.000','$1.470.000'],
+    correct:0,
+    explanation:{correct:'Educacion corresponde al 12% del presupuesto: $4.200.000 x 0,12 = $504.000.',wrongs:['$630.000 es el 15% (transporte)','Opcion correcta','$840.000 es el 20% (alimentos)','$1.470.000 es el 35% (vivienda)']}
+  },
+
+  // --- CIENCIAS CON DIAGRAMAS ---
+  {
+    id:'CN80',area:'ciencias',areaName:'Ciencias Naturales',difficulty:'media',
+    svg:`<svg viewBox="0 0 360 260" xmlns="http://www.w3.org/2000/svg" style="max-width:360px">
+      <text x="180" y="18" text-anchor="middle" font-size="11" font-weight="bold" fill="#333">Ciclo del agua</text>
+      <ellipse cx="180" cy="230" rx="140" ry="20" fill="#E3F2FD" stroke="#1565C0" stroke-width="1"/>
+      <text x="180" y="234" text-anchor="middle" font-size="9" fill="#0D47A1" font-weight="bold">Oceanos y rios</text>
+      <path d="M60,210 Q40,140 80,80" stroke="#42A5F5" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+      <text x="35" y="150" font-size="8" fill="#42A5F5" font-weight="bold">Evaporacion</text>
+      <ellipse cx="100" cy="65" rx="45" ry="20" fill="#ECEFF1" stroke="#90A4AE" stroke-width="1"/>
+      <text x="100" y="69" text-anchor="middle" font-size="8" fill="#546E7F">Nubes</text>
+      <path d="M145,65 L220,65" stroke="#90A4AE" stroke-width="2" stroke-dasharray="4,3"/>
+      <text x="180" y="58" text-anchor="middle" font-size="8" fill="#78909C">Transporte</text>
+      <path d="M220,65 Q260,80 260,130" stroke="#42A5F5" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+      <text x="270" y="100" font-size="8" fill="#42A5F5" font-weight="bold">Condensacion</text>
+      <path d="M260,140 L260,200" stroke="#42A5F5" stroke-width="2.5" stroke-dasharray="3,3"/>
+      <text x="280" y="175" font-size="8" fill="#1565C0" font-weight="bold">Precipitacion</text>
+      <path d="M260,200 Q220,215 180,220" stroke="#42A5F5" stroke-width="1.5" fill="none" marker-end="url(#arrow)"/>
+      <text x="220" y="210" font-size="7" fill="#1565C0">Escorrentia</text>
+      <circle cx="180" cy="130" r="30" fill="#E8F5E9" stroke="#4CAF50" stroke-width="1.5"/>
+      <text x="180" y="127" text-anchor="middle" font-size="8" fill="#2E7D32" font-weight="bold">Plantas</text>
+      <text x="180" y="138" text-anchor="middle" font-size="7" fill="#2E7D32">Transpiracion</text>
+      <path d="M165,100 Q155,80 130,70" stroke="#4CAF50" stroke-width="1.5" fill="none" marker-end="url(#arrow2)"/>
+      <defs>
+        <marker id="arrow" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#42A5F5"/></marker>
+        <marker id="arrow2" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#4CAF50"/></marker>
+      </defs>
+    </svg>`,
+    context:'El diagrama muestra las etapas principales del ciclo del agua en la naturaleza.',
+    question:'Segun el diagrama, cual proceso convierte el agua liquida en vapor de agua?',
+    options:['Condensacion','Precipitacion','Evaporacion','Escorrentia'],
+    correct:2,
+    explanation:{correct:'La evaporacion es el proceso por el cual el agua liquida de oceanos y rios se convierte en vapor de agua debido al calor del sol, subiendo hacia la atmosfera.',wrongs:['La condensacion es cuando el vapor se convierte en nubes (gotas liquidas)','La precipitacion es cuando el agua cae como lluvia o nieve','Opcion correcta','La escorrentia es el agua que fluye sobre la superficie hacia rios y oceanos']}
+  },
+  {
+    id:'CN81',area:'ciencias',areaName:'Ciencias Naturales',difficulty:'dificil',
+    table:{
+      headers:['Nivel trofico','Organismos','Energia disponible (kcal/m²/año)'],
+      rows:[
+        ['Productores (plantas)','Gramineas, arbustos','20.000'],
+        ['Primer consumidor (herbivoros)','Conejos, insectos','2.000'],
+        ['Segundo consumidor (carnivoros primarios)','Zorros, aves rapaces','200'],
+        ['Tercer consumidor (carnivoros secundarios)','Aguilas, pumas','20']
+      ],
+      caption:'Cadena trofica de un ecosistema de paramo colombiano'
+    },
+    context:'La tabla presenta la informacion de energia disponible en cada nivel trofico de un ecosistema de paramo en Colombia.',
+    question:'Segun la tabla, que porcentaje de la energia original llega al nivel del aguila (tercer consumidor)?',
+    options:['0,1%','1%','10%','0,01%'],
+    correct:0,
+    explanation:{correct:'Energia del aguila / Energia original = 20 / 20.000 = 0,001 = 0,1%. Solo el 0,1% de la energia de los productores llega al tercer nivel consumidor.',wrongs:['1% seria 200 kcal (segundo consumidor)','10% seria 2.000 kcal (primer consumidor)','Opcion correcta','0,01% seria 2 kcal, menor a lo mostrado']}
+  },
+  {
+    id:'CN82',area:'ciencias',areaName:'Ciencias Naturales',difficulty:'facil',
+    svg:`<svg viewBox="0 0 340 200" xmlns="http://www.w3.org/2000/svg" style="max-width:340px">
+      <text x="170" y="18" text-anchor="middle" font-size="11" font-weight="bold" fill="#333">Sistema solar (no a escala)</text>
+      <circle cx="60" cy="100" r="22" fill="#FDD835" stroke="#F9A825" stroke-width="2"/>
+      <text x="60" y="104" text-anchor="middle" font-size="8" fill="#E65100" font-weight="bold">Sol</text>
+      <circle cx="115" cy="100" r="5" fill="#90A4AE"/>
+      <text x="115" y="118" text-anchor="middle" font-size="6" fill="#546E7F">Mercurio</text>
+      <circle cx="140" cy="100" r="7" fill="#FFCC80"/>
+      <text x="140" y="118" text-anchor="middle" font-size="6" fill="#546E7F">Venus</text>
+      <circle cx="170" cy="100" r="8" fill="#42A5F5"/>
+      <text x="170" y="118" text-anchor="middle" font-size="6" fill="#1565C0" font-weight="bold">Tierra</text>
+      <circle cx="200" cy="100" r="6" fill="#EF5350"/>
+      <text x="200" y="118" text-anchor="middle" font-size="6" fill="#C62828">Marte</text>
+      <circle cx="240" cy="100" r="16" fill="#FFB74D"/>
+      <text x="240" y="104" text-anchor="middle" font-size="6" fill="#E65100">Jupiter</text>
+      <circle cx="285" cy="100" r="14" fill="#FFE082" stroke="#F9A825" stroke-width="1"/>
+      <ellipse cx="285" cy="100" rx="22" ry="5" fill="none" stroke="#F9A825" stroke-width="1" transform="rotate(-15,285,100)"/>
+      <text x="285" y="122" text-anchor="middle" font-size="6" fill="#546E7F">Saturno</text>
+      <text x="170" y="155" text-anchor="middle" font-size="9" fill="#333">Los planetas interiores (Mercurio, Venus, Tierra, Marte) son rocosos</text>
+      <text x="170" y="170" text-anchor="middle" font-size="9" fill="#333">Los planetas exteriores (Jupiter, Saturno) son gaseosos</text>
+      <text x="170" y="185" text-anchor="middle" font-size="8" fill="#1565C0" font-weight="bold">La Tierra es el unico planeta con agua liquida en su superficie</text>
+    </svg>`,
+    context:'El diagrama muestra los planetas del sistema solar ordenados segun su distancia al Sol.',
+    question:'Segun el diagrama, que caracteristica diferencia a la Tierra de los demas planetas interiores?',
+    options:['Es el mas cercano al Sol','Es el mas grande del sistema solar','Es el unico con agua liquida en su superficie','Tiene anillos como Saturno'],
+    correct:2,
+    explanation:{correct:'El diagrama indica que "La Tierra es el unico planeta con agua liquida en su superficie", lo que la diferencia de Mercurio, Venus y Marte.',wrongs:['Mercurio es el mas cercano al Sol','Jupiter es el mas grande','Opcion correcta','Saturno tiene anillos, no la Tierra']}
+  },
+
+  // --- SOCIALES CON MAPAS Y DIAGRAMAS ---
+  {
+    id:'SC80',area:'sociales',areaName:'Sociales y Ciudadania',difficulty:'media',
+    svg:`<svg viewBox="0 0 350 280" xmlns="http://www.w3.org/2000/svg" style="max-width:350px">
+      <text x="175" y="18" text-anchor="middle" font-size="11" font-weight="bold" fill="#333">Evolucion del PIB per capita en Colombia (2015-2023)</text>
+      <line x1="50" y1="30" x2="50" y2="230" stroke="#666" stroke-width="1.5"/>
+      <line x1="50" y1="230" x2="330" y2="230" stroke="#666" stroke-width="1.5"/>
+      <text x="15" y="135" font-size="8" fill="#666" transform="rotate(-90,15,135)">USD</text>
+      <text x="40" y="225" font-size="7" fill="#666">5.000</text>
+      <text x="35" y="185" font-size="7" fill="#666">6.000</text>
+      <text x="35" y="145" font-size="7" fill="#666">7.000</text>
+      <text x="35" y="105" font-size="7" fill="#666">8.000</text>
+      <text x="35" y="65" font-size="7" fill="#666">9.000</text>
+      <polyline points="70,185 105,165 140,145 175,150 210,170 245,140 280,120 315,105" fill="none" stroke="#1565C0" stroke-width="2.5"/>
+      <circle cx="70" cy="185" r="4" fill="#1565C0"/><text x="70" y="198" text-anchor="middle" font-size="7" fill="#333">2015</text>
+      <circle cx="105" cy="165" r="4" fill="#1565C0"/><text x="105" y="198" text-anchor="middle" font-size="7" fill="#333">2017</text>
+      <circle cx="140" cy="145" r="4" fill="#1565C0"/><text x="140" y="198" text-anchor="middle" font-size="7" fill="#333">2019</text>
+      <circle cx="175" cy="150" r="5" fill="#EF5350" stroke="#C62828" stroke-width="2"/><text x="175" y="198" text-anchor="middle" font-size="7" fill="#C62828" font-weight="bold">2020</text>
+      <circle cx="210" cy="170" r="4" fill="#1565C0"/><text x="210" y="198" text-anchor="middle" font-size="7" fill="#333">2021</text>
+      <circle cx="245" cy="140" r="4" fill="#1565C0"/><text x="245" y="198" text-anchor="middle" font-size="7" fill="#333">2022</text>
+      <circle cx="280" cy="120" r="4" fill="#1565C0"/><text x="280" y="198" text-anchor="middle" font-size="7" fill="#333">2023</text>
+      <text x="175" y="248" text-anchor="middle" font-size="8" fill="#C62828" font-weight="bold">Caida por pandemia COVID-19</text>
+      <text x="175" y="265" text-anchor="middle" font-size="8" fill="#333">Fuente: Banco Mundial</text>
+    </svg>`,
+    context:'La grafica muestra la evolucion del PIB per capita de Colombia entre 2015 y 2023, en dolares estadounidenses. El punto marcado en rojo indica el impacto de la pandemia de COVID-19.',
+    question:'Segun la grafica, en que ano se presento la caida mas fuerte del PIB per capita en Colombia?',
+    options:['2017','2019','2020','2022'],
+    correct:2,
+    explanation:{correct:'La grafica muestra un punto rojo marcado en 2020 con la nota "Caida por pandemia COVID-19", indicando la mayor caida del PIB per capita durante el periodo mostrado.',wrongs:['En 2017 el PIB per capita aumento respecto a 2015','En 2019 el PIB per capita era mayor que en 2017','Opcion correcta','En 2022 el PIB per capita se recupero significativamente']}
+  },
+  {
+    id:'SC81',area:'sociales',areaName:'Sociales y Ciudadania',difficulty:'dificil',
+    table:{
+      headers:['Indicador','2010','2015','2020','2023'],
+      rows:[
+        ['Poblacion (millones)','44,9','49,3','50,9','52,0'],
+        ['Tasa de urbanizacion (%)','75','77','80','82'],
+        ['Pobreza (%)','37,2','27,8','35,5','33,0'],
+        ['Acceso a internet (%)','32','52','68','75']
+      ],
+      caption:'Indicadores sociales de Colombia'
+    },
+    context:'La tabla muestra indicadores sociales de Colombia en cuatro periodos diferentes.',
+    question:'Cual de los siguientes comportamientos se observa en todos los periodos de la tabla?',
+    options:['La tasa de pobreza disminuyo continuamente','La urbanizacion y el acceso a internet aumentaron en todos los periodos','La poblacion se mantuvo constante','El acceso a internet siempre supero el 50%'],
+    correct:1,
+    explanation:{correct:'La urbanizacion aumento en cada periodo (75→77→80→82) y el acceso a internet tambien aumento en cada periodo (32→52→68→75). Ambos indicadores muestran crecimiento continuo.',wrongs:['La pobreza aumento en 2020 (35,5%) respecto a 2015 (27,8%)','Opcion correcta','La poblacion crecio de 44,9 a 52 millones','En 2010 el acceso a internet era solo 32%, menor al 50%']}
+  },
+
+  // --- LECTURA CRITICA CON TABLAS ---
+  {
+    id:'LC80',area:'lectura',areaName:'Lectura Critica',difficulty:'media',
+    table:{
+      headers:['Region','Produccion de cafe (sacos/ano)','No. de productores','Rendimiento (sacos/productor)'],
+      rows:[
+        ['Eje Cafetero','8.500.000','540.000','15,7'],
+        ['Norte de Santander','1.200.000','85.000','14,1'],
+        ['Huila','1.800.000','62.000','29,0'],
+        ['Tolima','950.000','48.000','19,8']
+      ],
+      caption:'Produccion cafetera en Colombia por region (2022)'
+    },
+    context:'La tabla presenta datos sobre la produccion de cafe en cuatro regiones colombianas. El rendimiento se calcula dividiendo la produccion total entre el numero de productores.',
+    question:'Segun los datos de la tabla, cual region tiene el mayor rendimiento promedio por productor?',
+    options:['Eje Cafetero','Norte de Santander','Huila','Tolima'],
+    correct:2,
+    explanation:{correct:'Huila tiene el mayor rendimiento con 29,0 sacos por productor, a pesar de tener menos productores que el Eje Cafetero. Esto sugiere una mayor eficiencia productiva.',wrongs:['El Eje Cafetero produce mas en total pero su rendimiento por productor es 15,7','Norte de Santander tiene el menor rendimiento (14,1)','Opcion correcta','Tolima tiene 19,8, menor que Huila']}
+  },
+  {
+    id:'LC81',area:'lectura',areaName:'Lectura Critica',difficulty:'dificil',
+    context:`"Un estudio de la Universidad Nacional analizo el rendimiento de 2.000 estudiantes de grado 11 en tres pruebas simultaneas: una de comprension lectora con textos academicos, otra con textos literarios, y una tercera con textos argumentativos. Los resultados mostraron que el promedio en comprension lectora de textos academicos fue 62/100, en textos literarios 71/100, y en textos argumentativos 55/100. Los investigadores concluyeron que los estudiantes tienen mayor dificultad con textos que requieren evaluar la solidez de los argumentos presentados."`,
+    question:'Cual de las siguientes conclusiones esta mejor sustentada por los datos del estudio?',
+    options:['Los estudiantes leen mas libros que articulos academicos','Los estudiantes tienen mejor comprension de textos argumentativos que academicos','La dificultad de los estudiantes varia segun el tipo de texto, siendo mayor con los argumentativos','Los textos literarios son los mas faciles de comprender para todos los estudiantes'],
+    correct:2,
+    explanation:{correct:'Los datos muestran diferencias claras: academicos 62, literarios 71, argumentativos 55. La diferencia entre el puntaje mas alto (literarios: 71) y el mas bajo (argumentativos: 55) respalda que la dificultad varia segun el tipo de texto.',wrongs:['El texto no informa sobre habitos de lectura fuera del estudio','Los argumentativos tienen el MENOR puntaje (55), no el mayor','Opcion correcta','Aunque los literarios tienen el puntaje mas alto, la conclusion general es sobre la variabilidad']}
+  },
+
+  // --- INGLES CON CONTENIDO VISUAL ---
+  {
+    id:'EN80',area:'ingles',areaName:'Ingles',difficulty:'media',
+    svg:`<svg viewBox="0 0 350 220" xmlns="http://www.w3.org/2000/svg" style="max-width:350px">
+      <text x="175" y="18" text-anchor="middle" font-size="11" font-weight="bold" fill="#333">Monthly rainfall in Medellin (mm)</text>
+      <line x1="50" y1="30" x2="50" y2="185" stroke="#666" stroke-width="1.5"/>
+      <line x1="50" y1="185" x2="340" y2="185" stroke="#666" stroke-width="1.5"/>
+      <text x="15" y="110" font-size="8" fill="#666" transform="rotate(-90,15,110)">mm</text>
+      <text x="42" y="183" font-size="7" fill="#666">0</text>
+      <text x="35" y="155" font-size="7" fill="#666">50</text>
+      <text x="35" y="125" font-size="7" fill="#666">100</text>
+      <text x="35" y="95" font-size="7" fill="#666">150</text>
+      <text x="35" y="65" font-size="7" fill="#666">200</text>
+      <text x="35" y="35" font-size="7" fill="#666">250</text>
+      <polyline points="65,155 90,140 115,135 140,155 165,170 190,165 215,175 240,160 265,145 290,155 315,165" fill="none" stroke="#42A5F5" stroke-width="2.5"/>
+      <circle cx="65" cy="155" r="3" fill="#42A5F5"/>
+      <circle cx="90" cy="140" r="3" fill="#42A5F5"/>
+      <circle cx="115" cy="135" r="3" fill="#42A5F5"/>
+      <circle cx="140" cy="155" r="3" fill="#42A5F5"/>
+      <circle cx="165" cy="170" r="3" fill="#42A5F5"/>
+      <circle cx="190" cy="165" r="3" fill="#42A5F5"/>
+      <circle cx="215" cy="175" r="3" fill="#42A5F5"/>
+      <circle cx="240" cy="160" r="3" fill="#42A5F5"/>
+      <circle cx="265" cy="145" r="3" fill="#42A5F5"/>
+      <circle cx="290" cy="155" r="3" fill="#42A5F5"/>
+      <circle cx="315" cy="165" r="3" fill="#42A5F5"/>
+      <text x="65" y="198" text-anchor="middle" font-size="6" fill="#333">J</text>
+      <text x="90" y="198" text-anchor="middle" font-size="6" fill="#333">F</text>
+      <text x="115" y="198" text-anchor="middle" font-size="6" fill="#333">M</text>
+      <text x="140" y="198" text-anchor="middle" font-size="6" fill="#333">A</text>
+      <text x="165" y="198" text-anchor="middle" font-size="6" fill="#333">M</text>
+      <text x="190" y="198" text-anchor="middle" font-size="6" fill="#333">J</text>
+      <text x="215" y="198" text-anchor="middle" font-size="6" fill="#333">J</text>
+      <text x="240" y="198" text-anchor="middle" font-size="6" fill="#333">A</text>
+      <text x="265" y="198" text-anchor="middle" font-size="6" fill="#333">S</text>
+      <text x="290" y="198" text-anchor="middle" font-size="6" fill="#333">O</text>
+      <text x="315" y="198" text-anchor="middle" font-size="6" fill="#333">N</text>
+      <text x="175" y="215" text-anchor="middle" font-size="8" fill="#333">Source: IDEAM</text>
+    </svg>`,
+    context:'The line graph shows the average monthly rainfall in Medellin, Colombia, measured in millimeters. The x-axis shows the months (J=January, F=February, etc.).',
+    question:'According to the graph, during which months does Medellin experience its highest rainfall?',
+    options:['January to March','April to May and October to November','June to August','September to December'],
+    correct:1,
+    explanation:{correct:'The graph shows two peaks in the rainfall line: one around April-May (the line drops around month 5-6) and another around October-November (the line rises again around month 10-11). These correspond to the two rainy seasons in Medellin.',wrongs:['The graph shows relatively low rainfall in January-March','Opcion correcta','June-August shows decreasing rainfall','The graph does not show December data']}
+  },
+  {
+    id:'EN81',area:'ingles',areaName:'Ingles',difficulty:'dificil',
+    table:{
+      headers:['City','Average temperature (°C)','Annual rainfall (mm)','Humidity (%)','Best season to visit'],
+      rows:[
+        ['Bogota','14','830','70','December-March'],
+        ['Cartagena','27','1050','80','December-April'],
+        ['Leticia','26','2500','85','July-September'],
+        ['Barranquilla','28','840','75','December-March']
+      ],
+      caption:'Climate data for four Colombian cities'
+    },
+    context:'The table provides climate information for four major Colombian cities to help tourists plan their visits.',
+    question:'A tourist wants to visit a city with the lowest rainfall and comfortable temperatures. Which city would be the best choice?',
+    options:['Cartagena','Leticia','Bogota','Barranquilla'],
+    correct:3,
+    explanation:{correct:'Barranquilla has the second lowest rainfall (840 mm) and the highest temperature (28°C). Bogota has lower rainfall (830 mm) but much cooler temperatures (14°C). For "comfortable temperatures" (warm), Barranquilla is the better choice.',wrongs:['Cartagena has high rainfall (1050 mm) and high humidity','Leticia has the highest rainfall (2500 mm)','Bogota has the lowest rainfall but very cool temperatures (14°C average)','Opcion correcta']}
+  },
+
+  // --- MATEMATICAS ADICIONALES ---
+  {
+    id:'MT83',area:'matematicas',areaName:'Matematicas',difficulty:'facil',
+    table:{
+      headers:['Producto','Precio normal ($)','Precio en descuento ($)','Descuento (%)'],
+      rows:[
+        ['Laptop','1.200','960','20%'],
+        ['Celular','800','640','?'],
+        ['Tablet','500','425','?'],
+        ['Auriculares','150','120','?']
+      ],
+      caption:'Catalogo de la tienda TechStore en descuentos de fin de ano'
+    },
+    context:'La tabla muestra los precios de productos en una tienda de tecnologia durante una promocion de fin de ano.',
+    question:'Cual es el porcentaje de descuento aplicado al tablet?',
+    options:['10%','15%','20%','25%'],
+    correct:1,
+    explanation:{correct:'Descuento = ((Precio normal - Precio descuento) / Precio normal) x 100 = ((500 - 425) / 500) x 100 = (75/500) x 100 = 15%.',wrongs:['10% seria $450','Opcion correcta','20% seria $400','25% seria $375']}
+  },
+  {
+    id:'MT84',area:'matematicas',areaName:'Matematicas',difficulty:'dificil',
+    svg:`<svg viewBox="0 0 350 230" xmlns="http://www.w3.org/2000/svg" style="max-width:350px">
+      <text x="175" y="18" text-anchor="middle" font-size="11" font-weight="bold" fill="#333">Poblacion de Colombia por grupos de edad (Censo 2023)</text>
+      <line x1="50" y1="30" x2="50" y2="200" stroke="#666" stroke-width="1.5"/>
+      <line x1="50" y1="200" x2="330" y2="200" stroke="#666" stroke-width="1.5"/>
+      <text x="15" y="120" font-size="8" fill="#666" transform="rotate(-90,15,120)">Millones</text>
+      <text x="42" y="200" font-size="7" fill="#666">0</text>
+      <text x="35" y="170" font-size="7" fill="#666">5</text>
+      <text x="35" y="140" font-size="7" fill="#666">10</text>
+      <text x="35" y="110" font-size="7" fill="#666">15</text>
+      <text x="35" y="80" font-size="7" fill="#666">20</text>
+      <rect x="65" y="130" width="40" height="70" fill="#42A5F5" rx="3"/>
+      <text x="85" y="155" text-anchor="middle" font-size="8" fill="white" font-weight="bold">12</text>
+      <rect x="120" y="110" width="40" height="90" fill="#66BB6A" rx="3"/>
+      <text x="140" y="145" text-anchor="middle" font-size="8" fill="white" font-weight="bold">15</text>
+      <rect x="175" y="140" width="40" height="60" fill="#FFA726" rx="3"/>
+      <text x="195" y="160" text-anchor="middle" font-size="8" fill="white" font-weight="bold">10</text>
+      <rect x="230" y="155" width="40" height="45" fill="#EF5350" rx="3"/>
+      <text x="250" y="170" text-anchor="middle" font-size="8" fill="white" font-weight="bold">7,5</text>
+      <rect x="285" y="170" width="40" height="30" fill="#AB47BC" rx="3"/>
+      <text x="305" y="180" text-anchor="middle" font-size="8" fill="white" font-weight="bold">5</text>
+      <text x="85" y="215" text-anchor="middle" font-size="7" fill="#333">0-14</text>
+      <text x="140" y="215" text-anchor="middle" font-size="7" fill="#333">15-29</text>
+      <text x="195" y="215" text-anchor="middle" font-size="7" fill="#333">30-44</text>
+      <text x="250" y="215" text-anchor="middle" font-size="7" fill="#333">45-59</text>
+      <text x="305" y="215" text-anchor="middle" font-size="7" fill="#333">60+</text>
+    </svg>`,
+    context:'La grafica de barras muestra la distribucion de la poblacion colombiana por grupos de edad, segun el Censo 2023. La suma total es 49,5 millones.',
+    question:'Cual es la proporcion de la poblacion mayor de 45 anos respecto al total?',
+    options:['15%','25%','30%','35%'],
+    correct:1,
+    explanation:{correct:'Poblacion 45-59: 7,5 millones. Poblacion 60+: 5 millones. Total mayor de 45: 12,5 millones. Total poblacion: 49,5 millones. Proporcion: (12,5/49,5) x 100 = 25,25% ≈ 25%.',wrongs:['15% seria 7,4 millones','Opcion correcta','30% seria 14,85 millones','35% seria 17,3 millones']}
+  },
+
+  // --- CIENCIAS ADICIONALES ---
+  {
+    id:'CN83',area:'ciencias',areaName:'Ciencias Naturales',difficulty:'media',
+    table:{
+      headers:['Propiedad','Plomo','Aluminio','Oro','Cobre'],
+      rows:[
+        ['Densidad (g/cm³)','11,3','2,7','19,3','8,9'],
+        ['Punto de fusion (°C)','327','660','1064','1085'],
+        ['Conductividad electrica','Baja','Alta','Media','Alta']
+      ],
+      caption:'Propiedades fisicas de cuatro metales'
+    },
+    context:'La tabla presenta propiedades fisicas de cuatro metales comunmente utilizados en la industria.',
+    question:'Un ingeniero necesita un metal liviano (baja densidad) que conduzca bien la electricidad para fabricar cables electricos. Cual metal es la mejor opcion?',
+    options:['Plomo','Aluminio','Oro','Cobre'],
+    correct:3,
+    explanation:{correct:'El cobre tiene baja densidad relativa (8,9 g/cm³) y alta conductividad electrica, por lo que es ideal para cables electricos. El aluminio tambien es liviano pero su conductividad es menor que la del cobre.',wrongs:['El plomo es muy denso (11,3 g/cm³) y tiene baja conductividad','El aluminio es liviano pero su conductividad es menor','El oro tiene conductividad media y es muy costoso','Opcion correcta (cobre: densidad moderada + alta conductividad)']}
+  },
+  {
+    id:'CN84',area:'ciencias',areaName:'Ciencias Naturales',difficulty:'dificil',
+    svg:`<svg viewBox="0 0 360 200" xmlns="http://www.w3.org/2000/svg" style="max-width:360px">
+      <text x="180" y="18" text-anchor="middle" font-size="11" font-weight="bold" fill="#333">Estructura del ADN - Doble helice</text>
+      <line x1="80" y1="40" x2="80" y2="170" stroke="#1565C0" stroke-width="3"/>
+      <line x1="280" y1="40" x2="280" y2="170" stroke="#C62828" stroke-width="3"/>
+      <line x1="110" y1="55" x2="250" y2="55" stroke="#666" stroke-width="2" stroke-dasharray="5,5"/>
+      <line x1="95" y1="75" x2="265" y2="75" stroke="#666" stroke-width="2" stroke-dasharray="5,5"/>
+      <line x1="100" y1="95" x2="260" y2="95" stroke="#666" stroke-width="2" stroke-dasharray="5,5"/>
+      <line x1="110" y1="115" x2="250" y2="115" stroke="#666" stroke-width="2" stroke-dasharray="5,5"/>
+      <line x1="95" y1="135" x2="265" y2="135" stroke="#666" stroke-width="2" stroke-dasharray="5,5"/>
+      <line x1="100" y1="155" x2="260" y2="155" stroke="#666" stroke-width="2" stroke-dasharray="5,5"/>
+      <circle cx="110" cy="55" r="8" fill="#42A5F5"/><text x="110" y="58" text-anchor="middle" font-size="7" fill="white" font-weight="bold">A</text>
+      <circle cx="250" cy="55" r="8" fill="#EF5350"/><text x="250" y="58" text-anchor="middle" font-size="7" fill="white" font-weight="bold">T</text>
+      <circle cx="95" cy="75" r="8" fill="#66BB6A"/><text x="95" y="78" text-anchor="middle" font-size="7" fill="white" font-weight="bold">C</text>
+      <circle cx="265" cy="75" r="8" fill="#FFA726"/><text x="265" y="78" text-anchor="middle" font-size="7" fill="white" font-weight="bold">G</text>
+      <circle cx="100" cy="95" r="8" fill="#42A5F5"/><text x="100" y="98" text-anchor="middle" font-size="7" fill="white" font-weight="bold">A</text>
+      <circle cx="260" cy="95" r="8" fill="#EF5350"/><text x="260" y="98" text-anchor="middle" font-size="7" fill="white" font-weight="bold">T</text>
+      <circle cx="110" cy="115" r="8" fill="#66BB6A"/><text x="110" y="118" text-anchor="middle" font-size="7" fill="white" font-weight="bold">C</text>
+      <circle cx="250" cy="115" r="8" fill="#FFA726"/><text x="250" y="118" text-anchor="middle" font-size="7" fill="white" font-weight="bold">G</text>
+      <circle cx="95" cy="135" r="8" fill="#FFA726"/><text x="95" y="138" text-anchor="middle" font-size="7" fill="white" font-weight="bold">G</text>
+      <circle cx="265" cy="135" r="8" fill="#66BB6A"/><text x="265" y="138" text-anchor="middle" font-size="7" fill="white" font-weight="bold">C</text>
+      <circle cx="100" cy="155" r="8" fill="#EF5350"/><text x="100" y="158" text-anchor="middle" font-size="7" fill="white" font-weight="bold">T</text>
+      <circle cx="260" cy="155" r="8" fill="#42A5F5"/><text x="260" y="158" text-anchor="middle" font-size="7" fill="white" font-weight="bold">A</text>
+      <text x="55" y="105" font-size="8" fill="#1565C0" font-weight="bold" transform="rotate(-90,55,105)">Cadena 5'-3'</text>
+      <text x="305" y="105" font-size="8" fill="#C62828" font-weight="bold" transform="rotate(90,305,105)">Cadena 3'-5'</text>
+      <text x="180" y="190" text-anchor="middle" font-size="8" fill="#333">A-T (2 puentes de hidrogeno) | C-G (3 puentes de hidrogeno)</text>
+    </svg>`,
+    context:'El diagrama muestra la estructura del ADN con sus bases nitrogenadas complementarias. A se une con T (adenina-timina) y C se une con G (citosina-guanina).',
+    question:'Segun el diagrama, si una cadena del ADN tiene la secuencia 5-ATCG-3, cual seria la secuencia complementaria en la otra cadena?',
+    options:['5-ATCG-3','5-GCTA-3','3-TAGC-5','3-CGAT-5'],
+    correct:2,
+    explanation:{correct:'La cadena complementaria se lee en sentido opuesto (3-5). A se une con T, T con A, C con G, G con C. Entonces 5-ATCG-3 se complementa con 3-TAGC-5.',wrongs:['La secuencia complementaria no es identica','La secuencia no se invierte asi','Opcion correcta','Esta en el sentido incorrecto']}
   }
 );
